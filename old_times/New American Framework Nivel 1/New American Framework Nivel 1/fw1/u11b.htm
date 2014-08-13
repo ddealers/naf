@@ -1,0 +1,288 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t1 {position:absolute;top:5;left:10;font-size:14;font-family:arial;width:570;color:#000000}
+#z1 {position:absolute;top:485;left:490;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z2 {position:absolute;top:830;left:490;font-size:14;font-family:arial;width:300;color:#ff0000}
+#tit {font-size:18;font-family:verdana;color:#a6a241}
+#bl {font-size:12;font-family:arial;color:#000000}
+#rd {font-size:14;font-family:arial;color:#ff0000}
+#lt {font-size:18;font-family:arial}
+a {color:#000099; text-decoration:none;font-size:14;font-family:arial}
+a:hover {color:#ff0000; text-decoration: underline}
+td {font-size:14;font-family:arial;color:#000000}
+</style>
+<script language="javascript">
+function k1(){
+if(q1a.value==9){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value==4){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value==7){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value==1){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value==5){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+if(q1f.value==2){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
+if(q1g.value==8){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
+if(q1h.value==6){s1h="8. Correct<br>"}else{s1h="8. Incorrect<br>"}
+if(q1i.value==3){s1i="9. Correct<br>"}else{s1i="9. Incorrect<br>"}
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h+s1i
+}
+function k2() {
+if(q2a.checked==true&q2b.checked==false){t2a=1}else{t2a=0}
+if(q2c.checked==false&q2d.checked==true){t2b=1}else{t2b=0}
+if(q2e.checked==true&q2f.checked==false){t2c=1}else{t2c=0}
+if(q2g.checked==true&q2h.checked==false){t2d=1}else{t2d=0}
+if(q2i.checked==false&q2j.checked==true){t2e=1}else{t2e=0}
+if(q2k.checked==true&q2l.checked==false){t2f=1}else{t2f=0}
+if(q2m.checked==false&q2n.checked==true){t2g=1}else{t2g=0}
+if(q2o.checked==false&q2p.checked==true){t2h=1}else{t2h=0}
+if(q2q.checked==false&q2r.checked==true){t2i=1}else{t2i=0}
+if(q2s.checked==true&q2t.checked==false){t2j=1}else{t2j=0}
+tt=t2a+t2b+t2c+t2d+t2e+t2f+t2g+t2h+t2i+t2j
+alert(tt)
+
+if(tt<=3){s2a="<b>Score 0-3</b><p> You're not stylish at all - and you probably don't care that you're not stylish. You generally wear conservative clothes, and you don't worry about what other people think of what you wear. "}
+if(tt>3&tt<=7){s2a="<b>Score 4-7</b><p> You are conscious about what you wear, but you don't spend too much time on clothes and appearance. You feel happy with the way you look and the clothes you wear. "}
+if(tt>7){s2a="<b>Score 8-10</b><p> You are very interested in clothes and your appearance, and you spend time and money on it. You know about what's stylish and what's not stylish."}
+z2.innerHTML=s2a
+}
+</script>
+</head>
+<body>
+
+<div id="t1">
+<img src="im/t-u11.jpg">
+<p>
+<span id="tit">Clothes</span>
+<p>
+<b>1. Vocabulary review. Match the words with the pictures by choosing the correct number.</b> 
+<p>
+<center>
+<table cellpadding=0 cellspacing=4>
+<tr><td><img src="im/u11-a1.jpg"></td><td><img src="im/u11-a2.jpg"></td><td><img src="im/u11-a3.jpg"></td><td><img src="im/u11-a4.jpg"></td><td><img src="im/u11-a5.jpg"></td></tr>
+</center>
+<center>
+</table>
+<table cellpadding=0 cellspacing=4>
+<tr><td><img src="im/u11-a6.jpg"></td><td><img src="im/u11-a7.jpg"></td><td><img src="im/u11-a8.jpg"></td><td><img src="im/u11-a9.jpg"></td></tr>
+</table>
+</center>
+<p>
+<center>
+<table cellpadding=0 cellspacing=4>
+<tr><td>
+1 jeans 
+</td><td width=50></td><td>
+<select name="q1a">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+2 sneakers
+</td><td></td><td>
+<select name="q1b">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+3 a suit 
+</td><td></td><td>
+<select name="q1c">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+4 a warm-up suit
+</td><td></td><td>
+<select name="q1d">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+5 a tie 
+</td><td></td><td>
+<select name="q1e">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+6 a shirt 
+</td><td></td><td>
+<select name="q1f">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+7 a T-shirt 
+</td><td></td><td>
+<select name="q1g">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+8 a sweatshirt 
+</td><td></td><td>
+<select name="q1h">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+<tr><td>
+9 a dress 
+</td><td></td><td>
+<select name="q1i">
+<option value=0>Choose Answer
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+<option value=9>9
+</select>
+</td></tr>
+</table>
+</center>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Here is a quiz to find out how <a href="#" onclick="window.open('u11b-t3.htm','_blank','width=400,height=530');"><b>stylish</b></a> you are. Click on an answer, then find out your score. </b> 
+<p>
+1 What are Levis?
+<p>
+<input type="checkbox" name="q2a"> a <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>brand name</b></a> for jeans
+<input type="checkbox" name="q2b"> a brand name for sneakers
+<p>
+2 What clothes do you normally wear? 
+<p>
+<input type="checkbox" name="q2c"> a suit and tie
+<input type="checkbox" name="q2d"> <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>casual</b></a> clothes
+ <p>
+3 How often do you buy new clothes? 
+<p>
+<input type="checkbox" name="q2e"> more than twice a year
+<input type="checkbox" name="q2f"> less than twice a year
+ <p>
+4 Where do you normally buy your clothes? 
+<p>
+<input type="checkbox" name="q2g"> in a clothing store
+<input type="checkbox" name="q2h"> in a big supermarket
+ <p>
+5 What is or are Raybans? 
+<p>
+<input type="checkbox" name="q2i"> sunscreen
+<input type="checkbox" name="q2j"> sunglasses
+ <p>
+6 Do you ever buy fashion magazines? 
+<p>
+<input type="checkbox" name="q2k"> No
+<input type="checkbox" name="q2l">  Yes
+ <p>
+7 A colleague at work starts to wear the same clothes as you. What's your reaction? 
+<p>
+<input type="checkbox" name="q2m"> You're pleased 
+<input type="checkbox" name="q2n">  You think your colleague is little strange.
+ <p>
+8 What do Christian Dior and Coco Chanel have in common? 
+<p>
+<input type="checkbox" name="q2o"> they are both models
+<input type="checkbox" name="q2p"> they are both clothes designers
+ <p>
+9 What kind of clothing do the brands Nike and Adidas make? 
+<p>
+<input type="checkbox" name="q2q"> <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>demin</b></a> jeans 
+<input type="checkbox" name="q2r"> sports clothing
+ <p>
+10 Which of these two things would you prefer to wear? 
+<p>
+<input type="checkbox" name="q2s"> a big T-shirt
+<input type="checkbox" name="q2t"> a pair of jeans 
+ <p>
+</table>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>

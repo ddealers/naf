@@ -1,0 +1,90 @@
+<head>
+<title>Framework 5</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t1 {position:absolute;top:5;left:10;font-size:14;font-family:arial;width:570;color:#000000}
+#z2 {position:absolute;top:780;left:640;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z3 {position:absolute;top:1110;left:500;font-size:14;font-family:arial;width:150;color:#ff0000}
+#tit {font-size:18;font-family:verdana;color:#00ac9f}
+#bl {font-size:14;font-family:arial;color:#000066}
+#rd {font-size:14;font-family:arial;color:#ff0000}
+#lt {font-size:18;font-family:arial}
+a {color:#000099; text-decoration:none;font-size:13;font-family:arial;font-weight:bold}
+a:hover {color:#ff0000; text-decoration: none}
+td {font-size:14;font-family:arial;color:#000000}
+</style>
+<script language="javascript">
+function k2(){
+if(q2a.value==2){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value==2){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value==2){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value==1){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+if(q2e.value==2){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e
+}
+function k3(){
+if(q3a.value==8){s3a="1. Correct<br>"}else{s3a="1. Incorrect<br>"}
+if(q3b.value==1){s3b="2. Correct<br>"}else{s3b="2. Incorrect<br>"}
+if(q3c.value==10){s3c="3. Correct<br>"}else{s3c="3. Incorrect<br>"}
+if(q3d.value==7){s3d="4. Correct<br>"}else{s3d="4. Incorrect<br>"}
+if(q3e.value==4){s3e="5. Correct<br>"}else{s3e="5. Incorrect<br>"}
+if(q3f.value==9){s3f="6. Correct<br>"}else{s3f="6. Incorrect<br>"}
+if(q3g.value==2){s3g="7. Correct<br>"}else{s3g="7. Incorrect<br>"}
+if(q3h.value==5){s3h="8. Correct<br>"}else{s3h="8. Incorrect<br>"}
+if(q3i.value==3){s3i="9. Correct<br>"}else{s3i="9. Incorrect<br>"}
+if(q3j.value==6){s3j="10. Correct<br>"}else{s3j="10. Incorrect<br>"}
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h+s3i+s3j
+}
+</script>
+</head>
+<body>
+
+<div id="t1">
+<span id="tit">Reading: Dolphins</span>
+<p>
+<b>1. Read this newspaper article. You can look the highlighted words up in the dictionary.</b>
+<p>
+<center>
+<img src="im/u4f-1.jpg">
+</center>
+<p>
+<b>2. Which is the best summary of the article? </b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>1 A boy who wasn't allowed to swim until he could speak, has learned to speak thanks to a dolphin.</td><td><select name="q2a"><option value=0>?<option value=1>Yes<option value=2>No</td></tr>
+<tr><td>2 A boy who hasn't been able to speak since birth has learned to speak again after swimming with dolphins at a therapy center in Florida.</td><td><select name="q2b"><option value=0>?<option value=1>Yes<option value=2>No</td></tr>
+<tr><td>3 A boy who has never been able to swim has learned to swim after swimming with dolphins at a therapy center in Hollywood.</td><td><select name="q2c"><option value=0>?<option value=1>Yes<option value=2>No</td></tr>
+<tr><td>4 A boy who hasn't been able to speak since birth was able to speak for the first time after swimming with dolphins at a therapy center in Florida.</td><td><select name="q2d"><option value=0>?<option value=1>Yes<option value=2>No</td></tr>
+<tr><td>5 A boy who has always been able to speak has learned to use his vocal cords after listening to the sounds that dolphins make underwater.</td><td><select name="q2e"><option value=0>?<option value=1>Yes<option value=2>No</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. Put these events in the order that they occurred.</b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td><select name="q3a"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>Nikki said "in."</td></tr>
+<tr><td><select name="q3b"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>Nikki didn't have enough oxygen when he was born.</td></tr>
+<tr><td><select name="q3c"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>Nikki said "please."</td></tr>
+<tr><td><select name="q3d"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>He pointed at the water.</td></tr>
+<tr><td><select name="q3e"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>His parents took him to Miami.</td></tr>
+<tr><td><select name="q3f"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>He got back into the tank.</td></tr>
+<tr><td><select name="q3g"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>His parents tried different therapies.</td></tr>
+<tr><td><select name="q3h"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>He went swimming with the dolphins.</td></tr>
+<tr><td><select name="q3i"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>His parents raised the money.</td></tr>
+<tr><td><select name="q3j"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10</td><td>He was told to get out of the tank.</td></tr>    
+</table>
+<p>
+<center>
+<button onclick="k3()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z2">
+</div>
+<div id="z3">
+</div>

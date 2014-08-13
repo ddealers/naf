@@ -1,0 +1,4 @@
+[autorun]
+shellexecute=americanframework1.htm /max
+label=New American Framework 1
+icon=fw1/eye.ico

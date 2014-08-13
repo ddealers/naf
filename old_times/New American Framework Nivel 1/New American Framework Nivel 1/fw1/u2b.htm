@@ -1,0 +1,154 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t1 {position:absolute;top:5;left:10;font-size:14;font-family:arial;width:570;color:#000000}
+#z1 {position:absolute;top:160;left:560;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z2 {position:absolute;top:760;left:525;font-size:14;font-family:arial;width:150;color:#ff0000}
+#tit {font-size:18;font-family:verdana;color:#61a34a}
+#bl {font-size:14;font-family:arial;color:#3625d9}
+a {color:#d8e0e8; text-decoration:none;font-size:12;font-family:arial}
+a:hover {color:#b0d0ff; text-decoration: underline}
+td {font-size:14;font-family:arial;color:#000000}
+</style>
+<script language="javascript">
+function k1(){
+if(q1a.value==2){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value==1){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value==1){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value==2){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value==2){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+if(q1f.value==2){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
+if(q1g.value==1){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
+if(q1h.value==2){s1h="8. Correct<br>"}else{s1h="8. Incorrect<br>"}
+if(q1i.value==2){s1i="9. Correct<br>"}else{s1i="9. Incorrect<br>"}
+if(q1j.value==1){s1j="10. Correct<br>"}else{s1j="10. Incorrect<br>"}
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h+s1i+s1j
+}
+function k2() {
+if(q2a.value=="teacher"|q2a.value=="Teacher"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value=="doctor"|q2b.value=="Doctor"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value=="taxi driver"|q2c.value=="Taxi driver"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value=="salesperson"|q2d.value=="Salesperson"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+if(q2e.value=="pilot"|q2e.value=="Pilot"){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
+if(q2f.value=="waiter"|q2f.value=="Waiter"){s2f="6. Correct<br>"}else{s2f="6. Incorrect<br>"}
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f
+}
+</script>
+</head>
+<body>
+
+<div id="t1">
+<img src="im/t-u2.jpg">
+<p>
+<span id="tit">Jobs and occupations </span>
+<p>
+<b>1. What are these jobs? Put the letters in order.</b> 
+<p>
+<table cellpadding=0 cellspacing=4>
+<tr><td><img src="im/u2-b1.jpg"></td><td><img src="im/u2-b2.jpg"></td><td><img src="im/u2-b3.jpg"></td><td><img src="im/u2-b4.jpg"></td></tr>
+<tr><td>
+<select name="q1a">
+<option value=0>Choose Answer
+<option value=1>Doctor
+<option value=2>Teacher
+</select>
+</td><td>
+<select name="q1b">
+<option value=0>Choose Answer
+<option value=1>Pilot
+<option value=2>Police officer
+</select>
+</td><td>
+<select name="q1c">
+<option value=0>Choose Answer
+<option value=1>Doctor
+<option value=2>Salesperson
+</select>
+</td><td>
+<select name="q1d">
+<option value=0>Choose Answer
+<option value=1>Doctor
+<option value=2>Secretary
+</select>
+</td><td>
+</td></tr>
+</table>
+<p>
+<table cellpadding=0 cellspacing=4>
+<tr><td><img src="im/u2-b5.jpg"></td><td><img src="im/u2-b6.jpg"></td><td><img src="im/u2-b7.jpg"></td><td><img src="im/u2-b8.jpg"></td></tr>
+<tr><td>
+<select name="q1e">
+<option value=0>Choose Answer
+<option value=1>Secretary
+<option value=2>Salesperson
+</select>
+</td><td>
+<select name="q1f">
+<option value=0>Choose Answer
+<option value=1>Taxi driver
+<option value=2>Police officer
+</select>
+</td><td>
+<select name="q1g">
+<option value=0>Choose Answer
+<option value=1>Taxi driver
+<option value=2>Businessman
+</select>
+</td><td>
+<select name="q1h">
+<option value=0>Choose Answer
+<option value=1>Doctor
+<option value=2>Astronaut
+</select>
+</td><td>
+</td></tr>
+</table>
+<p>
+<center>
+<table cellpadding=0 cellspacing=4>
+<tr><td><img src="im/u2-b9.jpg"></td><td><img src="im/u2-b10.jpg"></td></tr>
+<tr><td>
+<select name="q1i">
+<option value=0>Choose Answer
+<option value=1>Astronaut
+<option value=2>Businessman
+</select>
+</td><td>
+<select name="q1j">
+<option value=0>Choose Answer
+<option value=1>Waiter
+<option value=2>Taxi driver
+</select>
+</td><td>
+</td></tr>
+</table>
+</center>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Read the description. What is the job?</b>
+<p>
+<table cellpadding=2 cellspacing=0>
+<tr><td bgcolor="#ffcc99" width=340 align="center"><b>Description</b></td><td bgcolor="#ffcc99" align="center"><b>Your Answer</b></td></tr>
+<tr><td bgcolor="#ffcc99">1. This person works in a school.</td><td bgcolor="#ffcc99" width=130 align="center"><input type="text" name="q2a" size=12></td></tr>
+<tr><td bgcolor="#ffcc99">2. In this job you help people who are ill.</td><td bgcolor="#ffcc99" width=130 align="center"><input type="text" name="q2b" size=12></td></tr>
+<tr><td bgcolor="#ffcc99">3. To do this job you need to have a car.</td><td bgcolor="#ffcc99" width=130 align="center"><input type="text" name="q2c" size=12></td></tr>
+<tr><td bgcolor="#ffcc99">4. In this job you sell things to people.</td><td bgcolor="#ffcc99" width=130 align="center"><input type="text" name="q2d" size=12></td></tr>
+<tr><td bgcolor="#ffcc99">5. If you do this job you spend a lot of time on a plane.</td><td bgcolor="#ffcc99" width=130 align="center"><input type="text" name="q2e" size=12></td></tr>
+<tr><td bgcolor="#ffcc99">6. In this job you work in a cafe or restaurant.</td><td bgcolor="#ffcc99" width=130 align="center"><input type="text" name="q2f" size=12></td></tr>
+</table>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+<div id="z2">
+</div>

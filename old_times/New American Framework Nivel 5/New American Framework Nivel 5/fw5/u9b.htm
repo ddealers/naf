@@ -1,0 +1,133 @@
+<head>
+<title>Framework 5</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t1 {position:absolute;top:5;left:10;font-size:14;font-family:arial;width:570;color:#000000}
+#z1 {position:absolute;top:100;left:550;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z2 {position:absolute;top:650;left:630;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z3 {position:absolute;top:1050;left:630;font-size:14;font-family:arial;width:150;color:#ff0000}
+#tit {font-size:18;font-family:verdana;color:#00ac9f}
+#bl {font-size:14;font-family:arial;color:#000066}
+#rd {font-size:14;font-family:arial;color:#ff0000}
+#lt {font-size:18;font-family:arial}
+a {color:#000099; text-decoration:none;font-size:13;font-family:arial;font-weight:bold}
+a:hover {color:#ff0000; text-decoration: none}
+td {font-size:14;font-family:arial;color:#000000}
+</style>
+<script language="javascript">
+function k1(){
+if(q1a.value==2){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value==2){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value==1){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value==3){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value==2){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+if(q1f.value==1){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
+if(q1g.value==2){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
+if(q1h.value==3){s1h="8. Correct<br>"}else{s1h="8. Incorrect<br>"}
+if(q1i.value==2){s1i="9. Correct<br>"}else{s1i="9. Incorrect<br>"}
+if(q1j.value==3){s1j="10. Correct<br>"}else{s1j="10. Incorrect<br>"}
+if(q1k.value==3){s1k="11. Correct<br>"}else{s1k="11. Incorrect<br>"}
+if(q1l.value==1){s1l="12. Correct<br>"}else{s1l="12. Incorrect<br>"}
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h+s1i+s1j+s1k+s1l
+}
+function k2(){
+if(q2a.value=="idea"|q2a.value=="Idea"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value=="Search"|q2b.value=="search"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value=="ask"|q2c.value=="Ask"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value=="clue"|q2d.value=="Clue"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+if(q2e.value=="faintest"|q2e.value=="Faintest"){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
+if(q2f.value=="dark"|q2f.value=="Dark"){s2f="6. Correct<br>"}else{s2f="6. Incorrect<br>"}
+if(q2g.value=="give"|q2g.value=="Give"){s2g="7. Correct<br>"}else{s2g="7. Incorrect<br>"}
+if(q2h.value=="beats"|q2h.value=="Beats"){s2h="8. Correct<br>"}else{s2h="8. Incorrect<br>"}
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f+s2g+s2h
+}
+function k3(){
+if(q3a.value=="in"|q3a.value=="In"){s3a="1. Correct<br>"}else{s3a="1. Incorrect<br>"}
+if(q3b.value=="the"|q3b.value=="The"){s3b="2. Correct<br>"}else{s3b="2. Incorrect<br>"}
+if(q3c.value=="dark"|q3c.value=="Dark"){s3c="3. Correct<br>"}else{s3c="3. Incorrect<br>"}
+if(q3d.value=="haven't"|q3d.value=="Haven't"){s3d="4. Correct<br>"}else{s3d="4. Incorrect<br>"}
+if(q3e.value=="the"|q3e.value=="The"){s3e="5. Correct<br>"}else{s3e="5. Incorrect<br>"}
+if(q3f.value=="faintest"|q3f.value=="Faintest"){s3f="6. Correct<br>"}else{s3f="6. Incorrect<br>"}
+if(q3g.value=="beats"|q3g.value=="Beats"){s3g="7. Correct<br>"}else{s3g="7. Incorrect<br>"}
+if(q3h.value=="ask"|q3h.value=="Ask"){s3h="8. Correct<br>"}else{s3h="8. Incorrect<br>"}
+if(q3i.value=="me"|q3i.value=="Me"){s3i="9. Correct<br>"}else{s3i="9. Incorrect<br>"}
+if(q3j.value=="clue"|q3j.value=="Clue"){s3j="10. Correct<br>"}else{s3j="10. Incorrect<br>"}
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h+s3i+s3j
+}
+</script>
+</head>
+<body>
+
+<div id="t1">
+<span id="tit">Saying "I don’t know"</span>
+<p>
+<b>1. Complete these sentences by choosing the best word. </b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>1. The police haven't found any <select name="q1a"><option value=0>Choose answer<option value=1>proof<option value=2>evidence<option value=3>clue</select> of violence.</td></tr>
+<tr><td>2. The woman disappeared without a <select name="q1b"><option value=0>Choose answer<option value=1>clue<option value=2>trace<option value=3>sign</select> .</td></tr>
+<tr><td>3. We haven't a <select name="q1c"><option value=0>Choose answer<option value=1>clue<option value=2>sign<option value=3>proof</select> where she has gone.</td></tr>
+<tr><td>4. There is no <select name="q1d"><option value=0>Choose answer<option value=1>clue<option value=2>sign<option value=3>proof</select> that her husband was involved.</td></tr>
+<tr><td>5. There is no <select name="q1e"><option value=0>Choose answer<option value=1>trace<option value=2>evidence<option value=3>sign</select> that her husband was involved.</td></tr>
+<tr><td>6. There were <select name="q1f"><option value=0>Choose answer<option value=1>traces<option value=2>indications<option value=3>clues</select> of blood on the knife.</td></tr>
+<tr><td>7. Were there any <select name="q1g"><option value=0>Choose answer<option value=1>traces<option value=2>signs<option value=3>proofs</select> of violence?</td></tr>
+<tr><td>8. Were there any <select name="q1h"><option value=0>Choose answer<option value=1>clues<option value=2>evidences<option value=3>indications</select> of violence?</td></tr>
+<tr><td>9. The husband was released because of lack of <select name="q1i"><option value=0>Choose answer<option value=1>clues<option value=2>proof<option value=3>proofs</select> .</td></tr>
+<tr><td>10. The letter to her husband was an important piece of <select name="q1j"><option value=0>Choose answer<option value=1>clue<option value=2>proof<option value=3>evidence</select> .</td></tr>
+<tr><td>11. The police searched for a <select name="q1k"><option value=0>Choose answer<option value=1>proof<option value=2>sign<option value=3>clue</select> in her bedroom.</td></tr>
+<tr><td>12. It has all the <select name="q1l"><option value=0>Choose answer<option value=1>signs<option value=2>clues<option value=3>proofs</select> of a kidnapping.</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Ways of saying you don't know. Complete each sentence by using a word in the box.</b>
+<p>
+<center>
+<table cellpadding=0 cellspacing=3 border=1 bordercolor=#000000>
+<tr><td width=80 align="center">Search</td><td width=80 align="center">	clue</td><td width=80 align="center">dark</td><td width=80 align="center">faintest</td></tr>
+<tr><td align="center">give</td><td align="center">ask</td><td align="center">idea</td><td align="center">beats</td></tr>
+</table>
+</center>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>1. What´s the capital of Peru?</td><td width=30></td><td>I have no <input type="text" name="q2a" size=20>.</td></tr>
+<tr><td>2. Who discovered radium?</td><td></td><td>Radium? <input type="text" name="q2b" size=20> me.</td></tr>
+<tr><td>3. What's the square root of 64?</td><td></td><td>Don't <input type="text" name="q2c" size=20> me.</td></tr>
+<tr><td>4. When was Kennedy assassinated?</td><td></td><td>I haven't a <input type="text" name="q2d" size=20>.</td></tr>
+<tr><td>5. Who were the Huguenots?</td><td></td><td>I haven't the <input type="text" name="q2e" size=20> idea.</td></tr>
+<tr><td>6. What are you getting for your birthday?</td><td></td><td>I'm completely in the <input type="text" name="q2f" size=20>.</td></tr>
+<tr><td>7. Who wrote <i>Crime and Punishment</i>?</td><td></td><td>I <input type="text" name="q2g" size=20> up.</td></tr>
+<tr><td>8. Why are the trains on strike?</td><td></td><td>It <input type="text" name="q2h" size=20> me.</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. Complete the text using words and expressions from exercise 2.</b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>Since an American tourist went missing last weekend, police are completely <input type="text" name="q3a" size=20> 
+<input type="text" name="q3b" size=20> <input type="text" name="q3c" size=20>. "We 
+<input type="text" name="q3d" size=20> <input type="text" name="q3e" size=20> <input type="text" name="q3f" size=20> 
+idea where she could be," admits Chief Inspector Wells. Her husband is equally perplexed. "It 
+<input type="text" name="q3g" size=20> me," he said. When she failed to come home from work on Saturday, he phoned her 
+office. "Don't <input type="text" name="q3h" size=20> <input type="text" name="q3i" size=20>," said her boss. "She left here 
+at noon. I haven't a <input type="text" name="q3j" size=20> where she is."</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k3()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+<div id="z2">
+</div>
+<div id="z3">
+</div>

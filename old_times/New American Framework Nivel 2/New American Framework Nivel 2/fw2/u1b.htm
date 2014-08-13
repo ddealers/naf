@@ -1,0 +1,168 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t0 {position:absolute;top:5;left:10;font-size:22;font-family:verdana;width:650;color:#00b6cc}
+#t1 {position:absolute;top:150;left:10;font-size:14;font-family:arial;width:600;color:#000000}
+#z1 {position:absolute;top:650;left:550;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z2 {position:absolute;top:900;left:500;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z3 {position:absolute;top:1170;left:550;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z4 {position:absolute;top:1500;left:600;font-size:12;font-family:verdana;width:300;color:#ff0000}
+td {font-size:14;font-family:verdana;width:600;color:#000000}
+#m1 {color:#ff0000}
+sub {color:#ff4000}
+</style>
+
+<script language="javascript">
+
+function k1(){
+if(q1a.checked&q1b.checked==false&q1c.checked==false&q1d.checked){s1a="1.-Correct<br>"}else{s1a="1.-Incorrect<br>"}
+
+z1.innerHTML=s1a
+}
+function k2(){
+if(q2a.checked&q2b.checked==false){s2a="1.-Correct<br>"}else{s2a="1.-Incorrect<br>"}
+if(q2c.checked==false&q2d.checked){s2b="2.-Correct<br>"}else{s2b="2.-Incorrect<br>"}
+if(q2e.checked==false&q2f.checked){s2c="3.-Correct<br>"}else{s2c="3.-Incorrect<br>"}
+if(q2g.checked&q2h.checked==false){s2d="4.-Correct<br>"}else{s2d="4.-Incorrect<br>"}
+if(q2i.checked==false&q2j.checked){s2e="5.-Correct<br>"}else{s2e="5.-Incorrect<br>"}
+if(q2k.checked&q2l.checked==false){s2f="6.-Correct<br>"}else{s2f="6.-Incorrect<br>"}
+
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f
+}
+
+function k3(){
+if(q3a.checked&q3b.checked==false){s3a="1.-Correct<br>"}else{s3a="1.-Incorrect<br>"}
+if(q3c.checked==false&q3d.checked){s3b="2.-Correct<br>"}else{s3b="2.-Incorrect<br>"}
+if(q3e.checked&q3f.checked==false){s3c="3.-Correct<br>"}else{s3c="3.-Incorrect<br>"}
+if(q3g.checked&q3h.checked==false){s3d="4.-Correct<br>"}else{s3d="4.-Incorrect<br>"}
+if(q3i.checked==false&q3j.checked){s3e="5.-Correct<br>"}else{s3e="5.-Incorrect<br>"}
+if(q3k.checked==false&q3l.checked){s3f="6.-Correct<br>"}else{s3f="6.-Incorrect<br>"}
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f
+}
+function k4(){
+if(q4a.value=="There aren't many tall buildings"){s4a="1. Correct<br>"}else{s4a="1. Incorrect<br>"}
+if(q4b.value=="The downtown is quite nice and there are more parks than there are here"){s4b="2. Correct<br>"}else{s4b="2. Incorrect<br>"}
+if(q4c.value=="Though transportation is a problem in Belfast"){s4c="3. Correct<br>"}else{s4c="3. Incorrect<br>"}
+if(q4d.value=="There isn't a subway and the bus service isn't very good"){s4d="4. Correct<br>"}else{s4d="4. Incorrect<br>"}
+if(q4e.value=="Transportation is much better in Barcelona"){s4e="5. Correct<br>"}else{s4e="5. Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d+s4e
+}
+
+</script>
+</head>
+
+
+
+
+<body>
+
+<div id="t0">
+<b>1. The Concrete Jungle</b>
+<p>
+<b>Comparing two cities </b>
+<p>
+</div>
+
+<div id="t1">
+<b>1. Read this conversation then answer the questions. </b>
+<p>
+Amaya: Where are you from Andy?
+<br>Andy: I'm from Belfast.
+<br>Amaya: And you live in Barcelona now?
+<br>Andy: Yes, that's right.
+<br>Amaya: So, what's Belfast like? Is it very different from Barcelona?
+<br>Andy: Yes, very. It rains a lot in Belfast. And Barcelona is much hotter. In Belfast the maximum in summer is usually about 22 degrees and in winter the minimum is about minus 2 or 3.
+<br>Amaya: Really! The climate is better here then.
+<br>Andy: Yeah, I think so. 
+<br>Amaya: And is Belfast a big city like Barcelona?
+<br>Andy: No, it's smaller than Barcelona. There aren't many tall buildings. The downtown is quite nice and there are more parks than there are here. Though transportation is a problem in Belfast.
+ There isn't a subway and the bus service isn't very good. Transportation is much better in Barcelona.
+<br>Amaya: What about prices and the cost of living? Is it cheaper in Belfast?
+<br>Andy: Um, houses are cheaper. Food is about the same, but it's more expensive to eat in restaurants in Belfast. But beer is definitely cheaper in Barcelona. 
+<br>Amaya: Uh huh. And is Belfast on the coast?
+<br>Andy: Yes, it's on the coast and on a river, the river Lagan. It has a big port too, like Barcelona has, but the port in Belfast is smaller than the one here in Barcelona.
+<br>Amaya: Belfast sounds like a nice place. So why are you living here in Barcelona?
+<br>Andy: Well, I like it here, and .... this is where my girlfriend lives. 
+<br>Amaya: Oh, right. That's a good reason.
+<br>Andy: Yeah. I think so. 
+<p>
+
+<p>
+Where is Andy from?  <input type="checkbox" name="q1a"> Belfast  <input type="checkbox" name="q1b"> Barcelona  
+<br>Where does Andy live? <input type="checkbox" name="q1c"> Belfast   <input type="checkbox" name="q1d"> Barcelona  
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Read again. Are these sentences true or false? </b>
+<p>
+<ol>
+<li>  Barcelona is hotter than Belfast. <br> 
+   <input type="checkbox" name="q2a"> true  <input type="checkbox" name="q2b"> false<p> 
+<li>  Barcelona is smaller than Belfast.  <br>
+   <input type="checkbox" name="q2c"> true  <input type="checkbox" name="q2d"> false <p>
+<li>  Transportation is better in Belfast.  <br>
+   <input type="checkbox" name="q2e"> true  <input type="checkbox" name="q2f"> false <p>
+<li>  It's more expensive to eat in restaurants in Belfast. <br>
+   <input type="checkbox" name="q2g"> true  <input type="checkbox" name="q2h"> false <p>
+<li>  Beer is cheaper in Belfast. <br>
+   <input type="checkbox" name="q2i"> true  <input type="checkbox" name="q2j"> false <p>
+<li>  Andy likes living in Barcelona.  <br>
+   <input type="checkbox" name="q2k"> true  <input type="checkbox" name="q2l"> false <p>    
+</ol>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p> 
+<b>3. Read again. Which city do the sentences refer to? </b>
+<ol>
+<li> It rains a lot.  <input type="checkbox" name="q3a"> Belfast <input type="checkbox" name="q3b"> Barcelona 
+<li> It has a hot climate.  <input type="checkbox" name="q3c"> Belfast  <input type="checkbox" name="q3d"> Barcelona 
+<li> There aren't many tall buildings. <input type="checkbox" name="q3e"> Belfast  <input type="checkbox" name="q3f"> Barcelona 
+<li> There isn't a subway.  <input type="checkbox" name="q3g"> Belfast  <input type="checkbox" name="q3h"> Barcelona 
+<li> It has a bigger port. <input type="checkbox" name="q3i"> Belfast  <input type="checkbox" name="q3j"> Barcelona 
+<li> Andy's girlfriend lives there. <input type="checkbox" name="q3k"> Belfast  <input type="checkbox" name="q3l"> Barcelona 
+</ol>
+<p> 
+<center>
+<button onclick="k3()">Check answers</button>
+</center>
+<p>
+<b>4. Put the words in order to make the sentences.</b>
+<p>
+<ol>
+<li> tall aren't There buildings many.<br>
+<input size=40 name="q4a">.<p>
+<li> downtown quite there is nice are and are The more parks than  here there.<br>
+<input size=75 name="q4b">.<p>
+<li> problem transportation Belfast is a Though in. <br>
+<input size=40 name="q4c">.<p>
+<li> the very isn`t a good subway and bus There service isn't. <br>
+<input size=70 name="q4d">.<p>
+<li> is in much Barcelona better Transportation. <br>
+<input size=40 name="q4e">.<p>
+</ol>
+<p>
+<center>
+<button onclick="k4()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+<div id="z4">
+</div>

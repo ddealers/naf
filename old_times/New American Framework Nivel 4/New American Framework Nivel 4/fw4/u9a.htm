@@ -1,0 +1,151 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t0 {position:absolute;top:5;left:10;font-size:22;font-family:verdana;width:650;color:#ffa000}
+#t1 {position:absolute;top:150;left:10;font-size:14;font-family:arial;width:600;color:#000000}
+#z1 {position:absolute;top:550;left:650;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z2 {position:absolute;top:750;left:550;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z3 {position:absolute;top:250;left:600;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z4 {position:absolute;top:650;left:550;font-size:12;font-family:verdana;width:300;color:#ff0000}
+td {font-size:14;font-family:verdana;width:600;color:#000000}
+#m1 {color:#ff0000}
+sub {color:#ff4000}
+</style>
+
+<script language="javascript">
+
+function k1(){
+if(q1a.value=="2"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value=="6"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value=="5"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value=="1"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value=="3"){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+if(q1f.value=="4"){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f
+}
+function k2(){
+if(q2a.value==""){s2a="1. Correct<br>"}
+if(q2a.value!=""){s2a="1. Incorrect<br>"}
+if(q2b.value==""){s2b="2. Correct<br>"}
+if(q2b.value!=""){s2b="2. Incorrect<br>"}
+if(q2c.value==""){s2c="3. Correct<br>"}
+if(q2c.value!=""){s2c="3. Incorrect<br>"}
+if(q2d.value==""){s2d="4. Correct<br>"}
+if(q2d.value!=""){s2d="4. Incorrect<br>"}
+
+z2.innerHTML=s2a+s2b+s2c+s2d
+}
+
+function k3(){
+s3a="<br>"
+s3b="<br>"
+s3c="<br>"
+s3d="<br>"
+s3e="<br>"
+s3f="<br>"
+s3g="<br>"
+s3h="<br>"
+
+if(q3a.checked){s3a="1.-Correct<br>"}
+if(q3b.checked){s3a="1.-Incorrect<br>"}
+
+if(q3d.checked){s3b="2.-Correct<br>"}
+if(q3c.checked){s3b="2.-Incorrect<br>"}
+
+if(q3f.checked){s3c="3.-Correct<br>"}
+if(q3e.checked){s3c="3.-Incorrect<br>"}
+
+if(q3h.checked){s3d="4.-Correct<br>"}
+if(q3g.checked){s3d="4.-Incorrect<br>"}
+
+if(q3j.checked){s3e="5.-Correct<br>"}
+if(q3i.checked){s3e="5.-Incorrect<br>"}
+
+if(q3k.checked){s3f="6.-Correct<br>"}
+if(q3l.checked){s3f="6.-Incorrect<br>"}
+
+if(q3n.checked){s3g="7.-Correct<br>"}
+if(q3m.checked){s3g="7.-Incorrect<br>"}
+
+if(q3p.checked){s3h="8.-Correct<br>"}
+if(q3o.checked){s3h="8.-Incorrect<br>"}
+
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
+}
+
+function k4(){
+s4a="<br>"
+s4b="<br>"
+s4c="<br>"
+s4d="<br>"
+
+if(q4b.checked){s4a="1.-Correct<br>"}
+if(q4a.checked){s4a="1.-Incorrect<br>"}
+
+if(q4c.checked){s4b="2.-Correct<br>"}
+if(q4d.checked){s4b="2.-Incorrect<br>"}
+
+if(q4f.checked){s4c="3.-Correct<br>"}
+if(q4e.checked){s4c="3.-Incorrect<br>"}
+
+if(q4g.checked){s4d="4.-Correct<br>"}
+if(q4h.checked){s4d="4.-Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d
+}
+</script>
+</head>
+
+
+<body>
+
+<div id="t0">
+<img src="u9.jpg">
+<p>
+<b>How much do you know about job interviews? </b>
+<br>
+</div>
+<p>
+<div id="t1">
+<center>
+<img src="u9a1.jpg">
+</center>
+<p>
+<b>1. Put these events in the order that they usually happen. (1,2,3,4,5,6)</b>
+<p>
+<ol>
+<li><input size=1 maxlength=1 name="q1a"> He applied for the job, by writing a letter.
+<li><input size=1 maxlength=1 name="q1b"> He got the job.
+<li><input size=1 maxlength=1 name="q1c"> He attended an interview.
+<li><input size=1 maxlength=1 name="q1d"> He saw an advertisement for a job.
+<li><input size=1 maxlength=1 name="q1e"> He enclosed a resumé.
+<li><input size=1 maxlength=1 name="q1f"> His boss wrote him a reference.
+</ol>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center> 
+
+
+
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+
+<div id="z4">
+</div>
+
+
+ 

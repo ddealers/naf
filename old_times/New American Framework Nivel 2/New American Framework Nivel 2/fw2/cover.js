@@ -1,0 +1,1 @@
+t2.innerHTML='<embed src="cover/flame2.swf" width=490 height=75 wmode=transparent quality=best>'

@@ -1,0 +1,363 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t0 {position:absolute;top:5;left:10;font-size:22;font-family:verdana;width:650;color:#ffa000}
+#t1 {position:absolute;top:150;left:10;font-size:14;font-family:arial;width:600;color:#000000}
+#z1 {position:absolute;top:550;left:400;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z2 {position:absolute;top:1300;left:450;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z3 {position:absolute;top:1750;left:600;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z4 {position:absolute;top:2650;left:400;font-size:12;font-family:verdana;width:300;color:#ff0000}
+td {font-size:14;font-family:verdana;width:600;color:#000000}
+#m1 {color:#ff0000}
+sub {color:#ff4000}
+</style>
+
+<script language="javascript">
+
+function k1(){
+
+if(q1a.checked==false&q1b.checked){s1a="1.-Correct<br>"}else{s1a="1.-Incorrect<br>"}
+if(q1c.checked&q1d.checked==false){s1b="2.-Correct<br>"}else{s1b="2.-Incorrect<br>"}
+if(q1e.checked==false&q1f.checked&q1g.checked==false|q1e.checked==false&q1f.checked==false&q1g.checked){s1c="3.-Correct<br>"}else{s1c="3.-Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b+s1c
+}
+function k2(){
+if(q2a.checked==false&q2b.checked&q2c.checked==false){s2a="1.-Correct<br>"}else{s2a="1.-Incorrect<br>"}
+if(q2d.checked==false&q2e.checked&q2f.checked==false){s2b="2.-Correct<br>"}else{s2b="2.-Incorrect<br>"}
+if(q2g.checked&q2h.checked==false&q2i.checked==false){s2c="3.-Correct<br>"}else{s2c="3.-Incorrect<br>"}
+if(q2j.checked==false&q2k.checked==false&q2l.checked){s2d="4.-Correct<br>"}else{s2d="4.-Incorrect<br>"}
+
+
+z2.innerHTML=s2a+s2b+s2c+s2d
+}
+
+function k3(){
+
+if(q3a.value=="2"){s3a="1. Correct<br>"}else{s3a="1. Incorrect<br>"}
+if(q3b.value=="4"){s3b="2. Correct<br>"}else{s3b="2. Incorrect<br>"}
+if(q3c.value=="1"){s3c="3. Correct<br>"}else{s3c="3. Incorrect<br>"}
+if(q3d.value=="6"){s3d="4. Correct<br>"}else{s3d="4. Incorrect<br>"}
+if(q3e.value=="3"){s3e="5. Correct<br>"}else{s3e="5. Incorrect<br>"}
+if(q3f.value=="5"){s3f="6. Correct<br>"}else{s3f="6. Incorrect<br>"}
+
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f
+}
+
+function k4(){
+
+if(q4a.value=="2"){s4a="1. Correct<br>"}else{s4a="1. Incorrect<br>"}
+if(q4b.value=="1"){s4b="2. Correct<br>"}else{s4b="2. Incorrect<br>"}
+if(q4c.value=="2"){s4c="3. Correct<br>"}else{s4c="3. Incorrect<br>"}
+if(q4d.value=="2"){s4d="4. Correct<br>"}else{s4d="4. Incorrect<br>"}
+if(q4e.value=="2"){s4e="5. Correct<br>"}else{s4e="5. Incorrect<br>"}
+if(q4f.value=="1"){s4f="6. Correct<br>"}else{s4f="6. Incorrect<br>"}
+if(q4g.value=="1"){s4g="7. Correct<br>"}else{s4g="7. Incorrect<br>"}
+if(q4h.value=="1"){s4h="8. Correct<br>"}else{s4h="8. Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g+s4h
+}
+</script>
+</head>
+
+
+<body>
+
+<div id="t0">
+<img src="u9.jpg">
+<p>
+<b> Job application letter </b>
+<br>
+</div>
+<p>
+<div id="t1">
+<b>1. Here is a letter. You are going to read it in parts. Here is the first part. </b>
+<p>
+<center>
+<table cellpadding=3 cellspacing=2 width=500 bgcolor=#ffbc90>
+<tr><td></td><td></td><td>
+Ángeles Núñez,<br>
+Buenos Aires<br>
+Argentina
+<p>
+May 21, 2010
+</td></tr>
+
+<tr><td><p></td><td></td><td></tr></tr>
+<tr><td>Rowena Menzies<br>
+Personnel Manager<br>
+ACE Pharmaceuticals<br>
+25 Elm Road<br>
+Frammingham, Massachusetts<br>
+</td><td></td><td></td></tr>
+</table>
+
+</center>
+<p>
+<b>Before you read the rest of the letter, answer these questions:</b>
+<p>
+<ol>
+<li> Who wrote this letter? 
+<br><input type="checkbox" name="q1a"> Rowena Menzies 
+<br><input type="checkbox" name="q1b">   someone in Argentina 
+<p>
+<li> Is this a formal or informal letter? 
+  <br><input type="checkbox" name="q1c"> formal 
+  <br><input type="checkbox" name="q1d"> informal
+<p> 
+<li> What does Rowena do? 
+  <br><input type="checkbox" name="q1e"> She manages a company. 
+  <br><input type="checkbox" name="q1f"> She is responsible for staffing in a company. 
+  <br><input type="checkbox" name="q1g"> She is personnel manager. 
+</ol>  
+<p> 
+<center>
+<button onclick="k1()">Check answers</button>
+</center> 
+<p>
+ 
+<b>2. Now read on:</b>
+<p>
+<center>
+<table cellpading=3 cellspacing=2 width=500 bgcolor=#ffbc90>
+<tr><td>
+Dear Ms. Menzies,
+<p>
+I am writing to you on the recommendation of Rex Galbraith, the Marketing Manager in your Atlanta office,
+ whom I met at a marketing course in São Paulo last summer. He suggested that I should contact your company 
+to inquire about the possibility of a position.
+<p>
+</td></tr></table>
+</center>
+<p>
+
+<b>Answer these questions:</b>
+<p>
+<ol>
+<li> The person writing the letter 
+<br><input type="checkbox" name="q2a">wants to go on a marketing course. 
+<br><input type="checkbox" name="q2b">wants a job in ACE Pharmaceuticals. 
+<br><input type="checkbox" name="q2c">wants a job in the Atlanta office. 
+<p>
+<li> The writer 
+<br><input type="checkbox" name="q2d">met Rex Galbraith in Atlanta. 
+<br><input type="checkbox" name="q2e">took a marketing course in São Paulo last summer. 
+<br><input type="checkbox" name="q2f">is recommending Rex Galbraith for a job. 
+<p>
+<li> Rex Galbraith 
+<br><input type="checkbox" name="q2g">recommended that the writer should contact ACE Pharmaceuticals. 
+<br><input type="checkbox" name="q2h">recommended the writer for a job. 
+<br><input type="checkbox" name="q2i">recommended the writer for a marketing course. 
+<p>
+<li> The writer is writing this letter 
+<br><input type="checkbox" name="q2j">in response to an advertisement. 
+<br><input type="checkbox" name="q2k">because she knows there is a position. 
+<br><input type="checkbox" name="q2l">because she hopes there is a position. 
+</ol>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center> 
+<p>
+<b>3. Now read on:</b>
+
+<center>
+<table cellpading=3 cellspacing=2 width=500 bgcolor=#ffbc90>
+<tr><td>
+I am twenty-seven years old, Argentinian, and am employed at NUTTEX Solutions, where I work in the marketing division. 
+I have been with this company for the past eighteen months. 
+Prior to that I worked as a laboratory technician for a large pharmaceutical company,
+ after graduating from the University of Los Alamos with a degree in biochemistry in 1998. Before starting my degree,
+ I worked in Ecuador for a medical charity. I am presently completing a long distance degree in business administration
+ with the University of Little Hill.
+<p>
+As well as speaking fluent Spanish and English, I have a good working knowledge of Portuguese,
+ having spent a year in Brazil as an exchange student when I was in middle school.
+<p>
+</td></tr></table>
+</center>
+<p>
+<b>Now, put these events in the order that they happened: (1,2,3,4,5,6)</b>
+<p>
+<ol>
+<li><input size=1 maxlength=1 name="q3a"> She worked in Ecuador.
+<li><input size=1 maxlength=1 name="q3b"> She worked as a laboratory technician.
+<li><input size=1 maxlength=1 name="q3c"> She spent a year in Brazil.
+<li><input size=1 maxlength=1 name="q3d"> She is doing a long distance degree.
+<li><input size=1 maxlength=1 name="q3e"> She graduated in biochemistry.
+<li><input size=1 maxlength=1 name="q3f"> She got a job with NUTEX Solutions.
+</ol>
+<p>
+<center>
+<button onclick="k3()">Check answers</button>
+</center> 
+<p>
+<b>4. Now read on:</b>
+<p>
+<center>
+<table cellpading=3 cellspacing=2 width=500 bgcolor=#ffbc90>
+<tr><td>
+In my present position as Assistant Marketing Manager, I deal with a wide range of clients throughout Europe and Latin America.
+ My science background has been a great advantage in the marketing of my company's products. 
+<p>
+I plan to resign from my present position in order to accompany my husband to Boston, where he is completing a doctorate.
+ For this reason, I will be available for work as of next September. My present Director has agreed to provide a reference,
+should you require it.
+<p>
+I believe my experience and languages would prove useful to your organization. I am also eager to undertake further training, 
+should this be necessary.
+<p>
+If you think you would be able to offer me a position, or if you need any additional information,
+ please contact me at the above address. In the meantime, I am enclosing a resumé which gives more details of the skills
+ and experience I have to offer.
+<p>
+I look forward to hearing from you soon.
+<p>
+Yours sincerely,
+<p>
+Ángeles Núñez.
+<p>
+</td></tr></table></center>
+<p>
+<b>Now, answer these questions. True or false?</b>
+<p>
+<ol>
+<li> She would like to be Assistant Marketing Manager. 
+<br>
+<select name="q4a">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p> 
+<li> Her experience as a scientist is useful in her work. 
+<br>
+<select name="q4b">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p>
+<li> She is resigning because she is completing a doctorate. 
+<br>
+<select name="q4c">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p>
+<li> Her present Director doesn't know she is leaving. 
+<br>
+<select name="q4d">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p>
+<li> She is sending a reference with this letter. 
+<br>
+<select name="q4e">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p> 
+<li> She can start work in September. 
+<br>
+<select name="q4f">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p>
+<li> She would like to do some more training. 
+<br>
+<select name="q4g">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p>
+<li> She is sending a resumé with this letter. 
+<br>
+<select name="q4h">  
+<option value="x">Choose Answer
+<option value="1">true  
+<option value="2">false
+</select>
+<p>
+</ol>
+
+<center>
+<button onclick="k4()">Check answers</button>
+</center> 
+<p>
+<center>
+<table cellpadding=3 cellspacing=2 width=500 bgcolor=#ffbc90>
+<tr><td></td><td></td><td>
+Méndez Núñez,<br>
+2891 8860<br>
+Buenos Aires<br>
+Argentina
+<p>
+May 21, 2010
+</td></tr>
+
+<tr><td><p></td><td></td><td></tr></tr>
+<tr><td>Rowena Menzies<br>
+Personnel Manager<br>
+ACE Pharmaceuticals<br>
+25 Elm Road<br>
+Frammingham, Massachusetts<br>
+</td><td></td><td></td></tr>
+
+<tr><td colspan=3>
+Dear Ms. Menzies, 
+<p>
+I am writing to you on the recommendation of Rex Galbraith, the Marketing Manager in your Atlanta office, whom I met at a marketing course in São Paulo last summer. He suggested that I should contact your company to inquire about the possibility of a position. 
+<p>
+I am twenty-seven years old, Argentinian, and am employed at NUTTEX Solutions, where I work in the marketing division. I have been with this company for the past eighteen months. Prior to that I worked as a laboratory technician for a large pharmaceutical company, after graduating from the University of Los Alamos with a degree in biochemistry in 1998. Before starting my degree, I worked in Ecuador for a medical charity. I am presently completing a part-time distance degree in business administration with the University of Little Hill. 
+<p>
+As well as speaking fluent Spanish and English, I have a good working knowledge of Portuguese, having spent a year in Brazil as an exchange student when I was in middle school. 
+<p>
+In my present position as Assistant Marketing Manager, I deal with a wide range of clients throughout Europe and Latin America. My science background has been a great advantage in the marketing of my company's products. 
+<p>
+I plan to resign from my present position in order to accompany my husband to Boston, where he is completing a doctorate. For this reason, I will be available for work as of next September. My present Director has agreed to provide a reference, should you require it. 
+<p>
+I believe my experience and languages would prove useful to your organization. I am also eager to undertake further training, should this be necessary. 
+<p>
+If you think you would be able to offer me a position, or if you need any additional information, please contact me at the above address. In the meantime, I am enclosing a resumé which gives more details of the skills and experience I have to offer. 
+<p>
+I look forward to hearing from you soon. 
+<p>
+Yours sincerely, 
+<p>
+Ángeles Núñez. 
+
+<p>
+</td></tr>
+</table>
+<p>
+
+
+
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+
+<div id="z4">
+</div>
+
+
+ 

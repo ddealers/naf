@@ -1,0 +1,94 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t0 {position:absolute;top:5;left:10;font-size:22;font-family:verdana;width:650;color:#00b6cc}
+#t1 {position:absolute;top:150;left:10;font-size:14;font-family:arial;width:600;color:#000000}
+#z1 {position:absolute;top:100;left:650;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z2 {position:absolute;top:650;left:650;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z3 {position:absolute;top:2000;left:650;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z4 {position:absolute;top:2300;left:750;font-size:12;font-family:verdana;width:300;color:#ff0000}
+td {font-size:14;font-family:verdana;width:600;color:#000000}
+#m1 {color:#ff0000}
+sub {color:#ff4000}
+</style>
+
+<script language="javascript">
+
+function k1(){
+if(q1a.value=="Where are you from"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value=="Where in Australia"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value=="Do you know where that is"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value=="Is it near Sydney"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value=="What's it like"){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e
+}
+
+function k2(){
+if(q2a.value=="c"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value=="d"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value=="b"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value=="e"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+if(q2e.value=="a"){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
+
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e
+}
+
+</script>
+</head>
+
+
+<body>
+
+<div id="t0">
+<b>1. The Concrete Jungle</b>
+<p>
+<b> Describing where places are </b>
+<p>
+</div>
+
+<div id="t1">
+<b>1.  Select and drag the questions into the boxes.</b>
+<p>
+A: Hi, my name's Jim.<br>
+B:Hello. I'm Karl.
+A: <input size=20 name="q1a">?<br>
+B: I'm from Australia.
+A: Oh really? <input size=20 name="q1b">? <br>
+B A place called Brisbane. <input size=20 name="q1c">?<br>
+A: No. I only know where Sydney is, more or less. <input size=20 name="q1d">?<br> 
+B: No, it isn't. It's in the north of Australia. It's on the east coast, at the bottom of the state of Queensland. It's the capital, in fact.<br>
+A: Oh, I see. Is it a nice place? <input size=20 name="q1e">?
+B: It is nice. It's a fairly big city, built on a river. It's nearly in the tropics so it's very hot in summer.<p>
+<table cellpadding=5 cellspacing=5 bgcolor=#ffbc90>
+<tr><td>What's it like</td><td>Where are you from</td></tr>
+<tr><td>Where in Australia</td><td>Is it near Sydney</td></tr>
+<tr><td>Do you know where that is</td><td></td></tr>
+</table>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Match the questions to the answers.</b>
+<p>
+<table cellpadding=5 cellspacing=5>
+<tr><td>a) Where are you from?</td><td>1. <input size=1 name="q2a" maxlength=1> No, I don't</td></tr>
+<tr><td>b) Whereabouts in Spain?</td><td>2. <input size=1 name="q2b" maxlength=1> No, it isn't. It's near Barcelona</td></tr>
+<tr><td>c) Do you know where that is?</td><td>3. <input size=1 name="q2c" maxlength=1> A place called Sitges.</td></tr>
+<tr><td>d) Is it near Madrid? </td><td>4. <input size=1 name="q2d" maxlength=1> It's a nice town on the coast.</td></tr>
+<tr><td>e) What is it like?</td><td>5. <input size=1 name="q2e" maxlength=1> I'm from Spain.</tr>
+</table>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>

@@ -1,0 +1,66 @@
+<head>
+<title>Framework 5</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t1 {position:absolute;top:5;left:10;font-size:14;font-family:arial;width:570;color:#000000}
+#z1 {position:absolute;top:150;left:640;font-size:14;font-family:arial;width:150;color:#ff0000}
+#tit {font-size:18;font-family:verdana;color:#00ac9f}
+#bl {font-size:14;font-family:arial;color:#000066}
+#rd {font-size:14;font-family:arial;color:#ff0000}
+#lt {font-size:18;font-family:arial}
+a {color:#000099; text-decoration:none;font-size:13;font-family:arial;font-weight:bold}
+a:hover {color:#ff0000; text-decoration: none}
+td {font-size:14;font-family:arial;color:#000000}
+</style>
+<script language="javascript">
+function k1(){
+if(q1a.value=="I'm looking for"|q1a.value=="i'm looking for"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value=="what sort of"|q1b.value=="What sort of"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value=="I can't remember what it's called"|q1c.value=="i can't remember what it's called"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value=="that's the one"|q1d.value=="That's the one"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value=="Have you got it in stock"|q1e.value=="have you got it in stock"){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+if(q1f.value=="is there anything else you'd recommend"|q1f.value=="Is there anything else you'd recommend"){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
+if(q1g.value=="I'll take"|q1g.value=="i'll take"){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g
+}
+</script>
+</head>
+<body>
+
+<div id="t1">
+<span id="tit">Buying a video/DVD</span>
+<p>
+<b>1. Complete this dialog in a video store by typing the missing phrases in the boxes.</b>
+<p>
+<a href="sn/u10d-1.mp3"><img src="ob/s-1.jpg" border=0></a>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>A: Hello. Do you need any help?</td></tr>
+<tr><td>B. Yes. <input type="text" name="q1a" size=20> something to get my nephew for Christmas.</td></tr>
+<tr><td>A: How old is he?</td></tr>
+<tr><td>B: He's 18.</td></tr>
+<tr><td>A: And <input type="text" name="q1b" size=20> films does he like?</td></tr>
+<tr><td>B: Last time I saw him he was going on about this film with John Travolta in it. <input type="text" name="q1c" size=33> exactly . Something "fiction".</td></tr>
+<tr><td>A: <i>Pulp Fiction</i>?</td></tr>
+<tr><td>B: Yes, <input type="text" name="q1d" size=20> . Who's it directed by?</td></tr>
+<tr><td>A: Quentin Tarantino.</td></tr>
+<tr><td>B: Ah, yes, now I remember. <input type="text" name="q1e" size=25> ?</td></tr>
+<tr><td>A: No, I'm afraid we haven't. We've sold out.</td></tr>
+<tr><td>B: Damn! Well, <input type="text" name="q1f" size=38> ?</td></tr>
+<tr><td>A: Well, if he likes Tarantino, he'd probably enjoy this. <i>Fargo</i>. It's by the Cohen brothers.</td></tr>
+<tr><td>B: Never heard of them, but <input type="text" name="q1g" size=20> it. I'm sure he'll like it if you say so.</td></tr> 
+</table>
+<p>
+<b>Now listen to the dialog and then check your answers.</b>
+<p>
+<a href="sn/u10d-1.mp3"><img src="ob/s-1.jpg" border=0></a>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>

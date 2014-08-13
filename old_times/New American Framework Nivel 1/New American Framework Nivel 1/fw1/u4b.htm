@@ -1,0 +1,136 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t1 {position:absolute;top:5;left:10;font-size:14;font-family:arial;width:570;color:#000000}
+#z1 {position:absolute;top:340;left:570;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z2 {position:absolute;top:705;left:570;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z3 {position:absolute;top:1090;left:570;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z4 {position:absolute;top:1470;left:570;font-size:14;font-family:arial;width:150;color:#ff0000}
+#tit {font-size:18;font-family:verdana;color:#77ba46}
+#bl {font-size:14;font-family:arial;color:#000066}
+#rd {font-size:14;font-family:arial;color:#ff0000}
+#txt1 {font-size:20;font-family:verdana;tahoma;arial;color:#000000}
+a {color:#000099; text-decoration:none;font-size:14;font-family:arial}
+a:hover {color:#ff0000; text-decoration: underline}
+td {font-size:14;font-family:arial;color:#000000}
+</style>
+<script language="javascript">
+function k1() {
+if(q1a.checked==true&q1b.checked==false){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1c.checked==true&q1d.checked==false){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1e.checked==false&q1f.checked==true){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1g.checked==false&q1h.checked==true){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+z1.innerHTML=s1a+s1b+s1c+s1d
+}
+function k2() {
+if(q2a.value=="c"|q2a.value=="C"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value=="a"|q2b.value=="A"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value=="d"|q2c.value=="D"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value=="b"|q2d.value=="B"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+z2.innerHTML=s2a+s2b+s2c+s2d
+}
+function k3() {
+if(q3a.value=="They are sitting at the table"|q3a.value=="they are sitting at the table"){s3a="1. Correct<br>"}else{s3a="1. Incorrect<br>"}
+if(q3b.value=="He’s writing a letter"|q3b.value=="He’s smoking a cigarette"|q3b.value=="he’s writing a letter"|q3b.value=="he’s smoking a cigarette"){s3b="2. Correct<br>"}else{s3b="2. Incorrect<br>"}
+if(q3c.value=="Yes, he is"|q3c.value=="yes, he is"){s3c="3. Correct<br>"}else{s3c="3. Incorrect<br>"}
+if(q3d.value=="She’s reading a book"|q3d.value=="she’s reading a book"){s3d="4. Correct<br>"}else{s3d="4. Incorrect<br>"}
+if(q3e.value=="No, she isn't"|q3e.value=="no, she isn't"){s3e="5. Correct<br>"}else{s3e="5. Incorrect<br>"}
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e
+}
+
+function k4() {
+if(q4a.value=="Where is the woman sitting?"|q4a.value=="where is the woman sitting?"){s4a="1. Correct<br>"}else{s4a="1. Incorrect<br>"}
+if(q4b.value=="What is the man wearing?"|q4b.value=="what is the man wearing?"){s4b="2. Correct<br>"}else{s4b="2. Incorrect<br>"}
+if(q4c.value=="What is the man doing?"|q4c.value=="what is the man doing?"){s4c="3. Correct<br>"}else{s4c="3. Incorrect<br>"}
+if(q4d.value=="What is the woman wearing?"|q4d.value=="what is the woman wearing?"){s4d="4. Correct<br>"}else{s4d="4. Incorrect<br>"}
+if(q4e.value=="What is the woman doing?"|q4e.value=="what is the woman doing?"){s4e="5. Correct<br>"}else{s4e="5. Incorrect<br>"}
+z4.innerHTML=s4a+s4b+s4c+s4d+s4e
+}
+</script>
+</head>
+<body>
+
+<div id="t1">
+<img src="im/t-u4.jpg">
+<p>
+<span id="tit">Present Continuous</span>
+<p>
+<b>1. Look at the picture below. Choose the correct sentences to describe the picture.</b>
+<p>
+<center>
+<img src="im/u4-b1.jpg">
+</center>
+<p>
+<table cellpadding=0 cellspacing=4>
+<tr><td width=15><b>1</b></td><td><input type="checkbox" name="q1a"> A boy is eating an ice cream.</td><td width=30></td><td><input type="checkbox" name="q1b"> A boy eats an ice cream.</td></tr>
+<tr><td><b>2</b></td><td><input type="checkbox" name="q1c"> A girl is running along the beach.</td><td></td><td> <input type="checkbox" name="q1d"> A girl runs along the beach.</td></tr>
+<tr><td><b>3</b></td><td><input type="checkbox" name="q1e"> Two men windsurf.</td><td></td><td> <input type="checkbox" name="q1f"> Two men are windsurfing.</td></tr>
+<tr><td><b>4</b></td><td><input type="checkbox" name="q1g"> A woman swims in the ocean.</td><td></td><td> <input type="checkbox" name="q1h"> A woman is swimming in the ocean.</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Match the descriptions to the correct picture.</b>
+<p>
+<table cellpadding=2 cellspacing=0>
+<tr><td></td><td width=40></td><td></td><td width=40></td><td rowspan=5><img src="im/u4-b2.jpg"></td></tr>
+<tr><td><img src="im/u4-bt1.jpg"></td><td></td><td><input type="text" name="q2a" size=3></td><td></td></tr>
+<tr><td><img src="im/u4-bt2.jpg"></td><td></td><td><input type="text" name="q2b" size=3></td><td></td></tr>
+<tr><td><img src="im/u4-bt3.jpg"></td><td></td><td><input type="text" name="q2c" size=3></td><td></td></tr>
+<tr><td><img src="im/u4-bt4.jpg"></td><td></td><td><input type="text" name="q2d" size=3></td><td></td></tr>
+</table>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. Look at the third picture in exercise 2. Match the questions and answers below.</b>
+<p>
+<table cellpadding=2 cellspacing=0>
+<tr><td>Where are they sitting?</td><td></td><td><input type="text" name="q3a" size=30>.</td></tr>
+<tr><td>What is the man doing?</td><td></td><td><input type="text" name="q3b" size=30>.</td></tr>
+<tr><td>Is he wearing a blue T-shirt?</td><td></td><td><input type="text" name="q3c" size=30>.</td></tr>
+<tr><td>What is the woman doing?</td><td></td><td><input type="text" name="q3d" size=30>.</td></tr>
+<tr><td>Is she wearing a dress?</td><td></td><td><input type="text" name="q3e" size=30>.</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k3()">Check answers</button>
+</center>
+<p>
+<b>4. Now look at this picture from exercise 2. Write questions for these answers.</b>
+<p>
+<table cellpadding=0 cellspacing=4>
+<tr><td>Use the verbs in the first column. The first one has been done for you as an example.</td><td><img src="im/u4-b3.jpg"></td></tr>
+</table>
+<p>
+<table cellpadding=0 cellspacing=0>
+<tr><td bgcolor="#ffcc99">&#160;</td><td width=20 bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99">&#160;</td><td width=20 bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99">&#160;</td></tr>
+<tr><td bgcolor="#ffcc99"><b>use verb</b></td><td width=20 bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99"><b>Question</b></td><td width=20 bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99"><b>Reply</b></td></tr>
+<tr><td bgcolor="#ffcc99" align="center">stand</td><td bgcolor="#ffcc99"></td><td bgcolor="#ffcc99">Where is the man standing?</td><td bgcolor="#ffcc99"></td><td bgcolor="#ffcc99">Next to the table.</td bgcolor="#ffcc99"></tr>
+<tr><td bgcolor="#ffcc99"><b>1</b> sit</td><td bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99"><input type="text" name="q4a" size=12></td><td bgcolor="#ffcc99"></td><td bgcolor="#ffcc99">On a chair.</td></tr>
+<tr><td bgcolor="#ffcc99"><b>2</b> wear</td><td bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99"><input type="text" name="q4b" size=12></td><td bgcolor="#ffcc99"></td><td bgcolor="#ffcc99">A white T-shirt.</td></tr>
+<tr><td bgcolor="#ffcc99"><b>3</b> do</td><td bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99"><input type="text" name="q4c" size=12></td><td bgcolor="#ffcc99"></td><td bgcolor="#ffcc99">He's reading a newspaper.</td></tr>
+<tr><td bgcolor="#ffcc99"><b>4</b> wear</td><td bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99"><input type="text" name="q4d" size=12></td><td bgcolor="#ffcc99"></td><td bgcolor="#ffcc99">A red dress.</td></tr>
+<tr><td bgcolor="#ffcc99"><b>5</b> do</td><td bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99"><input type="text" name="q4e" size=12></td><td bgcolor="#ffcc99"></td><td bgcolor="#ffcc99">She's smoking.</td></tr>
+<tr><td bgcolor="#ffcc99">&#160;</td><td width=20 bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99">&#160;</td><td width=20 bgcolor="#ffcc99"></td><td align="center" bgcolor="#ffcc99">&#160;</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k4()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+<div id="z2">
+</div>
+<div id="z3">
+</div>
+<div id="z4">
+</div>
