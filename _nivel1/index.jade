@@ -1,0 +1,20 @@
+//- index.jade
+extends ../jade/layouts/main.jade
+
+block content
+	div.row
+		div(class=['large-10','medium-12','short-12','columns'], id='section1')
+			img(id='logo', src='img/m2-1.jpg')
+			img(src='img/m2-2.jpg')
+			img(src='img/m2-3.jpg')
+	div.row
+		div(class=['large-3','medium-3','short-12','columns'], id='menu')
+			include ../jade/menus/1.jade
+		div(class=['large-9','medium-9','short-12','columns'], id='cont')
+			#intro
+				p Welcome to the New American Framework Interactive Activities!
+				p Choose an exercise from the unit menu of the left.
+				p GOOD LUCK!
+			include ../jade/N1A1A.jade
+			include ../jade/N1A1B.jade
+			//include ../jade/N1A2B.jade
