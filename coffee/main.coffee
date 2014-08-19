@@ -34,4 +34,4 @@ $(document).ready ->
 	load './templates/A0.html'
 	$('#menu a').on 'click', (e) ->
 		e.preventDefault()
-		load './templates/' + $(@).attr('href') + '.html'
+		load './templates/' + $(@).attr('href')
