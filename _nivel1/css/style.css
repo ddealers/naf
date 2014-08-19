@@ -10,3 +10,10 @@ body #cont {
   background: #fff;
   min-height: 100px;
 }
+body #cont td {
+  padding: 0 3px;
+}
+body #cont select {
+  width: auto;
+  margin: 5px;
+}
