@@ -11,7 +11,7 @@ var level = args.level;
 function doHTML(cfg, level){
 	console.log('_nivel'+level+cfg.jade.src, '_nivel'+level+cfg.jade.dest);
 	return gulp.src('_nivel'+level+cfg.jade.src)
-		.pipe(jade())
+		.pipe(jade({pretty:true}))
 		.pipe(gulp.dest('_nivel'+level+cfg.jade.dest));
 }
 function doCSS(cfg, level){
