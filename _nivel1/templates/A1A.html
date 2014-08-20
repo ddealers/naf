@@ -1,11 +1,23 @@
-<div id="t1">
-	<img src="im/t-u1.jpg">
-	<span id="tit">Question words</span>
-	<b>1. Read the questions and answers. Choose the correct question word to complete the questions. </b>
+<script>
+	v = {
+		q1a:2,
+		q1b:1,
+		q1c:2,
+		q1d:1,
+		q1e:3,
+		q1f:3,
+		q1g:1,
+		q1h:2
+	}
+</script>
+<form id="t1">
+	<img src="img/t-u1.jpg">
+	<p><span id="tit">Question words</span></p>
+	<p><strong>1. Read the questions and answers. Choose the correct question word to complete the questions. </strong></p>
 	<table cellpadding=0 cellspacing=10>
 		<tr>
 			<td>
-				1<select name="q1a">
+				1<select class="q" name="q1a">
 					<option value=0>Choose Answer</option>
 					<option value=1>Who</option>
 					<option value=2> What</option>
@@ -15,75 +27,91 @@
 			</td>
 			<td> I'm a teacher.</td>
 		</tr>
-<tr><td>
-2  <select name="q1b">
-<option value=0>Choose Answer
-<option value=1>Where
-<option value=2>When
-<option value=3>What
-</select>
-does she live?
-</td><td> In an apartment in San Francisco.</td></tr>
-<tr><td>
-3  <select name="q1c">
-<option value=0>Choose Answer
-<option value=1>What
-<option value=2>When
-<option value=3>How
-</select>
-is your birthday?
-</td><td> It's on June 11th.</td></tr>
-<tr><td>
-4  <select name="q1d">
-<option value=0>Choose Answer
-<option value=1>How
-<option value=2>When
-<option value=3>Why
-</select>
-do you go to work?
-</td><td> I go by bus.</td></tr>
-<tr><td>
-5  <select name="q1e">
-<option value=0>Choose Answer
-<option value=1>Where
-<option value=2>How
-<option value=3>Who
-</select>
-is that man?
-</td><td> I think it's John's brother.</td></tr>
-<tr><td>
-6  <select name="q1f">
-<option value=0>Choose Answer
-<option value=1>Who
-<option value=2>Where
-<option value=3>How
-</select>
-are you?
-</td><td> Fine, thanks.</td></tr>
-<tr><td>
-7  <select name="q1g">
-<option value=0>Choose Answer
-<option value=1>Why
-<option value=2>Where
-<option value=3>How
-</select>
-do you live in Chicago?
-</td><td> Because I work there.</td></tr>
-<tr><td>
-8  <select name="q1h">
-<option value=0>Choose Answer
-<option value=1>Who
-<option value=2>What
-<option value=3>How
-</select>
-is your name?
-</td><td> Kate.</td></tr>
-</table>  
-<p>
-<center>
-<button onclick="k1()">Check answers</button>
-</center>
-</div>
-
-<div id="z1">
-</div>
+		<tr>
+			<td>
+				2<select class="q" name="q1b">
+					<option value=0>Choose Answer</option>
+					<option value=1>Where</option>
+					<option value=2>When</option>
+					<option value=3>What</option>
+				</select>
+				does she live?
+			</td>
+			<td> In an apartment in San Francisco.</td>
+		</tr>
+		<tr>
+			<td>
+				3<select class="q" name="q1c">
+					<option value=0>Choose Answer</option>
+					<option value=1>What</option>
+					<option value=2>When</option>
+					<option value=3>How</option>
+				</select>
+				is your birthday?
+			</td>
+			<td>It's on June 11th.</td>
+		</tr>
+		<tr>
+			<td>
+				4<select class="q" name="q1d">
+					<option value=0>Choose Answer</option>
+					<option value=1>How</option>
+					<option value=2>When</option>
+					<option value=3>Why</option>
+				</select>
+				do you go to work?
+			</td>
+			<td> I go by bus.</td>
+		</tr>
+		<tr>
+			<td>
+				5<select class="q" name="q1e">
+					<option value=0>Choose Answer
+					<option value=1>Where
+					<option value=2>How
+					<option value=3>Who
+				</select>
+				is that man?
+			</td>
+			<td>I think it's John's brother.</td>
+		</tr>
+		<tr>
+			<td>
+				6<select class="q" name="q1f">
+					<option value=0>Choose Answer</option>
+					<option value=1>Who</option>
+					<option value=2>Where</option>
+					<option value=3>How</option>
+				</select>
+				are you?
+			</td>
+			<td>Fine, thanks.</td>
+		</tr>
+		<tr>
+			<td>
+				7<select class="q" name="q1g">
+					<option value=0>Choose Answer</option>
+					<option value=1>Why</option>
+					<option value=2>Where</option>
+					<option value=3>How</option>
+				</select>
+				do you live in Chicago?
+			</td>
+			<td>Because I work there.</td>
+		</tr>
+		<tr>
+			<td>
+				8<select class="q" name="q1h">
+					<option value=0>Choose Answer</option>
+					<option value=1>Who</option>
+					<option value=2>What</option>
+					<option value=3>How</option>
+				</select>
+				is your name?
+			</td>
+			<td> Kate.</td>
+		</tr>
+	</table>
+</form>  
+<button data-target="t1" class="eval">Check answers</button>
+<div id="z1"></div>
