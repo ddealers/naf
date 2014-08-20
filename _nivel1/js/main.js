@@ -7,48 +7,38 @@
     cont.empty();
     return cont.load(url, function() {
       return $('.eval').on('click', function(e) {
-        var form;
+        var draw, form;
+        e.preventDefault();
         form = $(e.target).data('target');
-        console.log(form);
-        return evaluate(form);
+        draw = $(e.target).data('draw');
+        console.log(form, draw);
+        return evaluate(form, draw);
       });
     });
   };
 
-  evaluate = function(form) {
+  evaluate = function(form, draw) {
     var answers;
     answers = $('#' + form).serializeArray();
-    console.log(answers);
-    $('#z1').empty();
+    $('#' + draw).empty();
     return $.each(answers, function(index, elem) {
       var answer, correct;
       answer = elem.value;
       correct = v[elem.name];
-      if (answer === correct) {
-        return $('#z1').append((index + 1) + '. Correct<br />');
+      console.log(answer, correct, String(answer) === String(correct));
+      if (String(answer).toLowerCase() === String(correct).toLowerCase()) {
+        return $('#' + draw).append((index + 1) + '. Correct<br />');
       } else {
-        return $('#z1').append((index + 1) + '. Incorrect<br />');
+        return $('#' + draw).append((index + 1) + '. Incorrect<br />');
       }
     });
-
-    /*
-    	answers = $('.q')
-    	$('#z1').empty()
-    	$.each answers, (index, elem) ->
-    		answer = $(elem).val()
-    		correct = $(elem).data('v').toString()
-    		if answer is correct
-    			$('#z1').append (index + 1) + '. Correct<br />'
-    		else
-    			$('#z1').append (index + 1) + '. Incorrect<br />'
-     */
   };
 
   $(document).ready(function() {
     load('./templates/A0.html');
     return $('#menu a').on('click', function(e) {
       e.preventDefault();
-      return load('./templates/' + $(this).attr('href') + '.html');
+      return load('./templates/' + $(this).attr('href'));
     });
   });
 

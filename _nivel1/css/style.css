@@ -10,6 +10,13 @@ body #cont {
   background: #fff;
   min-height: 500px;
 }
+body #cont td {
+  padding: 0 3px;
+}
+body #cont select {
+  width: auto;
+  margin: 5px;
+}
 body #cont #part1 {
   position: absolute;
   top: 182px;
@@ -24,11 +31,4 @@ body #cont p {
 }
 body #cont p span {
   color: #116323;
-}
-body #cont td {
-  padding: 0 3px;
-}
-body #cont select {
-  width: auto;
-  margin: 5px;
 }
