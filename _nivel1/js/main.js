@@ -48,7 +48,7 @@
     load('./templates/A0.html');
     return $('#menu a').on('click', function(e) {
       e.preventDefault();
-      return load('./templates/' + $(this).attr('href') + '.html');
+      return load('./templates/' + $(this).attr('href'));
     });
   });
 
