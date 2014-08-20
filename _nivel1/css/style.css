@@ -8,5 +8,20 @@ body #section1 > img {
 }
 body #cont {
   background: #fff;
-  min-height: 100px;
+  min-height: 500px;
+}
+body #cont #part1 {
+  position: absolute;
+  top: 182px;
+  left: 100px;
+}
+body #cont p {
+  font-family: inherit;
+  font-size: 20px;
+  color: #95b60f;
+  text-align: center;
+  top: 350px;
+}
+body #cont p span {
+  color: #116323;
 }
