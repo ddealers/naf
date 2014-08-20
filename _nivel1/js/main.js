@@ -20,6 +20,7 @@
   evaluate = function(form, draw) {
     var answers;
     answers = $('#' + form).serializeArray();
+    console.log(answers);
     $('#' + draw).empty();
     return $.each(answers, function(index, elem) {
       var answer, correct;

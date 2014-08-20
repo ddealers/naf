@@ -1,4 +1,38 @@
-
+<script>
+	v = {
+		q1a:2,
+		q2a:1,
+		q2b:1,
+		q2c:0,
+		q2d:0,
+		q2e:1,
+		q2f:1,
+		q2g:0,
+		q2h:1,
+		q3a:'Get',
+		q3b:'Up',
+		q3c:'Get',
+		q3d:'Up',
+		q3e:'Have',
+		q3f:'Breakfast',
+		q3g:'Go',
+		q3h:'To',
+		q3i:'Work',
+		q3j:'Have',
+		q3k:'Lunch',
+		q3l:'Finish',
+		q3m:'Work',
+		q3n:'Have',
+		q3o:'Dinner',
+		q3p:'Go',
+		q3q:'Home',
+		q3r:'Go',
+		q3s:'To',
+		q3t:'Bed',
+		q3u:'Watch',
+		q3v:'TV'
+	}
+</script>
 <form id="t1">
 <img src="img/t-u2.jpg">
 <p>
@@ -17,7 +51,7 @@ My work starts in the middle of the afternoon, when it's usually very quiet. The
  I'm always hungry then so I have dinner at work. There's always some food that hasn't been sold that we can eat. 
 I go home at about 12:00 a.m. I don't like to go to bed immediately so I watch TV for half an hour, 
 so it's usually about 1:00 a.m. before I fall asleep."</td></tr>
-<tr><td bgcolor="#ffffcc" align="center"><select name="q1a"><option value=0>Choose Answer<option value=1>salesperson<option value=2>waiter<option value=3>secretary</select>&#160; &#160; <button class"eval" data-target="t1">Check answer</button></td></tr>
+<tr><td bgcolor="#ffffcc" align="center"><select name="q1a"><option value=0>Choose Answer<option value=1>salesperson<option value=2>waiter<option value=3>secretary</select>&#160; &#160;<button class="eval" data-target="t1" data-draw="z1">Check answer</button></td></tr>
 </table>
 </p>
 </form>
@@ -27,40 +61,40 @@ so it's usually about 1:00 a.m. before I fall asleep."</td></tr>
 </p>
 <b>1</b> She doesn't get up very early.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2a"> true</td><td><input type="checkbox" name="q2b"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2a" value=1 checked> true</td><td><input type="radio" name="q2a" value=0> false</td></tr>
 </table>
 <b>2</b> She has breakfast at home.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2c"> true</td><td><input type="checkbox" name="q2d"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2b" value=1 checked> true</td><td><input type="radio" name="q2b" value=0> false</td></tr>
 </table>
 <b>3</b> She has lunch before she goes to work.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2e"> true</td><td><input type="checkbox" name="q2f"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2c" value=1 checked> true</td><td><input type="radio" name="q2c" value=0> false</td></tr>
 </table>
 <b>4</b> She has lunch at about 2:30 p.m.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2g"> true</td><td><input type="checkbox" name="q2h"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2d" value=1 checked> true</td><td><input type="radio" name="q2d" value=0> false</td></tr>
 </table>
 <b>5</b> She has dinner at work.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2i"> true</td><td><input type="checkbox" name="q2j"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2e" value=1 checked> true</td><td><input type="radio" name="q2e" value=0> false</td></tr>
 </table>
 <b>6</b> She goes home after dinner.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2k"> true</td><td><input type="checkbox" name="q2l"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2f" value=1 checked> true</td><td><input type="radio" name="q2f" value=0> false</td></tr>
 </table>
 <b>7</b> She doesn't watch TV when she arrives home.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2m"> true</td><td><input type="checkbox" name="q2n"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2g" value=1 checked> true</td><td><input type="radio" name="q2g" value=0> false</td></tr>
 </table>
 <b>8</b> She goes to bed late.<br>
 <table cellpadding=2 cellspacing=0>
-<tr><td width=20></td><td><input type="checkbox" name="q2o"> true</td><td><input type="checkbox" name="q2p"> false</td></tr>
+<tr><td width=20></td><td><input type="radio" name="q2h" value=1 checked> true</td><td><input type="radio" name="q2h" value=0> false</td></tr>
 </table>
 </p>
-<button class="eval" data-target="t2">Check answers</button>
+<button class="eval" data-target="t2" data-draw="z2">Check answers</button>
 </form>
-<form class="t3">
+<form id="t3">
 <p>
 <b>3. Here is the text from exercise 1 again. Complete the text with the correct expressions.</b>
 </p>
@@ -82,16 +116,11 @@ The place starts to get busy at about 7:30 a.m. and that's when I do most of my 
 <input type="text" name="q3o" size=6> (7) at work. There's always some food that hasn't been sold that we can eat. 
 I <sub>16</sub><input type="text" name="q3p" size=2> <sub>17</sub><input type="text" name="q3q" size=4> (8) at about 12:00 a.m. 
 I don't like to <sub>18</sub><input type="text" name="q3r" size=2> <sub>19</sub><input type="text" name="q3s" size=2> 
-<sub>20</sub><input type="text" name="q3t" size=3> (9) immediately so I <sub>21</sub><input type="text" name="q3v" size=5>
- <sub>22</sub><input type="text" name="q3w" size=2> (10) half an hour, so it's usually about 1:00 a.m. before I fall asleep."</td></tr>
+<sub>20</sub><input type="text" name="q3t" size=3> (9) immediately so I <sub>21</sub><input type="text" name="q3u" size=5>
+ <sub>22</sub><input type="text" name="q3v" size=2> (10) half an hour, so it's usually about 1:00 a.m. before I fall asleep."</td></tr>
 </table>
-<button class="eval" data-target="t3">Check answers</button>
+<button class="eval" data-target="t3" data-draw="z3">Check answers</button>
 </form>
-
-
-<div id="z1">
-</div>
-<div id="z2">
-</div>
-<div id="z3">
-</div>
+<div id="z1"></div>
+<div id="z2"></div>
+<div id="z3"></div>

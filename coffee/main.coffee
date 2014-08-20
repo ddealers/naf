@@ -11,6 +11,7 @@ load = (url) ->
 
 evaluate = (form, draw) ->
 	answers = $('#'+form).serializeArray()
+	console.log answers
 	$('#'+draw).empty()
 	$.each answers, (index, elem) ->
 		answer = elem.value
