@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9ac00a;
+}
+body #section1 > img {
+  padding: 20px 30px;
+}
+body #cont {
+  background: #fff;
+  min-height: 100px;
+}
+body #cont td {
+  padding: 0 3px;
+}
+body #cont select {
+  width: auto;
+  margin: 5px;
+}

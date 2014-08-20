@@ -3,11 +3,40 @@
 		q1a:'Australian',
 		q1b:'Brazilian',
 		q1c:'American',
-		q1d:1,
-		q1e:3,
-		q1f:3,
-		q1g:1,
-		q1h:2
+		q1d:'Europe',
+		q1e:'Canada',
+		q1f:'Italian',
+		q1g:'Korean',
+		q1h:'African',
+		q1i:'Russia',
+		q1j:'British',
+		q1k:'Ireland',
+		q1l:'Scotland',
+		q1m:'Polish',
+		q1n:'Denmark',
+		q1o:'Chinese',
+		q1p:'Vietnam',
+		q1q:'Greek',
+		q1r:'France',
+		q1s:'Germany',
+		q2a:2,
+		q2b:1,
+		q2c:1,
+		q2d:2,
+		q2e:1,
+		q2f:2,
+		q2g:2,
+		q2h:2,
+		q2i:2,
+		q2j:2,
+		q2k:2,
+		q2l:1,
+		q2m:1,
+		q2n:1,
+		q2o:2,
+		q2p:2,
+		q2q:1,
+		q2r:1
 	}
 </script>
 <form id="t1">
@@ -58,28 +87,69 @@
 			</table>
 		</center>
 	</p>
+	<button data-target="t1" data-draw="z1" class="eval">Check answers</button>
 </form>
-<button id="boton1" data-target="t1" class="eval">Check answers</button>
-
-<form>
-	<p id="t2"><strong>2. Now read these words. Are they places or adjectives?</strong></p> 
+<form id="t2">
+	<p><strong>2. Now read these words. Are they places or adjectives?</strong></p> 
 	<p>
-		<table id="tabla1" cellpadding=3 cellspacing=0 border=0>
-		<tr><td bgcolor="#ffffcc">1. Brazilian</td><td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2a"> adjective <input type="radio" name="q2a" value=2></td><td bgcolor="#ffffcc">10. Germany</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2s"> adjective <input type="checkbox" name="q2t"></td></tr>
-		<tr><td bgcolor="#ffffcc">2. Italy</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2c"> adjective <input type="checkbox" name="q2d" value=2></td><td bgcolor="#ffffcc">11. French</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2v"> adjective <input type="checkbox" name="q2w"></td></tr>
-		<tr><td bgcolor="#ffffcc">3. Australia</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2e"> adjective <input type="checkbox" name="q2f" value=2></td><td bgcolor="#ffffcc">12. European</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2x"> adjective <input type="checkbox" name="q2y"></td></tr>
-		<tr><td bgcolor="#ffffcc">4. Italian</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2g"> adjective <input type="checkbox" name="q2h" value=2></td><td bgcolor="#ffffcc">13. British</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2z"> adjective <input type="checkbox" name="q2aa"></td></tr>
-		<tr><td bgcolor="#ffffcc">5. Irish</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2i"> adjective <input type="checkbox" name="q2j" value=2></td><td bgcolor="#ffffcc">14. Canadian</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2ab"> adjective <input type="checkbox" name="q2ac"></td></tr>
-		<tr><td bgcolor="#ffffcc">6. Japanese</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2k"> adjective <input type="checkbox" name="q2l" value=2></td><td bgcolor="#ffffcc">15. China</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2ad"> adjective <input type="checkbox" name="q2ae"></td></tr>
-		<tr><td bgcolor="#ffffcc">7. Scotland</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2m"> adjective <input type="checkbox" name="q2n" value=2></td><td bgcolor="#ffffcc">16. Greece</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2af"> adjective <input type="checkbox" name="q2ag"></td></tr>
-		<tr><td bgcolor="#ffffcc">8. German</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2o"> adjective <input type="checkbox" name="q2p" value=2></td><td bgcolor="#ffffcc">17. Greek</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2ah"> adjective <input type="checkbox" name="q2ai"></td></tr>
-		<tr><td bgcolor="#ffffcc">9. France</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2q"> adjective <input type="checkbox" name="q2r" value=2></td><td bgcolor="#ffffcc">18. Europe</td><td bgcolor="#ffcc99" align="center">place <input type="checkbox" name="q2aj"> adjective <input type="checkbox" name="q2ak"></td></tr>
+		<table cellpadding=3 cellspacing=0 border=0>
+		<tr>
+			<td bgcolor="#ffffcc">1. Brazilian</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2a" value=1 checked> adjective <input type="radio" name="q2a" value=2></td>
+			<td bgcolor="#ffffcc">10. Germany</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2b" value=1 checked> adjective <input type="radio" name="q2b" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">2. Italy</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2c" value=1 checked> adjective <input type="radio" name="q2c" value=2></td>
+			<td bgcolor="#ffffcc">11. French</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2d" value=1 checked> adjective <input type="radio" name="q2d" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">3. Australia</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2e" value=1 checked> adjective <input type="radio" name="q2e" value=2></td>
+			<td bgcolor="#ffffcc">12. European</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2f" value=1 checked> adjective <input type="radio" name="q2f" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">4. Italian</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2g" value=1 checked> adjective <input type="radio" name="q2g" value=2></td>
+			<td bgcolor="#ffffcc">13. British</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2h" value=1 checked> adjective <input type="radio" name="q2h" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">5. Irish</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2i" value=1 checked> adjective <input type="radio" name="q2i" value=2></td>
+			<td bgcolor="#ffffcc">14. Canadian</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2j" value=1 checked> adjective <input type="radio" name="q2j" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">6. Japanese</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2k" value=1 checked> adjective <input type="radio" name="q2k" value=2></td>
+			<td bgcolor="#ffffcc">15. China</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2l" value=1 checked> adjective <input type="radio" name="q2l" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">7. Scotland</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2m" value=1 checked> adjective <input type="radio" name="q2m" value=2></td>
+			<td bgcolor="#ffffcc">16. Greece</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2n" value=1 checked> adjective <input type="radio" name="q2n" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">8. German</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2o" value=1 checked> adjective <input type="radio" name="q2o" value=2></td>
+			<td bgcolor="#ffffcc">17. Greek</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2p" value=1 checked> adjective <input type="radio" name="q2p" value=2></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffcc">9. France</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2q" value=1 checked> adjective <input type="radio" name="q2q" value=2></td>
+			<td bgcolor="#ffffcc">18. Europe</td>
+			<td bgcolor="#ffcc99" align="center">place <input type="radio" name="q2r" value=1 checked> adjective <input type="radio" name="q2r" value=2></td>
+		</tr>
 		</table>
 	</p>
+	<button data-target="t2" data-draw="z2" class="eval">Check answers</button>
 </form>
-<button id="boton2" data-target="t2" class="eval">Check answers</button>
-
-<div id="z1">
-</div>
-<div id="z2">
-</div>
+<div id="z1"></div>
+<div id="z2"></div>
