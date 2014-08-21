@@ -1,0 +1,142 @@
+<script language="javascript">
+
+function k1(){
+s1="Incorrect<br>"
+if(q1a.value=="OK Computer, Radiohead"){s1a="1. Correct<br>"}else{s1a="1.Incorrect<br>"}
+if(q1b.value=="Revolver, The Beatles"){s1b="2. Correct<br>"}else{s1b="2.Incorrect<br>"}
+if(q1c.value=="Automatic for the People, REM"){s1c="3. Correct<br>"}else{s1c="3.Incorrect<br>"}
+if(q1d.value=="The Stone Roses, The Stone Roses"){s1d="4. Correct<br>"}else{s1d="4.Incorrect<br>"}
+if(q1e.value=="Sgt. Peppers Lonely Heart’s Club Band, The Beatles"){s1e="7. Correct<br>"}else{s1e="7. Incorrect<br>"}
+if(q1f.value=="The Fat of the Land, The Prodigy"){s1f="9. Correct<br>"}else{s1f="9. Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f
+
+}
+function k2(){
+s2a="<br>"
+s2b="<br>"
+s2c="<br>"
+s2d="<br>"
+s2e="<br>"
+s2f="<br>"
+s2g="<br>"
+s2h="<br>"
+
+if(q2b.checked&q2a.checked==false){s2a="1.-Correct<br>"}else{s2a="1.-Incorrect<br>"}
+if(q2c.checked&q2d.checked==false){s2b="2.-Correct<br>"}else{s2b="2.-Incorrect<br>"}
+if(q2e.checked&q2f.checked==false){s2c="3.-Correct<br>"}else{s2c="3.-Incorrect<br>"}
+if(q2h.checked&q2g.checked==false){s2d="4.-Correct<br>"}else{s2d="4.-Incorrect<br>"}
+if(q2i.checked&q2j.checked==false){s2e="5.-Correct<br>"}else{s2e="5.-Incorrect<br>"}
+if(q2k.checked&q2l.checked==false){s2f="6.-Correct<br>"}else{s2f="6.-Incorrect<br>"}
+if(q2n.checked&q2m.checked==false){s2g="7.-Correct<br>"}else{s2g="7.-Incorrect<br>"}
+if(q2o.checked&q2p.checked==false){s2h="8.-Correct<br>"}else{s2h="8.-Incorrect<br>"}
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f+s2g+s2h
+}
+
+function k3(){
+
+}
+function k4(){
+
+}
+</script>
+<div id="t0">
+<b>Icons</b>
+<p>
+<b>All-time top 10 albums</b>
+<br>
+</div>
+<p>
+<div id="t1">
+<b>1. <a href="fave1.ra">Listen to two people talking</a>, a list of the ten best albums of all time that appeared in a music magazine and complete the list below.</b>  
+<p>
+<ol>
+<li><input size="60" name="q1a">
+<li><input size="60" name="q1b">
+<li><input size="60" name="q1c">
+<li><input size="60" name="q1d">
+<li><i>Exile on Main Street</i>, The Rolling Stone
+<li><i>The Bends</i>, Radiohead
+<li><input size="60" name="q1e">
+<li><i>(What’s the Story) Morning Glory?</i>, Oasis
+<li><input size="60" name="q1f">
+<li><i>Dark Side of the Moon</i>, Pink Floyd
+</ol>
+<p>
+<table cellpadding=5 cellspacing=5 bgcolor=#ffbc90 width=400>
+<tr><td>
+<i>Sgt. Peppers Lonely Heart’s Club Band</i>, The Beatles<br> 
+<i>Automatic for the People</i>, REM<br>
+<i>The Fat of the Land</i>, The Prodigy<br>
+<i>The Stone Roses</i>, The Stone Roses<br>
+<i>OK Computer</i>, Radiohead<br>
+<i>Revolver</i>, The Beatles<br>
+</td></tr>
+</table>
+<p>
+<center>
+<button onClick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. <a href="fave1.ra">Listen again</a> and decide if these statements are true or false.</b> 
+<p> 
+<ol>
+<li>Both speakers think <i>Sergeant Pepper's</i> is the best Beatles album.<br>	 
+<input type="checkbox" name="q2a"> true 
+<input type="checkbox" name="q2b"> false
+<p> 
+
+<li>All the groups in the list are British except one.<br>	
+<input type="checkbox" name="q2c"> true 
+<input type="checkbox" name="q2d"> false
+<p> 
+
+<li>"Q" is a British magazine.<br>	
+<input type="checkbox" name="q2e"> true 
+<input type="checkbox" name="q2f"> false
+<p> 
+
+<li>All the groups in the list are from the 1960s or the 1990s.<br>	
+<input type="checkbox" name="q2g"> true 
+<input type="checkbox" name="q2h"> false
+<p> 
+
+<li>Neither of the speakers think Oasis will still be a top ten album in ten years' time.<br>	
+<input type="checkbox" name="q2i"> true 
+<input type="checkbox" name="q2j"> false
+<p>
+<li>One of the speakers hasn't listened to the The Stone Roses since the summer it came out.<br>	
+<input type="checkbox" name="q2k"> true 
+<input type="checkbox" name="q2l"> false
+<p> 
+
+<li>One of the speakers has never heard Pink Floyd's <i>The Dark Side of the Moon</i>.<br>	
+<input type="checkbox" name="q2m"> true 
+<input type="checkbox" name="q2n"> false
+<p> 
+
+<li>Neither speaker has heard The Prodigy's album.<br>	
+<input type="checkbox" name="q2o"> true 
+<input type="checkbox" name="q2p"> false
+</ol>
+<p> 
+
+<center>
+<button onClick="k2()">Check answers</button>
+</center>
+</div>
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+
+<div id="z4">
+</div>
+
+
+ 

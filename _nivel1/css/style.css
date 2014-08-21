@@ -1,14 +1,43 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+body div.bg {
+  height: 100%;
+}
+body div.bg.bg1 {
   background-color: #9ac00a;
+}
+body div.bg.bg2 {
+  background-color: #2ba6cb;
+}
+body #index #t1 img {
+  padding: 1em;
+  width: 80%;
+}
+body #index #t2 img {
+  padding: 1em;
 }
 body #section1 > img {
   padding: 20px 30px;
 }
+body .activity {
+  height: 100%;
+}
+body #menu {
+  overflow-y: scroll;
+  height: 100%;
+  color: #fff;
+}
+body #menu a {
+  color: #fff;
+}
 body #cont {
   background: #fff;
-  min-height: 500px;
+  overflow-y: scroll;
+  height: 100%;
+  padding-bottom: 200px;
 }
 body #cont td {
   padding: 0 3px;

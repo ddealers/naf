@@ -1,0 +1,155 @@
+<script language="javascript">
+
+function k1(){
+if(q1a.value=="2"){s1a=" Correct<br>"}
+if(q1a.value!="2"){s1a=" Incorrect<br>"}
+
+if(q1b.value=="3"){s1b=" Correct<br>"}
+if(q1b.value!="3"){s1b=" Incorrect<br>"}
+
+if(q1c.value=="1"){s1c=" Correct<br>"}
+if(q1c.value!="1"){s1c=" Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b+s1c
+}
+function k2(){
+if(q2a.value=="e"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value=="c"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value=="f"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value=="a"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+if(q2e.value=="b"){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
+if(q2f.value=="d"){s2f="6. Correct<br>"}else{s2f="6. Incorrect<br>"}
+
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f
+}
+
+s3a=""
+
+function k3(){
+if(q3b.checked&q3a.checked==false&q3d.checked==false&q3c.checked==false){s3a="3.-Correct<br>"}else{s3a="3.-Incorrect<br>"}
+
+z3.innerHTML=s3a
+}
+function k4(){
+if(q4a.value=="think"){s4a="1. Correct<br>"}
+if(q4a.value!="think"){s4a="1. Incorrect<br>"}
+
+if(q4b.value=="fell"){s4b="2. Correct<br>"}
+if(q4b.value!="fell"){s4b="2. Incorrect<br>"}
+
+if(q4c.value=="forgotten"){s4c="3. Correct<br>"}
+if(q4c.value!="forgotten"){s4c="3. Incorrect<br>"}
+
+if(q4d.value=="thought"){s4d="4. Correct<br>"}
+if(q4d.value!="thought"){s4d="4. Incorrect<br>"}
+
+if(q4e.value=="felt"){s4e="5. Correct<br>"}
+if(q4e.value!="felt"){s4e="5. Incorrect<br>"}
+
+if(q4f.value=="seen"){s4f="6. Correct<br>"}
+if(q4f.value!="seen"){s4f="6. Incorrect<br>"}
+
+if(q4g.value=="taught"){s4g="7. Correct<br>"}
+if(q4g.value!="taught"){s4g="7. Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g
+}
+</script>
+<div id="t0">
+<b>Global Inequality</b>
+<p>
+<b>Charity lexis</b>
+</div>
+<p>
+<div id="t1">
+<b>1.Choose the correct headline for each of these newspaper articles.</b>
+<p> 
+<select name="q1a">
+<option value="x">Choose Answer
+<option value="1">Across a continent on wheels 
+
+<option value="2">A haircut for cancer
+<option value="3">Stand up for your rights 
+</select><br>
+A 16-year old girl who has never cut her hair, has decided to donate all her hair to leukaemia patients. Emma Wilson will give her knee-length hair to the Leukaemia Foundation to make wigs for leukaemia victims.
+<p> 
+<select name="q1b">
+<option value="x">Choose Answer
+<option value="1">A haircut for cancer 
+
+<option value="2">Stand up for your rights 
+<option value="3">Across a continent on wheels 
+</select><br> 
+
+James Hunt is roller skating across Australia to raise money for the Australian Children's Fund. Hunt, 25, started his trip in Adelaide in June, and is due to reach Darwin next week. The sponsorship money will help underprivileged Australian children go to college.
+<p> 
+<select name="q1c">
+<option value="x">Choose Answer
+<option value="1">Stand up for your rights 
+
+<option value="2">Across a continent on wheels 
+<option value="3">A haircut for cancer 
+</select><br> 
+
+A London woman, Sally Adams, is raising money for the Race Equality Society by standing on one leg in Trafalgar Square for three days. Adams hopes to make people conscious of the importance of good race relations in Britain today.
+<p>
+<center>
+<button onClick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Vocabulary development. Match these words to the definitions.</b>
+<p>
+<table cellpadding=5 cellspacing=5>
+<tr><td>a) a charity  </td><td><input size="1" name="q2a">the money collected from people who sponsor someone</td></tr>
+<tr><td>b) to raise money</td><td><input size="1" name="q2b">to give money, often to a charity</td></tr>
+<tr><td>c) to donate money</td><td><input size="1" name="q2c">they have less money and opportunities than other people</td></tr>
+<tr><td>d) to sponsor someone</td><td><input size="1" name="q2d">an organization which gives money to poor people</td></tr>
+<tr><td>e) sponsorship money</td><td><input size="1" name="q2e">to ask people to give money for a charity</td></tr>
+<tr><td>f) underprivileged people </td><td><input size="1" name="q2f">to agree to give someone money for charity if they do a certain thing (e.g., roller skate across Australia , stand on one leg for two days)</td></tr>
+</table>
+<p>
+<center>
+<button onClick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. How good is your memory? Which of these news stories is exactly the same as the news story in exercise 1? </b>
+<p>
+<center>
+<input type="checkbox" name="q3a">1 <input type="checkbox" name="q3b">2 <input type="checkbox" name="q3c">3 <input type="checkbox" name="q3d">4
+</center>
+<p>
+<ol>
+<li><b> Across a continent on wheels</b><br> 
+James Hunt is roller skating across Australia to raise money for the Australian Leukaemia Foundation. Hunt, 25, started his journey in Adelaide in June, and is due to reach Darwin next week. The sponsorship money will help make wigs for leukaemia victims.
+<p>
+<li><b> Across a continent on wheels</b> <br> 
+James Hunt is roller skating across Australia to raise money for the Australian Children's Fund. Hunt, 25, started his journey in Adelaide in June, and is due to reach Darwin next week. The sponsorship money will help underprivileged Australian children go to college. 
+<p>
+<li><b>Across a continent on wheels </b><br> 
+James Hunt is roller skating across Australia to raise money for the Australian Race Equality Society. Hunt, 25, started his journey in Adelaide in June, and is due to reach Darwin next week. He hopes to make people conscious of the importance of good race relations in Australia today. 
+<p>
+<li><b>Across a continent on wheels</b> <br> 
+James Hunt is roller skating across Australia to raise money for the Australian Children's Fund. Hunt, 25, started his journey in Darwin in June, and is due to reach Adelaide next week. The sponsorship money will help underprivileged Australian children go to college. 
+</ol>
+<p>
+
+<center>
+<button onClick="k3()">Check answers</button>
+</center>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+
+<div id="z4">
+</div>
+
+
+ 

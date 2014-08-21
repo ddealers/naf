@@ -1,0 +1,221 @@
+<script language="javascript">
+
+function k1(){
+
+if(q1a.value=="5"){s1a="1. Correct<br>"}
+if(q1a.value!="5"){s1a="1. Incorrect<br>"}
+
+z1.innerHTML=s1a
+}
+function k2(){
+if(q2a.value=="5"){s2a="2. Correct<br>"}
+if(q2a.value!="5"){s2a="2. Incorrect<br>"}
+
+z2.innerHTML=s2a
+}
+
+function k3(){
+if(q3a.value=="has been playing golf for two hours"){s3a="1. Correct<br>"}
+if(q3a.value!="has been playing golf for two hours"){s3a="1. Incorrect<br>"}
+
+if(q3b.value=="have been playing music for four hours"){s3b="2. Correct<br>"}
+if(q3b.value!="have been playing music for four hours"){s3b="2. Incorrect<br>"}
+
+if(q3c.value=="have been working here for six months"){s3c="3. Correct<br>"}
+if(q3c.value!="have been working here for six months"){s3c="3. Incorrect<br>"}
+
+if(q3d.value=="has been studying Chinese for two years"){s3d="4. Correct<br>"}
+if(q3d.value!="has been studying Chinese for two years"){s3d="4. Incorrect<br>"}
+
+if(q3e.value=="has been doing his homework for three hours"){s3e="5. Correct<br>"}
+if(q3e.value!="has been doing his homework for three hours"){s3e="5. Incorrect<br>"}
+
+if(q3f.value=="have been living together for fifteen years"){s3f="6. Correct<br>"}
+if(q3f.value!="have been living together for fifteen years"){s3f="6. Incorrect<br>"}
+
+if(q3g.value=="have been watching TV for four hours"){s3g="7. Correct<br>"}
+if(q3g.value!="have been watching TV for four hours"){s3g="7. Incorrect<br>"}
+
+if(q3h.value=="have been reading this book for five weeks"){s3h="8. Correct<br>"}
+if(q3h.value!="have been reading this book for five weeks"){s3h="8. Incorrect<br>"}
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
+}
+
+function k4(){
+if(q4a.value=="has"){s4a="1. Correct"}else{s4a="1. Incorrect"}
+if(q4b.value=="been"){s4b=" 1a. Correct<br>"}else{s4b=" 1a. Incorrect<br>"}
+if(q4c.value=="How long have"){s4c="2. Correct"}else{s4c="2. Incorrect"}
+if(q4d.value=="been playing"){s4d=" 2a. Correct<br>"}else{s4d=" 2a. Incorrect<br>"}
+if(q4e.value=="How long have"){s4e="3. Correct"}else{s4e="3. Incorrect"}
+if(q4f.value=="been"){s4f=" 3a. Correct<br>"}else{s4f=" 3a. Incorrect<br>"}
+if(q4g.value=="How long has"){s4g="4. Correct"}else{s4g="4. Incorrect"}
+if(q4h.value=="been studying"){s4h=" 4a. Correct<br>"}else{s4h=" 4a. Incorrect<br>"}
+if(q4i.value=="How long has"){s4i="5. Correct"}else{s4i="5. Incorrect"}
+if(q4j.value=="been doing"){s4j=" 5a. Correct<br>"}else{s4j=" 5a. Incorrect<br>"}
+if(q4k.value=="How long have"){s4k="6. Correct"}else{s4k="6. Incorrect"}
+if(q4l.value=="been living"){s4l=" 6a. Correct<br>"}else{s4l=" 6a. Incorrect<br>"}
+if(q4m.value=="How long have"){s4m="7. Correct"}else{s4m="7. Incorrect"}
+if(q4n.value=="been watching"){s4n=" 7a. Correct<br>"}else{s4n=" 7a. Incorrect<br>"}
+if(q4o.value=="How long have you been reading"){s4o="8. Correct<br>"}else{s4o="8. Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g+s4h+s4i+s4j+s4k+s4l+s4m+s4n+s4o
+}
+<div id="t0">
+<b>Best Days of Your Life</b>
+<p>
+<b>
+Present Perfect Continuous + <i>for</i></b>
+</div>
+<p>
+<div id="t1">
+<b>1. Look at this story and decide which is the best sentence to complete the speech bubble.</b>
+<p>
+<center>
+<img src="u5a.jpg"><br>
+<select name="q1a">
+<option value="x">Choose Correct
+<option value="1">How long do you wait?
+<option value="2">How long are you waiting?
+<option value="3">How long did you wait?
+<option value="4">How long were you waiting?
+<option value="5">How long have you been waiting?
+<option value="6">How long have you waited?
+</select>
+<p>
+<button onClick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. What is the woman's answer?</b>
+<p>
+<center>
+<img src="u5b.jpg"><br>
+<select name="q2a">
+<option value="x">Choose Correct
+<option value="1">I wait for half an hour.
+<option value="2">I am waiting for half an hour.
+<option value="3">I waited for half an hour.
+<option value="4">I was waiting for half an hour.
+<option value="5">I have been waiting for half an hour
+<option value="6">I have waited for half an hour.
+</select>
+<p>
+<button onClick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. Write sentences for these situations.</b>
+<p>
+<span id="m1">e.g., Jack started working at 9:00. It is now 12:00.<br>	 
+ 	Jack has been working for three hours.</span>
+<p>
+<ol>	 
+<li>Helen started playing golf at 5:00. She is still playing golf. It is 7:00.	 
+ 
+<nobr>Helen <input size=95 name="q3a"> .</nobr>     
+<p>
+<li>Alan and Joe started playing music four hours ago. They are still playing.	 
+ 
+<nobr>They <input size=95 name="q3b"> .</nobr>    
+
+<p>
+<li>I started working here six months ago. I am still working here.	 
+ 
+<nobr>I  <input size=95 name="q3c">
+.</nobr>      
+
+<p>
+<li>Jackie started studying Chinese two years ago. She is still studying Chinese.	  
+ 
+<nobr>Jackie <input size=95 name="q3d">
+</nobr>.       
+
+<p>
+<li>Ed started doing his homework at 8:00. It is now 11:00. He is still doing his homework. 	  
+ 
+<nobr>Ed <input size=95 name="q3e">
+</nobr>.        
+
+<p>
+<li>We started living together fifteen years ago. We are still living together.	 
+ 
+<nobr>We <input size=95 name="q3f">
+</nobr>.       
+
+<p>
+<li>You started watching TV at 6:00. It is now 10:00. You are still watching TV.	 
+ 
+<nobr>You  <input size=95 name="q3g">
+</nobr>.      
+
+<p>
+<li>I started reading this book five weeks ago. I am still reading it.	 
+ 
+<nobr>I  <input size=95 name="q3h">
+</nobr>.
+</ol>
+<p>
+<center>
+<button onClick="k3()">Check answers</button>
+</center> 
+<p>
+<b>4. Here are the time periods for the sentences in the last exercise. Can you write the questions?</b>
+<p>
+<span id="m1">e.g.,	For three hours.<br> 
+	How long has Jack been working? </span>
+<p>
+<ol>
+<li>For two hours.
+ 
+How long <input size=25 name="q4a">  Helen <input size=25 name="q4b">  playing golf?
+
+<li>For four hours.<br> 
+ 
+<input size=25 name="q4c">  Alan and Joe <input size=25 name="q4d">  music?
+
+<li>For six months.<br>
+ 
+<input size=25 name="q4e">  you <input size=25 name="q4f">  working here?
+
+<li>For two years.<br> 
+ 
+<input size=25 name="q4g">  Jackie <input size=25 name="q4h">   Chinese.
+
+<li>For three hours.<br> 
+ 
+<input size=25 name="q4i">  Ed <input size=25 name="q4j">    homework?
+
+<li>For fifteen years.<br> 
+ 
+<input size=25 name="q4k">  you<input size=25 name="q4l">   together?
+
+<li>For four hours.<br> 
+ 
+<input size=25 name="q4m"> we <input size=25 name="q4n">   TV?
+
+<li>For five weeks.<br> 
+ 
+<input size=50 name="q4o">  
+this book?
+
+</ol>
+<p>
+
+<center>
+<button onClick="k4()">Check answers</button>
+</center>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+<div id="z4">
+</div>
+
+
+ 

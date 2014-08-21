@@ -1,0 +1,210 @@
+<script language="javascript">
+
+function k1(){
+if(q1a.value=="2"){s1a="1. Correct<br>"}
+if(q1a.value!="2"){s1a="1. Incorrect<br>"}
+
+if(q1b.value=="1"){s1b="2. Correct<br>"}
+if(q1b.value!="1"){s1b="2. Incorrect<br>"}
+
+if(q1c.value=="3"){s1c="3. Correct<br>"}
+if(q1c.value!="3"){s1c="3. Incorrect<br>"}
+
+if(q1d.value=="2"){s1d="4. Correct<br>"}
+if(q1d.value!="2"){s1d="4. Incorrect<br>"}
+
+if(q1e.value=="3"){s1e="5. Correct<br>"}
+if(q1e.value!="3"){s1e="5. Incorrect<br>"}
+
+if(q1f.value=="1"){s1f="6. Correct<br>"}
+if(q1f.value!="1"){s1f="6. Incorrect<br>"}
+
+if(q1g.value=="2"){s1g="7. Correct<br>"}
+if(q1g.value!="2"){s1g="7. Incorrect<br>"}
+
+if(q1h.value=="1"){s1h="8. Correct<br>"}
+if(q1h.value!="1"){s1h="8. Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h
+}
+
+function k2(){
+if(q2a.value=="take"){s2a="1. Correct<br>"}
+if(q2a.value!="take"){s2a="1. Incorrect<br>"}
+
+if(q2b.value=="make"){s2b="2. Correct<br>"}
+if(q2b.value!="make"){s2b="2. Incorrect<br>"}
+
+if(q2c.value=="do"){s2c="3. Correct<br>"}
+if(q2c.value!="do"){s2c="3. Incorrect<br>"}
+
+z2.innerHTML=s2a+s2b+s2c
+}
+
+function k3(){
+if(q3a.value=="build on"){s3a="1.- Correct<br>"}else{s3a="1.- Incorrect<br>"}
+if(q3b.value=="build up"){s3b="2.- Correct<br>"}else{s3b="2.- Incorrect<br>"}
+if(q3c.value=="at home"){s3c="3.- Correct<br>"}else{s3c="3.- Incorrect<br>"}
+if(q3d.value=="in ruins"){s3d="4.- Correct<br>"}else{s3d="4.- Incorrect<br>"}
+if(q3e.value=="foundation"){s3e="5.- Correct<br>"}else{s3e="5.- Incorrect<br>"}
+if(q3f.value=="go through the roof"){s3f="6.- Correct<br>"}else{s3f="6.- Incorrect<br>"}
+if(q3g.value=="open doors"){s3g="7.- Correct<br>"}else{s3g="7.- Incorrect<br>"}
+if(q3h.value=="key"){s3h="8.- Correct<br>"}else{s3h="8.- Incorrect<br>"}
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
+}
+
+<div id="t0">
+<b>Home Alone</b>
+<p>
+<b>Houses</b>
+</div>
+<p>
+<div id="t1">
+<b>1. Collocations</b>
+<p>
+Complete these sentences using the following words:
+<p>
+<ol>
+<li>	I decided to stop work and  
+<select name="q1a">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+some coffee.<p> 
+
+<li>	It's a big job, it will  
+<select name="q1b">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+them a long time to finish.<p> 
+
+<li>	I never have time to  
+<select name="q1c">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+the housework.<p> 
+
+<li>	Don't  
+<select name="q1d">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+a mess in the kitchen. I've just cleaned it.<p> 
+
+<li>	My brother wants to  
+<select name="q1e">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+the design of our new web page.<p> 
+
+<li>	Excuse me. Can you  
+<select name="q1f">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+a picture of us in front of this statue?<p> 
+
+<li>	They are going to  
+<select name="q1g">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+a garden in front of the house.<p> 
+
+<li>	I'd like to  
+<select name="q1h">
+<option value="x">Choose Answer
+<option value="1">take
+<option value="2">make
+<option value="3">do
+</select>
+advantage of the vacations to finish my studies.
+</ol> 
+<p>
+<center>
+<button onClick="k1()">Check answers</button>
+</center>
+
+<p>
+<b>2. Now complete this table by typing the correct verb into the box: do, make, or take.</b>
+<p> 
+<table cellpadding=5 bgcolor=#ffbc90>
+<tr><td>
+<input size=8 name="q2a"> time, a picture, advantage of something
+<p> 
+<input size=8 name="q2b"> a cup of coffee, a mess, a garden/a physical object 
+<p>
+<input size=8 name="q2c"> work/housework, the design of something
+</td></tr>
+</table>
+<p>
+<center>
+<button onClick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. Metaphors related to houses.</b> 
+<p>
+Use these house related words to complete the sentences by clicking and dragging them to the correct position. 
+<p>
+<ol>
+<li>Use your previous experience. <input size=6 name="q3a"> what you know. It's easier than starting from the beginning.
+<p>
+<li>They started with nothing but have managed to <input size=6 name="q3b"> a succesful business.
+<p>
+<li>I love working here. I really feel <input size=6 name="q3c"> in this job.
+<p>
+<li>After the scandal his career was <input size=6 name="q3d">.
+<p>
+<li>What we have done so far is an excellent <input size=6 name="q3e"> to build on in the future.
+<p>
+<li>After the economic crisis they expect interest rates to <input size=6 name="q3f">.
+<p>
+<li>Her reputation will  <input size=6 name="q3g"> for her. I'm sure she'll get a job quickly and easily.
+<p>
+<li>I asked him for advice and he said that hard work was the <input size=6 name="q3h"> to success.
+</ol>
+<p>
+<table cellpadding=5 cellspacing=5 bgcolor=#ffbc90>
+<tr><td>foundation</td><td>in ruins</td><td>build on</td><td>key</td></tr>
+
+<tr><td>at home</td><td>build up</td><td>open doors</td><td>go through the roof</td></tr>
+</table>
+<p>
+
+<center>
+<button onClick="k3()">Check answers</button>
+</center>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+<div id="z4">
+</div>
+
+
+ 

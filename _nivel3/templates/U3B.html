@@ -1,0 +1,204 @@
+<script language="javascript">
+
+function k1(){
+s1a="<br>"
+s1b="<br>"
+
+if(q1a.checked&q1b.checked==false&q1c.checked==false&q1d.checked==false){s1a="1.-Correct<br>"}
+else {s1a="1.-Incorrect<br>"}
+if(q1g.checked&q1e.checked==false&q1f.checked==false&q1h.checked==false){s1b="2.-Correct<br>"}
+else {s1b="2.-Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b
+}
+
+function k2(){
+s2a=""
+
+if(q2b.checked&q2a.checked==false&q2c.checked==false&q2d.checked==false&q2e.checked==false){s2a="2.-Correct<br>"}
+else {s2a="2.-Incorrect<br>"}
+
+
+z2.innerHTML=s2a
+}
+
+function k3(){
+s3a="<br>"
+s3b="<br>"
+s3c="<br>"
+s3d="<br>"
+s3e="<br>"
+s3f="<br>"
+if(q3b.checked&q3a.checked==false){s3a="1.-Correct<br>"}else{s3a="1.-Incorrect<br>"}
+if(q3d.checked&q3c.checked==false){s3b="2.-Correct<br>"}else{s3b="2.-Incorrect<br>"}
+if(q3e.checked&q3f.checked==false){s3c="3.-Correct<br>"}else{s3c="3.-Incorrect<br>"}
+if(q3g.checked&q3h.checked==false){s3d="4.-Correct<br>"}else{s3d="4.-Incorrect<br>"}
+if(q3i.checked&q3j.checked==false){s3e="5.-Correct<br>"}else{s3e="5.-Incorrect<br>"}
+if(q3l.checked&q3k.checked==false){s3f="6.-Correct<br>"}else{s3f="6.-Incorrect<br>"}
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f
+}
+function k4(){
+if(q4a.value=="think"){s4a="1. Correct<br>"}
+if(q4a.value!="think"){s4a="1. Incorrect<br>"}
+
+if(q4b.value=="fell"){s4b="2. Correct<br>"}
+if(q4b.value!="fell"){s4b="2. Incorrect<br>"}
+
+if(q4c.value=="forgotten"){s4c="3. Correct<br>"}
+if(q4c.value!="forgotten"){s4c="3. Incorrect<br>"}
+
+if(q4d.value=="thought"){s4d="4. Correct<br>"}
+if(q4d.value!="thought"){s4d="4. Incorrect<br>"}
+
+if(q4e.value=="felt"){s4e="5. Correct<br>"}
+if(q4e.value!="felt"){s4e="5. Incorrect<br>"}
+
+if(q4f.value=="seen"){s4f="6. Correct<br>"}
+if(q4f.value!="seen"){s4f="6. Incorrect<br>"}
+
+if(q4g.value=="taught"){s4g="7. Correct<br>"}
+if(q4g.value!="taught"){s4g="7. Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g
+}
+<div id="t0">
+<b>Body Matters</b>
+<p>
+<b>Problem page from health magazine</b>
+</div>
+<p>
+<div id="t1">
+<b>1. You are going to read part of the problem page from a health magazine called "Healthy Life, Happy Life". First look at the four questions below.</b> 
+<p>
+<table cellpadding=5 border=1>
+<tr><td>
+<b>Question A</b> <br>
+When I use my computer I often get aches and pains in my neck and back. Can you give me some advice?
+<p>
+<b>Question B</b><br>
+My daughter spends lots of time working at the computer and she also spends time playing computer games. I'm worried that this might not be very good for her. What should I do?
+<p>
+<b>Question C</b><br> 
+For my job I do a lot of work at the computer and I also spend time at home surfing the Internet. Recently, I've started to get pain in my wrist when I use the computer. A friend thinks I could have RSI. What is it? Do I have RSI?
+<p>
+<b>Question D</b><br> 
+Could you suggest any exercises for people like myself who spend a lot of time at the computer?
+</td></tr></table>
+<p>
+
+
+<b>Now read the text and then decide which of the questions (A, B,C, or D ) are answered.</b>
+<p>
+<table cellpadding=5 bgcolor=#ffbc90>
+<tr><td>
+Your problems - answered! 
+<p>
+<b>Answer 1</b><br>
+Yes, there are lots of things you can do. Here is one for the neck and another for the shoulders and back. 
+<p>
+For the first one, stand or sit with your arms by your sides and look straight ahead. Slowly bend your head to the left towards your shoulder. Go as far as you can and hold the position for five seconds. Do this exercise five times on both sides.
+<p>
+For the arms and shoulders, bend your left arm and hold your left elbow with your right arm. Gently push your left arm over your right shoulder. This stretches the shoulder and muscles of the back. Repeat five times with each arm. 
+<p>
+Do these exercises a few times every day. You can also find lots of books and websites which have exercises that are great for people who work with computers.
+<p>
+<b>Answer 2</b><br>
+Not necessarily. RSI&#151;repetitive strain injury&#151;can occur through repeating the same physical movements time after time. It can be a problem for musicians, people who play sports and those who use computers a lot, for example. You could be experiencing the first symptoms. Here are a few tips.
+<p>
+You should always keep your wrists straight and flat&#151;never bend them in any direction. Move the hands from the arms, not from the wrists. Are your wrists flat when you type? This is best. You can adjust your chair and keyboard to do this. Also remember to take lots of breaks to give your body a chance to rest.
+<p>
+Using the mouse can also cause problems. Alternate hands sometimes with the mouse and learn how to use more of the keyboard controls instead of the mouse. If the symptoms persist you should see a doctor.
+</td></tr></table>
+<p>
+
+<table cellspacing=5 cellpadding=5 border=1>
+<tr><td>Answer 1 </td>	 
+<td><input type="checkbox" name="q1a">Question A</td>
+<td><input type="checkbox" name="q1b">Question B</td>
+<td><input type="checkbox" name="q1c">Question C</td>
+<td><input type="checkbox" name="q1d">Question D</td></tr>
+
+
+<tr><td>Answer 2</td>	 
+<td><input type="checkbox" name="q1e">Question A</td>
+<td><input type="checkbox" name="q1f">Question B</td>
+<td><input type="checkbox" name="q1g">Question C</td>
+<td><input type="checkbox" name="q1h">Question D</td></tr>
+
+</table>
+<p>
+<center>
+<button onClick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Choose the pictures which best represent the two exercises described in answer 1 in the text.</b>
+<p>
+<center>
+<img src="u3a.jpg">
+<p>
+<table cellspacing=5 cellpadding=5>
+<tr><td>
+The two pictures which best
+represent the two exercises are:	 
+</td></tr>
+<tr><td><input type="checkbox" name="q2a">A & B <input type="checkbox" name="q2b">A & C</td></tr>
+
+<tr><td><input type="checkbox" name="q2c">A & D <input type="checkbox" name="q2d">B & C</td></tr>
+
+<tr><td><input type="checkbox" name="q2e">B & D <input type="checkbox" name="q2f">C & D</td></tr>
+
+</table>
+<p>
+<button onClick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. Answer the following questions True or False.</b>
+<p>
+<ol>
+<li>	RSI means Repeated Strain Injury.<br>	 
+<input type="checkbox" name="q3a">true  <input type="checkbox" name="q3b">false<p>
+ 
+
+<li>	RSI is caused by doing too much heavy, physical work.<br>	 
+<input type="checkbox" name="q3c">true  <input type="checkbox" name="q3d">false<p>
+ 
+
+<li>	RSI isn't only a problem for people who work with computers.<br> 	 
+<input type="checkbox" name="q3e">true  <input type="checkbox" name="q3f">false<p>
+ 
+
+<li>	It's bad to bend your wrists when you type.<br>	 
+<input type="checkbox" name="q3g">true  <input type="checkbox" name="q3h">fals<p>
+ 
+
+<li>	It's a good idea to change hands occasionally when using the mouse.<br>	 
+<input type="checkbox" name="q3i">true  <input type="checkbox" name="q3j">false<p>
+ 
+
+<li>	The writer suggests going to see a doctor immediately.<br>	 
+<input type="checkbox" name="q3k">true  <input type="checkbox" name="q3l">false
+</ol>
+
+<p>
+
+<center>
+<button onClick="k3()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+<div id="z4">
+</div>
+
+
+ 

@@ -1,6 +1,6 @@
 {
 	"jade":{
-		"src":"/index.jade",
+		"src":"/main.jade",
 		"dest":"/"
 	},
 	"stylus":{
