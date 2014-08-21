@@ -1,0 +1,82 @@
+<script language="javascript">
+
+function k1(){
+if(q1a.value=="flu"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value=="colds"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value=="healthy"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value=="ailments"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value=="infections"){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+if(q1f.value=="defenses"){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
+if(q1g.value=="immune system"){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g
+}
+function k2(){
+if(q2a.value=="infection"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value=="body"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value=="sick"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value=="immune system"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+if(q2e.value=="colds"){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
+if(q2f.value=="flu"){s2f="6. Correct<br>"}else{s2f="6. Incorrect<br>"}
+if(q2g.value=="ailments"){s2g="7. Correct<br>"}else{s2g="7. Incorrect<br>"}
+if(q2h.value=="defenses"){s2h="8. Correct<br>"}else{s2h="8. Incorrect<br>"}
+if(q2i.value=="healthy"){s2i="9. Correct<br>"}else{s2i="9. Incorrect<br>"}
+
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f+s2g+s2h+s2i
+}
+
+<div id="t0">
+<b>Body Matters</b>
+<p>
+<b>Health and illness</b>
+</div>
+<p>
+<div id="t1">
+<b>1. Put the letters in order to make HEALTH words from the article in READING.</b>
+<p>
+<ol>
+<li>luf <input size=3 name="q1a">
+<li>clods <input size=5 name="q1b">
+<li>thehaly <input size=7 name="q1c">
+<li>stailmen <input size=8 name="q1d">
+<li>snotinefic <input size=10 name="q1e">
+<li>nesfedes <input size=8 name="q1f">
+<li>menumi metyss <input size=14 name="q1g">
+</ol>
+<p>
+<center>
+<button onClick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Write the words to complete the text about HEALTH and ILLNESS.</b>
+<p>
+An <sub>1</sub><input size="6" name="q2a"> is caused by a germ or bacteria that enters your <sub>2</sub><input size="6" name="q2b"> and makes you
+ <nobr><sub>3</sub><input size="6" name="q2c"></nobr>. Luckily our body has an <sub>4</sub><input size="6" name="q2d"> that protects us against these attacks.
+Often in winter people get common <sub>5</sub><input size="6" name="q2e"> or the <sub>6</sub><input size="6" name="q2f">.
+These are not very serious. But we can also get other <nobr><sub>7</sub><input size="6" name="q2g"></nobr> that can be more serious and are
+often accompanied by fever and headaches. Luckily our <nobr><sub>8</sub><input size="6" name="q2h"></nobr>
+soon control and eliminate the infection, making us <sub>9</sub><input size="6" name="q2i"> again.
+<p>
+<center>
+<table cellpadding=5 cellspacing=5 bgcolor=#ffbc90>
+<tr><td>defenses</td><td>colds</td>
+<td>sick</td>
+</tr>
+<tr><td>infection</td><td>flu</td><td>body</td></tr>
+<tr><td>ailments</td><td>healthy</td><td>immune system</td></tr>
+</table>
+</center>
+<p>
+<center>
+<button onClick="k2()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+ 

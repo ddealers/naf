@@ -1,0 +1,157 @@
+<script language="javascript">
+
+function k1(){
+s1a="<br>"
+s1b="<br>"
+s1c="<br>"
+
+if(q1c.checked){s1a="1.-Correct<br>"}
+if(q1a.checked){s1a="1.-Incorrect<br>"}
+if(q1b.checked){s1a="1.-Incorrect<br>"}
+
+
+if(q1d.checked){s1b="2.-Correct<br>"}
+if(q1e.checked){s1b="2.-Incorrect<br>"}
+if(q1f.checked){s1b="2.-Incorrect<br>"}
+
+if(q1h.checked){s1c="3.-Correct<br>"}
+if(q1g.checked){s1c="3.-Incorrect<br>"}
+if(q1i.checked){s1c="3.-Incorrect<br>"}
+
+
+z1.innerHTML=s1a+s1b+s1c
+}
+function k2(){
+s2a="<br>"
+s2b="<br>"
+s2c="<br>"
+s2d="<br>"
+
+if(q2c.checked){s2a="2.-Correct<br>"}
+if(q2a.checked){s2a="2.-Incorrect<br>"}
+if(q2b.checked){s2a="2.-Incorrect<br>"}
+if(q2d.checked){s2a="2.-Incorrect<br>"}
+
+z2.innerHTML=s2a
+}
+
+function k3(){
+if(q3a.value=="d"){s3a="1.- Correct<br>"}else{s3a="1.- Incorrect<br>"}
+if(q3b.value=="e"){s3b="2.- Correct<br>"}else{s3b="2.- Incorrect<br>"}
+if(q3c.value=="a"){s3c="3.- Correct<br>"}else{s3c="3.- Incorrect<br>"}
+if(q3d.value=="c"){s3d="4.- Correct<br>"}else{s3d="4.- Incorrect<br>"}
+if(q3e.value=="b"){s3e="5.- Correct<br>"}else{s3e="5.- Incorrect<br>"}
+if(q3f.value=="h"){s3f="6.- Correct<br>"}else{s3f="6.- Incorrect<br>"}
+if(q3g.value=="g"){s3g="7.- Correct<br>"}else{s3g="7.- Incorrect<br>"}
+if(q3h.value=="f"){s3h="8.- Correct<br>"}else{s3h="8.- Incorrect<br>"}
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
+}
+function k4(){
+if(q4a.value=="think"){s4a="1. Correct<br>"}
+if(q4a.value!="think"){s4a="1. Incorrect<br>"}
+
+if(q4b.value=="fell"){s4b="2. Correct<br>"}
+if(q4b.value!="fell"){s4b="2. Incorrect<br>"}
+
+if(q4c.value=="forgotten"){s4c="3. Correct<br>"}
+if(q4c.value!="forgotten"){s4c="3. Incorrect<br>"}
+
+if(q4d.value=="thought"){s4d="4. Correct<br>"}
+if(q4d.value!="thought"){s4d="4. Incorrect<br>"}
+
+if(q4e.value=="felt"){s4e="5. Correct<br>"}
+if(q4e.value!="felt"){s4e="5. Incorrect<br>"}
+
+if(q4f.value=="seen"){s4f="6. Correct<br>"}
+if(q4f.value!="seen"){s4f="6. Incorrect<br>"}
+
+if(q4g.value=="taught"){s4g="7. Correct<br>"}
+if(q4g.value!="taught"){s4g="7. Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g
+}
+<div id="t0">
+<b>Controversy</b>
+<p>
+<b><i>Since</i>, <i>then</i> + Present Perfect </b>
+</div>
+<p>
+<div id="t1">
+<b>1. Look at these examples of <i>since, then.</i> What does then refer to, in each case? 
+<p></b>
+<p>
+<ol>
+<li>(Tasmanian Tiger) Since then there have been many eyewitness reports<p>
+<input type="checkbox" name="q1a">early in the century<br>
+<input type="checkbox" name="q1b">65 million years ago<br>	
+<input type="checkbox" name="q1c">1936
+<p>
+	
+<li>(Pterosaurs) Since then there have been a surprising number of reports<p>
+<input type="checkbox" name="q1d">early in the century<br>
+<input type="checkbox" name="q1e">65 million years ago<br>	
+<input type="checkbox" name="q1f">1936
+<p>
+	
+<li>(Mokele-mbembe) The Central African forest has remained relatively unchanged since then.<p>
+<input type="checkbox" name="q1g">early in the century<br>
+<input type="checkbox" name="q1h">65 million years ago<br>
+<input type="checkbox" name="q1i">1936
+</ol>
+<p>
+<center>
+<button onClick="k1()">Check answers</button>
+</center>
+<p>	
+<b>2. What is the tense of the verb in the sentences with <i>since, then</i>?</b>
+<p> 
+<input type="checkbox" name="q2a"> Past Perfect
+<p>
+<input type="checkbox" name="q2b">
+ Past Simple 
+<p> 
+<input type="checkbox" name="q2c"> Present Perfect 
+<p> 
+<input type="checkbox" name="q2d">
+ Present Simple 
+<p>
+  <center>
+    <button onClick="k2()">Check answers</button>
+  </center>
+<p> <b>3. Match the two halves of each sentence.</b>
+<p>
+<p>t 
+<table cellpadding cellspacing=5>
+<tr><td>1.I stopped smoking last year,<br><input size="1" name="q3a"></td><td>a) since then we have been going out together.</td></tr>
+<tr><td>2.I first went to London four years ago,<br><input size="1" name="q3b"></td><td>b) since then I have seen it four times.</td></tr>
+<tr><td>3.I met Brenda last summer,<br><input size="1" name="q3c"></td><td>c) since then I have had no reply.</td></tr>
+<tr><td>4.I wrote to you two months ago,<br><input size="1" name="q3d"></td><td>d) since then I haven't smoked a single cigarette.</td></tr>
+<tr><td>5.I first saw this movie in 1990,<br><input size="1" name="q3e"></td><td>e) since then I have been three times.</td></tr>
+<tr><td>6.I gave up meat when I was in my teens,<br><input size="1" name="q3f"></td><td>f) since then I've never been out of work</td></tr>
+<tr><td>7.I wrote my first book 10 years ago,<br><input size="1" name="q3g"></td><td>g) since then I have written two others.</td></tr>
+<tr><td>8.I did a computer course 5 years ago,<br><input size="1" name="q3h"></td><td>h) since then I have eaten fruit only.</td></tr>
+
+</table>
+
+<p>
+<center>
+<button onClick="k3()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+<div id="z4">
+</div>
+
+
+ 

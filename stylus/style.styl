@@ -1,4 +1,5 @@
 $nafGreen = #9ac00a
+$nafBlue = #2ba6cb
 $txtContGreen = #95b60f
 $spanNewAmerican = #116323				
 
@@ -6,13 +7,37 @@ $spanNewAmerican = #116323
 body
 	margin 0
 	padding 0
-	background-color $nafGreen
+	overflow hidden
+	div.bg
+		height 100%
+		&.bg1
+			background-color $nafGreen
+		&.bg2
+			background-color $nafBlue
+	#index
+		#t1
+			img
+				padding 1em
+				width 80%
+		#t2
+			img
+				padding 1em
 	#section1
 		> img
 			padding 20px 30px
+	.activity
+		height 100%
+	#menu
+		overflow-y scroll
+		height 100%
+		color #fff
+		a
+			color #fff
 	#cont 
-		background #FFFFFF	
-		min-height 500px
+		background #FFF
+		overflow-y scroll
+		height 100%
+		padding-bottom 200px
 		td
 			padding 0 3px
 		select

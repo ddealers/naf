@@ -1,14 +1,43 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+body div.bg {
+  height: 100%;
+}
+body div.bg.bg1 {
   background-color: #9ac00a;
+}
+body div.bg.bg2 {
+  background-color: #2ba6cb;
+}
+body #index #t1 img {
+  padding: 1em;
+  width: 80%;
+}
+body #index #t2 img {
+  padding: 1em;
 }
 body #section1 > img {
   padding: 20px 30px;
 }
+body .activity {
+  height: 100%;
+}
+body #menu {
+  overflow-y: scroll;
+  height: 100%;
+  color: #fff;
+}
+body #menu a {
+  color: #fff;
+}
 body #cont {
   background: #fff;
-  min-height: 100px;
+  overflow-y: scroll;
+  height: 100%;
+  padding-bottom: 200px;
 }
 body #cont td {
   padding: 0 3px;
@@ -16,4 +45,156 @@ body #cont td {
 body #cont select {
   width: auto;
   margin: 5px;
+}
+body #cont #part1 {
+  position: absolute;
+  top: 182px;
+  left: 100px;
+}
+body #cont #part1 p {
+  font-family: inherit;
+  font-size: 20px;
+  color: #95b60f;
+  text-align: center;
+  top: 350px;
+}
+body #cont #part1 p span {
+  color: #116323;
+}
+body #cont .hello {
+  width: 200px;
+  height: 52px;
+  margin-top: 10px;
+  margin-left: -4px;
+}
+body #quest,
+body display block {
+  position: relative;
+  margin-left: 0;
+  margin: 0;
+  font-family: verdana;
+  font-size: 18px;
+  top: 18px;
+  color: #9fa437;
+  text-align: left;
+}
+body #read {
+  display: block;
+  position: relative;
+  margin-left: 0;
+  margin: 0;
+  top: 30px;
+  font-size: 14px;
+}
+body #tabla {
+  display: block;
+  position: relative;
+  width: 720px;
+  height: 270px;
+  margin: 0;
+  margin-left: 0;
+  top: 50px;
+  left: 100px;
+}
+body .boton {
+  font-size: 15px;
+  font-family: arial;
+  margin: 0;
+}
+body .resp {
+  padding-left: 120px;
+}
+body .eval {
+  display: block;
+  margin: 0 auto 1.25rem;
+  border-radius: 20px;
+}
+body #lang {
+  display: block;
+  position: relative;
+  color: #9fa437;
+  font-family: verdana;
+  font-size: 18px;
+  margin: 0;
+  top: 10px;
+}
+body #adje {
+  margin: 0;
+  font-family: arial;
+  margin-top: 17px;
+  font-size: 14px;
+}
+body #mexican {
+  display: block;
+  position: relative;
+  margin: 0px;
+  font-family: arial;
+  font-size: 14px;
+  color: #f00;
+  top: 4px;
+}
+body #there {
+  margin: 0;
+  position: relative;
+  top: 11px;
+  font-family: arial;
+  font-size: 14px;
+}
+body #ones {
+  display: block;
+  position: relative;
+  margin: 0px;
+  font-size: 14px;
+  font-family: arial;
+  top: 21px;
+}
+body .r1 {
+  color: #f00;
+  font-size: 14px;
+  font-family: 14px;
+}
+body #comp {
+  position: relative;
+  top: 27px;
+  font-family: arial;
+  font-size: 14px;
+  margin: 0px;
+}
+body #place {
+  position: relative;
+  top: 13px;
+  font-family: arial;
+  font-size: 14px;
+}
+body #boton1 {
+  display: block;
+  position: relative;
+  margin: 0;
+  border-radius: 10px;
+  top: 3px;
+  left: 290px;
+}
+body #t2 {
+  display: block;
+  position: relative;
+  font-family: arial;
+  font-size: 14px;
+  margin: 0;
+  top: 10px;
+}
+body #tabla1 {
+  display: block;
+  position: relative;
+  top: -4px;
+  left: 130px;
+  font-size: 14px;
+  font-family: arial;
+}
+body #boton2 {
+  margin: 0;
+  top: -9px;
+  display: block;
+  position: relative;
+  left: 305px;
+  border-radius: 10px;
 }
