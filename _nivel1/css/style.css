@@ -32,22 +32,18 @@ body #cont #part1 p {
 body #cont #part1 p span {
   color: #116323;
 }
-body #cont .hello {
-  width: 200px;
+body #cont .logo {
+  width: 210px;
   height: 52px;
   margin-top: 10px;
   margin-left: -4px;
 }
-body #quest,
-body display block {
+body .titdorado {
   position: relative;
-  margin-left: 0;
-  margin: 0;
-  font-family: verdana;
+  top: 20px;
   font-size: 18px;
-  top: 18px;
   color: #9fa437;
-  text-align: left;
+  font-family: verdana;
 }
 body #read {
   display: block;
@@ -62,12 +58,12 @@ body #tabla {
   position: relative;
   width: 720px;
   height: 270px;
-  margin: 0;
+  margin: 5px;
   margin-left: 0;
   top: 50px;
   left: 100px;
 }
-body .boton {
+body .preg {
   font-size: 15px;
   font-family: arial;
   margin: 0;
@@ -79,6 +75,7 @@ body .eval {
   display: block;
   margin: 0 auto 1.25rem;
   border-radius: 20px;
+  top: 5px;
 }
 body #lang {
   display: block;
@@ -137,35 +134,122 @@ body #place {
   font-family: arial;
   font-size: 14px;
 }
-body #boton1 {
-  display: block;
-  position: relative;
-  margin: 0;
-  border-radius: 10px;
-  top: 3px;
-  left: 290px;
-}
 body #t2 {
-  display: block;
   position: relative;
   font-family: arial;
   font-size: 14px;
-  margin: 0;
-  top: 10px;
+  margin: auto;
+}
+body .cuadro {
+  position: relative;
+  margin: auto;
 }
 body #tabla1 {
   display: block;
   position: relative;
-  top: -4px;
+  top: px;
   left: 130px;
   font-size: 14px;
   font-family: arial;
 }
-body #boton2 {
+body .logo1 {
+  width: 230px;
+  height: 52px;
+  margin-top: 10px;
+  margin-left: -4px;
+}
+body .titulo {
+  margin: 0px;
+  position: relative;
+  top: 15px;
+  font-size: 18px;
+  font-family: verdana;
+  color: #61a34a;
+  margin-bottom: 10px;
+}
+body .instrucciones {
+  font-size: 14px;
+  font-family: arial;
+  color: #000;
   margin: 0;
-  top: -9px;
+  position: relative;
+  top: 10px;
+}
+body #organigrama {
   display: block;
   position: relative;
-  left: 305px;
-  border-radius: 10px;
+  top: 40px;
+  left: 128px;
+}
+body .txt {
+  position: relative;
+  font-family: arial;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  top: 20px;
+}
+body .azul {
+  position: relative;
+  font-size: 14px;
+  font-family: arial;
+  color: #3625d9;
+  margin: 0;
+  top: 35px;
+  margin-bottom: 40px;
+}
+body .letra {
+  font-family: arial;
+  font-size: 14px;
+  margin: 0px;
+}
+body #tabla2 {
+  position: relative;
+  font-family: arial;
+  font-size: 14px;
+  margin: auto;
+  left: 123px;
+}
+body .hoja {
+  position: relative;
+  display: block;
+  margin: 0;
+  top: 14px;
+  left: 277px;
+}
+body #recamara {
+  position: relative;
+  width: 307px;
+  height: 220px;
+}
+body .tx1 {
+  position: relative;
+  margin: 0;
+  font-family: arial;
+  font-size: 14px;
+  width: 400px;
+}
+body .rojo {
+  position: relative;
+  margin: 0;
+  color: #f00;
+  font-size: 15px;
+  font-family: arial;
+  top: 11px;
+}
+body #verb {
+  position: relative;
+  margin: 0;
+  top: -6px;
+  font-family: arial;
+  font-size: 14px;
+}
+body #cont td span {
+  top: 0;
+}
+body .imcuadro {
+  position: relative;
+  margin: auto;
+  display: block;
+  padding-bottom: 15px;
 }
