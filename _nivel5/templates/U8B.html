@@ -1,0 +1,306 @@
+<head>
+<title>Framework 5</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t1 {position:absolute;top:5;left:10;font-size:14;font-family:arial;width:570;color:#000000}
+#z1 {position:absolute;top:450;left:640;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z2 {position:absolute;top:640;left:600;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z4 {position:absolute;top:2200;left:480;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z5 {position:absolute;top:2430;left:450;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z6 {position:absolute;top:2690;left:400;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z7 {position:absolute;top:3080;left:600;font-size:14;font-family:arial;width:150;color:#ff0000}
+#z8 {position:absolute;top:4090;left:600;font-size:14;font-family:arial;width:150;color:#ff0000}
+#tit {font-size:18;font-family:verdana;color:#00ac9f}
+#bl {font-size:14;font-family:arial;color:#000066}
+#rd {font-size:14;font-family:arial;color:#ff0000}
+#lt {font-size:18;font-family:arial}
+a {color:#00aaa7; text-decoration:none;font-size:14;font-family:arial}
+a:hover {color:#ff0000; text-decoration: underline}
+td {font-size:14;font-family:arial;color:#000000}
+</style>
+<script language="javascript">
+function k1(){
+if(q1a.value=="2"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value=="1"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value=="4"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value=="3"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+z1.innerHTML=s1a+s1b+s1c+s1d
+}
+function k2(){
+if(q2a.checked==false&q2b.checked==true){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2c.checked==false&q2d.checked==true){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2e.checked==true&q2f.checked==false){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2g.checked==true&q2h.checked==false){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+if(q2i.checked==true&q2j.checked==false){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
+if(q2k.checked==true&q2l.checked==false){s2f="6. Correct<br>"}else{s2f="6. Incorrect<br>"}
+z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f
+}
+function k4(){
+if(q4a.checked==false&q4b.checked==true&q4c.checked==false&q4d.checked==false){s4a="1. Correct<br>"}else{s4a="1. Incorrect<br>"}
+z4.innerHTML=s4a
+}
+function k5(){
+if(q5a.value==4){s5a="1. Correct<br>"}else{s5a="1. Incorrect<br>"}
+if(q5b.value==1){s5b="2. Correct<br>"}else{s5b="2. Incorrect<br>"}
+if(q5c.value==5){s5c="3. Correct<br>"}else{s5c="3. Incorrect<br>"}
+if(q5d.value==3){s5d="4. Correct<br>"}else{s5d="4. Incorrect<br>"}
+if(q5e.value==2){s5e="5. Correct<br>"}else{s5e="5. Incorrect<br>"}
+z5.innerHTML=s5a+s5b+s5c+s5d+s5e
+}
+function k6(){
+if(q6a.value==7){s6a="1. Correct<br>"}else{s6a="1. Incorrect<br>"}
+if(q6b.value==9){s6b="2. Correct<br>"}else{s6b="2. Incorrect<br>"}
+if(q6c.value==5){s6c="3. Correct<br>"}else{s6c="3. Incorrect<br>"}
+if(q6d.value==3){s6d="4. Correct<br>"}else{s6d="4. Incorrect<br>"}
+if(q6e.value==1){s6e="5. Correct<br>"}else{s6e="5. Incorrect<br>"}
+if(q6f.value==6){s6f="6. Correct<br>"}else{s6f="6. Incorrect<br>"}
+if(q6g.value==2){s6g="7. Correct<br>"}else{s6g="7. Incorrect<br>"}
+if(q6h.value==8){s6h="8. Correct<br>"}else{s6h="8. Incorrect<br>"}
+if(q6i.value==4){s6i="9. Correct<br>"}else{s6i="9. Incorrect<br>"}
+z6.innerHTML=s6a+s6b+s6c+s6d+s6e+s6f+s6g+s6h+s6i
+}
+function k7(){
+if(q7a.checked==false&q7b.checked==true){s7a="1. Correct<br>"}else{s7a="1. Incorrect<br>"}
+if(q7c.checked==false&q7d.checked==true){s7b="2. Correct<br>"}else{s7b="2. Incorrect<br>"}
+if(q7e.checked==true&q7f.checked==false){s7c="3. Correct<br>"}else{s7c="3. Incorrect<br>"}
+if(q7g.checked==true&q7h.checked==false){s7d="4. Correct<br>"}else{s7d="4. Incorrect<br>"}
+if(q7i.checked==true&q7j.checked==false){s7e="5. Correct<br>"}else{s7e="5. Incorrect<br>"}
+if(q7k.checked==false&q7l.checked==true){s7f="6. Correct<br>"}else{s7f="6. Incorrect<br>"}
+if(q7m.checked==false&q7n.checked==true){s7g="7. Correct<br>"}else{s7g="7. Incorrect<br>"}
+if(q7o.checked==true&q7p.checked==false){s7h="8. Correct<br>"}else{s7h="8. Incorrect<br>"}
+if(q7q.checked==true&q7r.checked==false){s7i="9. Correct<br>"}else{s7i="9. Incorrect<br>"}
+if(q7s.checked==true&q7t.checked==false){s7j="10. Correct<br>"}else{s7j="10. Incorrect<br>"}
+if(q7u.checked==true&q7v.checked==false){s7k="11. Correct<br>"}else{s7k="11. Incorrect<br>"}
+if(q7w.checked==true&q7x.checked==false){s7l="12. Correct<br>"}else{s7l="12. Incorrect<br>"}
+if(q7y.checked==false&q7z.checked==true){s7m="13. Correct<br>"}else{s7m="13. Incorrect<br>"}
+if(q7aa.checked==false&q7ab.checked==true){s7n="14. Correct<br>"}else{s7n="14. Incorrect<br>"}
+if(q7ac.checked==false&q7ad.checked==true){s7o="15. Correct<br>"}else{s7o="15. Incorrect<br>"}
+if(q7ae.checked==true&q7af.checked==false){s7p="16. Correct<br>"}else{s7p="16. Incorrect<br>"}
+z7.innerHTML=s7a+s7b+s7c+s7d+s7e+s7f+s7g+s7h+s7i+s7j+s7k+s7l+s7m+s7n+s7o+s7p
+}
+function k8(){
+if(q8a.value==2){s8a="1. Correct<br>"}else{s8a="1. Incorrect<br>"}
+if(q8b.value==1){s8b="2. Correct<br>"}else{s8b="2. Incorrect<br>"}
+if(q8c.value==2){s8c="3. Correct<br>"}else{s8c="3. Incorrect<br>"}
+if(q8d.value==1){s8d="4. Correct<br>"}else{s8d="4. Incorrect<br>"}
+if(q8e.value==2){s8e="5. Correct<br>"}else{s8e="5. Incorrect<br>"}
+if(q8f.value==2){s8f="6. Correct<br>"}else{s8f="6. Incorrect<br>"}
+if(q8g.value==1){s8g="7. Correct<br>"}else{s8g="7. Incorrect<br>"}
+if(q8h.value==1){s8h="8. Correct<br>"}else{s8h="8. Incorrect<br>"}
+if(q8i.value==2){s8i="9. Correct<br>"}else{s8i="9. Incorrect<br>"}
+if(q8j.value==2){s8j="10. Correct<br>"}else{s8j="10. Incorrect<br>"}
+if(q8k.value==2){s8k="11. Correct<br>"}else{s8k="11. Incorrect<br>"}
+if(q8l.value==2){s8l="12. Correct<br>"}else{s8l="12. Incorrect<br>"}
+if(q8m.value==2){s8m="13. Correct<br>"}else{s8m="13. Incorrect<br>"}
+z8.innerHTML=s8a+s8b+s8c+s8d+s8e+s8f+s8g+s8h+s8i+s8j+s8k+s8l+s8m
+}
+</script>
+</head>
+<body>
+
+<div id="t1">
+<span id="tit">Modals</span>
+<p>
+<b>1. Here are four short news items from a website called TV New Zealand. Can you put them in the order they appeared?</b>
+<p>
+<b>story 1</b><br>
+A search is due to resume at first light for a missing American tourist, Raewyn Tonkin, 30. Her car was found abandoned yesteday, with many of her possessions, including her passport and money. Police are concerned for the woman's safety. 
+<p>
+<b>story 2</b><br>
+An aerial search for an American woman thought to be missing on Banks Peninsula has been <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">called</a> off for the night. An air force helicopter has failed to find Raewyn Tonkin, 30, from Washington State. Police say a local farmer discovered her car unlocked near Akaroa this morning. 
+<p>
+<b>story 3</b><br>
+The mystery of a missing American woman was solved yesterday when police <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">traced</a> her to Christchurch. Raewyn Tonkin, 30, was found safe and well in a central <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">backpackers' hostel</a> last night. The search began on Saturday after a farmer noticed her abandoned car. Yesterday afternoon police called off the search after Miss Tonkin was seen on a bus bound for Christchurch in the company of a man described as an Australian tourist. 
+<p>
+<b>story 4</b><br>
+A search is underway in and around the Banks Peninsula town of Akaroa for the American tourist who has been missing since yesterday. Raewyn Tonkin, 30, is <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">overdue</a> from a tour around the South Island and concern is <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">mounting</a> for her <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">well-being</a>. Twenty searchers are checking the <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">shoreline</a> and surrounding forest areas. 
+<p>
+In what order did these news stories appear? <input type="text" name="q1a" size=3> <input type="text" name="q1b" size=3> <input type="text" name="q1c" size=3> <input type="text" name="q1d" size=3>
+<p>
+<center>
+<button onclick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Here are some opinions about the missing tourist story. Do you agree with them?</b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>She might have had a nervous breakdown.</td><td width=30></td><td><input type="checkbox" name="q2a"> Yes <input type="checkbox" name="q2b"> No</td></tr>
+<tr><td>She should have had a fight with her boyfriend.</td><td width=30></td><td><input type="checkbox" name="q2c"> Yes <input type="checkbox" name="q2d"> No</td></tr>
+<tr><td>She should have known the police would start looking for her.</td><td width=30></td><td><input type="checkbox" name="q2e"> Yes <input type="checkbox" name="q2f"> No</td></tr>
+<tr><td>The police search must have cost a lot of money.</td><td width=30></td><td><input type="checkbox" name="q2g"> Yes <input type="checkbox" name="q2h"> No</td></tr>
+<tr><td>The man on the bus should've been her boyfriend.</td><td width=30></td><td><input type="checkbox" name="q2i"> Yes <input type="checkbox" name="q2j"> No</td></tr>
+<tr><td>She must've felt a little stupid when the police found her.</td><td width=30></td><td><input type="checkbox" name="q2k"> Yes <input type="checkbox" name="q2l"> No</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. Before you read the text here is a list of the 20 <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">keywords</a> in the text plus the number of times they occur in the text. Can you guess what the text is about?</b>
+<p>
+Betty (8)<br>
+her (22)<br>
+Betty's (5)<br>
+she (19)<br>
+Diane (4)<br>
+door (5)<br>
+disappearance (3)<br>
+no (10)<br>
+school (5)<br>
+Jack (3)<br>
+there (9)<br>
+had (10)<br>
+went (4)<br>
+home (5)<br>
+anything (3)<br>
+nothing (3)<br>
+seen (3)<br>
+was (13)<br>
+day (4)<br>
+something (3) 
+<p>
+<b>4. Now, read the newspaper article and decide the best title:</b>
+<p>
+Betty Ross disappeared in a thunderstorm. She waved good-bye to her children from the door of her <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">secluded</a> home, the lightning cracked, and she was never seen again. That was a year ago. Since then her family has heard nothing from her, nobody has seen her, and there is not even the faintest clue as to where she might be. 
+<p>
+It all started on a Tuesday morning in the small town of Edmond. It was 8:50 a.m. Betty Ross stood at the door of her home and waved good-bye to her two children as they set off for school. It was special day for her son Robbie. He had been selected to travel to Aberdeen to represent his school playing soccer. She wished him luck and closed the door. 
+<p>
+She had a busy day ahead of her. An <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">insurance assessor</a> was coming that morning to look at her car. The week before it had been set on fire&#151;deliberately, say the police. At lunchtime she had arranged to meet her best friend, Diane, for something to eat and a chat. And then she was to meet her lawyer to discuss the details of her <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">impending</a> divorce. She kept none of these appointments.
+<p>
+A few minutes after the kids left, she must have realized that her well-planned day wasn't perfect. Perhaps the lawyer's appointment would be longer than she had planned. She phoned Robbie's school to check what time he would be back from Aberdeen. The school secretary didn't know, but she said she would phone back. Ten minutes later she phoned. The phone rang and rang. There was no reply. The school secretary is the last person known to have heard Betty's voice. 
+<p>
+At 11 a.m. her friend Diane went and banged on the door of Betty's home. She went away and came back again at 1 p.m.. There was still no reply. The door was unlocked so she went inside. There were breakfast things on the table. Betty's hairdryer was still plugged in. But there was no sign of Betty. 
+<p>
+Diane went home and kept phoning all afternoon. At around 7 p.m. Robbie answered. Betty still wasn't home. Diane called the police. They searched the house but found nothing that might indicate where she was or why she had left. Her handbag appeared to be gone, but not her glasses. Nor her passport. All her clothes were still in the closet. There were no signs of violence. Since her disappearance no money has been <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">withdrawn</a> from her bank account. 
+<p>
+"Something criminal has happened to Betty, there's no doubt about that," says the detective leading the case, Detective Chief Inspector James Marshall. But there is no evidence of a crime. No one in Edmond saw anything unusual on the day Betty disappeared. Not even the prospect of a 20,000-dollar reward has <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">jogged their memories</a>.
+<p>
+Of course, there are rumors. Suspicion naturally fell on her <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">estranged</a> husband, Jack. Betty and Jack had been separated for a month. She had been living alone with the children since then. Friends say that Betty and Jack had endured a stormy marriage. But there is absolutely no evidence to suggest that he had anything to do with Betty's disappearance. 
+<p>
+Besides, he has a cast-iron <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">alibi</a> which proves that he was working at the time of Betty's disappearance. "It is the most frustrating case I have ever worked on," says Inspector Marshall. "We normally have something to go on. But in this case we have nothing. Nobody has seen anything. We have no main lines of inquiry anymore." 
+<p>
+<b>Now, choose the best headline for the story.</b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td><input type="checkbox" name="q4a"></td><td>THE WOMAN WHO WENT AWAY</td></tr>
+<tr><td><input type="checkbox" name="q4b"></td><td>THE WOMAN WHO DISAPPEARED</td></tr>
+<tr><td><input type="checkbox" name="q4c"></td><td>THE WOMAN WHO NEVER CAME BACK</td></tr>
+<tr><td><input type="checkbox" name="q4d"></td><td>THE WOMAN WHO WAS KIDNAPPED</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k4()">Check answers</button>
+</center>
+<p>
+<b>5. Match the person with the description on the right.</b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>1. Betty Ross</td><td width=20></td><td><select name="q5a"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5</select> a detective</td></tr>
+<tr><td>2. Robbie</td><td></td><td><select name="q5b"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5</select> the woman who went missing</td></tr>
+<tr><td>3. Jack</td><td></td><td><select name="q5c"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5</select> Betty's best friend</td></tr>
+<tr><td>4. James Marshall</td><td></td><td><select name="q5d"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5</select> Betty's husband</td></tr>
+<tr><td>5. Diane</td><td></td><td><select name="q5e"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5</select> Betty's son</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k5()">Check answers</button>
+</center>
+<p>
+<b>6. Put the events in the order they happened.</b>
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>Robbie answered the phone.</td><td> <select name="q6a"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>The police searched the house.</td><td> <select name="q6b"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>The school secretary phoned Betty.</td><td> <select name="q6c"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>Betty waved good-bye to her children.</td><td> <select name="q6d"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>Betty and Jack separated.</td><td> <select name="q6e"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>Diane went and banged on Betty's door.</td><td> <select name="q6f"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>Betty's car was set on fire.</td><td> <select name="q6g"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>Diane called the police.</td><td> <select name="q6h"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+<tr><td>Betty phoned the school.</td><td> <select name="q6i"><option value=0>?<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9</select></td></tr>
+</table>
+<p>
+<center>
+<button onclick="k6()">Check answers</button>
+</center>
+<p>
+<b>7. True or false?</b> 
+<p>
+<table cellpadding=0 cellspacing=10>
+<tr><td>1.</td><td>Diane was the last known person to see Betty.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7a"> true <input type="checkbox" name="q7b"> false</td></tr>
+<tr><td>2.</td><td>Betty left her house at 8:50 am on a Tuesday morning.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7c"> true <input type="checkbox" name="q7d"> false</td></tr>
+<tr><td>3.</td><td>Betty had arranged to meet Diane for lunch.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7e"> true <input type="checkbox" name="q7f"> false</td></tr>
+<tr><td>4.</td><td>Betty has been missing for a year.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7g"> true <input type="checkbox" name="q7h"> false</td></tr>
+<tr><td>5.</td><td>On that Tuesday Robbie had represented his school playing soccer.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7i"> true <input type="checkbox" name="q7j"> false</td></tr>
+<tr><td>6.</td><td>Betty's car had caught fire accidentally.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7k"> true <input type="checkbox" name="q7l"> false</td></tr>
+<tr><td>7.</td><td>Betty and Jack were divorced.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7m"> true <input type="checkbox" name="q7n"> false</td></tr>
+<tr><td>8.</td><td>Betty wasn't sure when Robbie was coming home.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7o"> true <input type="checkbox" name="q7p"> false</td></tr>
+<tr><td>9.</td><td>The school secretary was the last person known to have spoken to Betty.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7q"> true <input type="checkbox" name="q7r"> false</td></tr>
+<tr><td>10.</td><td>Betty must have disappeared around shortly after 9 a.m.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7s"> true <input type="checkbox" name="q7t"> false</td></tr>
+<tr><td>11.</td><td>Betty didn't keep her appointment with the insurance assessor.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7u"> true <input type="checkbox" name="q7v"> false</td></tr>
+<tr><td>12.</td><td>Robbie came home before 7 p.m.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7w"> true <input type="checkbox" name="q7x"> false</td></tr>
+<tr><td>13.</td><td>Betty appeared to have taken her handbag and her passport.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7y"> true <input type="checkbox" name="q7z"> false</td></tr>
+<tr><td>14.</td><td>The detective doesn't doubt that something criminal has happened.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7aa"> true <input type="checkbox" name="q7ab"> false</td></tr>
+<tr><td>15.</td><td>There is no proof that Jack was working when Betty disappeared.</td></tr>
+<tr><td></td><td><input type="checkbox" name="q7ac"> true <input type="checkbox" name="q7ad"> false</td></tr>
+<tr><td>16.</td><td>There have been no <a href="#" onclick="window.open('t-u8b-1.htm','_blank','width=275');">sightings</a> of Betty since she disappeared.   </td></tr>
+<tr><td></td><td><input type="checkbox" name="q7ae"> true <input type="checkbox" name="q7af"> false</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k7()">Check answers</button>
+</center>
+<p>
+<b>8. Complete these sentences about the text by choosing the correct verb.</b>
+<p>
+<table cellpadding=0 cellspacing=10>				
+<tr><td>1. After her children left Betty <select name="q8a"><option value=0>Choose answer<option value=1>realized<option value=2>must have realized</select> her well-planned day wasn't perfect.</td></tr>
+<tr><td>2. The school secretary <select name="q8b"><option value=0>Choose answer<option value=1>was<option value=2>must have</select> been the last person known to have talked to Betty.</td></tr>
+<tr><td>3. Betty <select name="q8c"><option value=0>Choose answer<option value=1>disappeared<option value=2>must have disappeared</select> around 9 a.m.</td></tr>
+<tr><td>4. The door <select name="q8d"><option value=0>Choose answer<option value=1>was<option value=2>must have been</select> unlocked.</td></tr>
+<tr><td>5. Betty <select name="q8e"><option value=0>Choose answer<option value=1>was<option value=2>must have been</select> drying her hair.</td></tr>
+<tr><td>6. Betty <select name="q8f"><option value=0>Choose answer<option value=1>took<option value=2>must have taken</select> her handbag with her.</td></tr>
+<tr><td>7. Betty <select name="q8g"><option value=0>Choose answer<option value=1>didn't take<option value=2>can't have taken</select> her passport with her.</td></tr>
+<tr><td>8. Jack <select name="q8h"><option value=0>Choose answer<option value=1>was<option value=2>must have been</select> working when Betty disappeared.</td></tr>
+<tr><td>9. Jack <select name="q8i"><option value=0>Choose answer<option value=1>didn't have<option value=2>can't have had</select> anything to do with Betty's disappearance.</td></tr>
+<tr><td>10. Jack <select name="q8j"><option value=0>Choose answer<option value=1>set fire<option value=2>could have set fire</select> to Betty's car.</td></tr>
+<tr><td>11. Betty <select name="q8k"><option value=0>Choose answer<option value=1>planned<option value=2>could have planned</select> her own disappearance.</td></tr>
+<tr><td>12. Betty <select name="q8l"><option value=0>Choose answer<option value=1>had<option value=2>could have had</select> a boyfriend.</td></tr>
+<tr><td>13. Diane <select name="q8m"><option value=0>Choose answer<option value=1>must have<option value=2>could have</select> helped her disappear.</td></tr>
+</table>
+<p>
+<center>
+<button onclick="k8()">Check answers</button>
+</center>
+<p>
+</div>
+
+<div id="z1">
+</div>
+<div id="z2">
+</div>
+<div id="z4">
+</div>
+<div id="z5">
+</div>
+<div id="z6">
+</div>
+<div id="z7">
+</div>
+<div id="z8">
+</div>
