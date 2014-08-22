@@ -1,154 +1,40 @@
-<script language="javascript">
+<script>
+	v = {
 
-function k1(){
-s1a="<br>"
-
-if(q1c.checked){s1a="Correct<br>"}
-if(q1b.checked){s1a="Incorrect<br>"}
-if(q1a.checked){s1a="Incorrect<br>"}
-if(q1d.checked){s1a="Incorrect<br>"}
-
-z1.innerHTML=s1a
-}
-
-function k1a(){
-s1a="<br>"
-
-if(q1e.checked){s1a="Correct<br>"}
-if(q1f.checked){s1a="Incorrect<br>"}
-if(q1g.checked){s1a="Incorrect<br>"}
-if(q1h.checked){s1a="Incorrect<br>"}
-
-z1a.innerHTML=s1a
-
-}
-
-function k1b(){
-s1a="<br>"
-
-if(q1l.checked){s1a="Correct<br>"}
-if(q1j.checked){s1a="Incorrect<br>"}
-if(q1k.checked){s1a="Incorrect<br>"}
-if(q1i.checked){s1a="Incorrect<br>"}
-
-z1b.innerHTML=s1a
-
-}
-
-function k2(){
-s2a="<br>"
-s2b="<br>"
-s2c="<br>"
-s2d="<br>"
-s2e="<br>"
-s2f="<br>"
-s2g="<br>"
-s2h="<br>"
-
-if(q2a.checked){s2a="1.-Correct<br>"}
-if(q2b.checked){s2a="1.-Incorrect<br>"}
-if(q2c.checked){s2a="1.-Incorrect<br>"}
-
-if(q2d.checked){s2b="2.-Correct<br>"}
-if(q2e.checked){s2b="2.-Incorrect<br>"}
-if(q2f.checked){s2b="2.-Incorrect<br>"}
-
-if(q2g.checked){s2c="3.-Incorrect<br>"}
-if(q2h.checked){s2c="3.-Incorrect<br>"}
-if(q2i.checked){s2c="3.-Correct<br>"}
-
-if(q2j.checked){s2d="4.-Correct<br>"}
-if(q2k.checked){s2d="4.-Incorrect<br>"}
-if(q2l.checked){s2d="4.-Incorrect<br>"}
-
-if(q2m.checked){s2e="5.-Incorrect<br>"}
-if(q2n.checked){s2e="5.-Correct<br>"}
-if(q2o.checked){s2e="5.-Incorrect<br>"}
-
-if(q2p.checked){s2f="6.-Correct<br>"}
-if(q2q.checked){s2f="6.-Incorrect<br>"}
-if(q2r.checked){s2f="6.-Incorrect<br>"}
-
-if(q2s.checked){s2g="7.-Incorrect<br>"}
-if(q2t.checked){s2g="7.-Incorrect<br>"}
-if(q2v.checked){s2g="7.-Correct<br>"}
-
-if(q2y.checked){s2h="8.-Correct<br>"}
-if(q2x.checked){s2h="8.-Incorrect<br>"}
-if(q2w.checked){s2h="8.-Incorrect<br>"}
-
-if(q2z3.checked){s2i="9.-Correct<br>"}
-if(q2z2.checked){s2i="9.-Incorrect<br>"}
-if(q2z.checked){s2i="9.-Incorrect<br>"}
-
-z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f+s2g+s2h+s2i
-}
-
-function k3(){
-if(q3a.value=="2"){s3a="1.- Correct<br>"}
-if(q3a.value!="2"){s3a="1.- Incorrect<br>"}
-
-if(q3b.value=="1"){s3b="2.- Correct<br>"}
-if(q3b.value!="1"){s3b="2.- Incorrect<br>"}
-
-if(q3c.value=="3"){s3c="3.- Correct<br>"}
-if(q3c.value!="3"){s3c="3.- Incorrect<br>"}
-
-if(q3d.value=="2"){s3d="4.- Correct<br>"}
-if(q3d.value!="2"){s3d="4.- Incorrect<br>"}
-
-if(q3e.value=="1"){s3e="5.- Correct<br>"}
-if(q3e.value!="1"){s3e="5.- Incorrect<br>"}
-
-if(q3f.value=="2"){s3f="6.- Correct<br>"}
-if(q3f.value!="2"){s3f="6.- Incorrect<br>"}
-
-if(q3g.value=="1"){s3g="7.- Correct<br>"}
-if(q3g.value!="1"){s3g="7.- Incorrect<br>"}
-
-if(q3h.value=="3"){s3h="8.- Correct<br>"}
-if(q3h.value!="3"){s3h="8.- Incorrect<br>"}
+		q1a:'3',
+		q1b:'1',
+		q1c:'1',
+		q2a:'1',
+		q2b:'1',
+		q2c:'3',
+		q2d:'1',
+		q2e:'2',
+		q2f:'1',
+		q2g:'3',
+		q2h:'1',
+		q2i:'1',
+		q3a:'2',
+		q3b:'1',
+		q3c:'3',
+		q3d:'2',
+		q3e:'1',
+		q3f:'2',
+		q3g:'1',
+		q3h:'3',
+		q4a:'2',
+		q4b:'2',
+		q4c:'1',
+		q4d:'1',
+		q4e:'1',
+		q4f:'2',
+		q4g:'2',
+		q4h:'2',
 
 
-z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
-}
-function k4(){
-s4a="<br>"
-s4b="<br>"
-s4c="<br>"
-s4d="<br>"
-s4e="<br>"
-s4f="<br>"
-s4g="<br>"
-s4h="<br>"
-
-if(q4b.checked){s4a="1.-Correct<br>"}
-if(q4a.checked){s4a="1.-Incorrect<br>"}
-
-if(q4d.checked){s4b="2.-Correct<br>"}
-if(q4c.checked){s4b="2.-Incorrect<br>"}
-
-if(q4e.checked){s4c="3.-Correct<br>"}
-if(q4f.checked){s4c="3.-Incorrect<br>"}
-
-if(q4g.checked){s4d="4.-Correct<br>"}
-if(q4h.checked){s4d="4.-Incorrect<br>"}
-
-if(q4i.checked){s4e="5.-Correct<br>"}
-if(q4j.checked){s4e="5.-Incorrect<br>"}
-
-if(q4l.checked){s4f="6.-Correct<br>"}
-if(q4k.checked){s4f="6.-Incorrect<br>"}
-
-if(q4n.checked){s4g="7.-Correct<br>"}
-if(q4m.checked){s4g="7.-Incorrect<br>"}
-
-if(q4p.checked){s4h="8.-Correct<br>"}
-if(q4o.checked){s4h="8.-Incorrect<br>"}
-
-z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g+s4h
-}
+	}
 </script>
+
+
 <div id="t0">
 <b>Icons</b>
 <p>
