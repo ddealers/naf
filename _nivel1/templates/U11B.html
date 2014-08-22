@@ -1,32 +1,29 @@
 <script>
 	v = {
-		q1a:'9'
-		q1b:'4'
-		q1c:'7'
-		q1d:'1'
-		q1e:'5'
-		q1f:'2'
-		q1g:'8'
-		q1h:'6'
-		q1i:'3'
-		q2a:'1'
-		q2c:'0'
-		q2e:'1'
-		q2g:'1'
+		q1a:'9',
+		q1b:'4',
+		q1c:'7',
+		q1d:'1',
+		q1e:'5',
+		q1f:'2',
+		q1g:'8',
+		q1h:'6',
+		q1i:'3',
+		q2a:'1',
+		q2b:'0',
+		q2c:'1',
+		q2d:'1',
+		q2e:'0',
+		q2f:'1',
+		q2g:'0',
+		q2h:'0',
 		q2i:'0'
-		q2k:'1'
-		q2m:'0'
-		q2o:'0'
-		q2q:'0'
-
-
-
-if(tt<=3){s2a="<b>Score 0-3</b><p> You're not stylish at all - and you probably don't care that you're not stylish. You generally wear conservative clothes, and you don't worry about what other people think of what you wear. "}
-if(tt>3&tt<=7){s2a="<b>Score 4-7</b><p> You are conscious about what you wear, but you don't spend too much time on clothes and appearance. You feel happy with the way you look and the clothes you wear. "}
-if(tt>7){s2a="<b>Score 8-10</b><p> You are very interested in clothes and your appearance, and you spend time and money on it. You know about what's stylish and what's not stylish."}
-
-		
 	}
+	/*
+	if(tt<=3){s2a="<b>Score 0-3</b><p> You're not stylish at all - and you probably don't care that you're not stylish. You generally wear conservative clothes, and you don't worry about what other people think of what you wear. "}
+	if(tt>3&tt<=7){s2a="<b>Score 4-7</b><p> You are conscious about what you wear, but you don't spend too much time on clothes and appearance. You feel happy with the way you look and the clothes you wear. "}
+	if(tt>7){s2a="<b>Score 8-10</b><p> You are very interested in clothes and your appearance, and you spend time and money on it. You know about what's stylish and what's not stylish."}
+		*/
 </script>
 <form id="t1">
 <img class="logo1" src="img/t-u11.jpg">
@@ -196,7 +193,7 @@ if(tt>7){s2a="<b>Score 8-10</b><p> You are very interested in clothes and your a
 </center>
 <p>
 <center>
-<button class="eval" data-target="t1">Check answers</button>
+<button class="eval" data-target="t1" data-draw="z1">Check answers</button>
 </center>
 </p>
 </form>
@@ -205,57 +202,57 @@ if(tt>7){s2a="<b>Score 8-10</b><p> You are very interested in clothes and your a
 <p class="instrucciones">
 1 What are Levis?
 </p>
-<input type="checkbox" name="q2a"> a <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>brand name</b></a> for jeans
-<input type="checkbox" name="q2b"> a brand name for sneakers
+<input type="radio" name="q2a" value=1> a <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>brand name</b></a> for jeans
+<input type="radio" name="q2a" value=0> a brand name for sneakers
 <p class="instrucciones">
 2 What clothes do you normally wear? 
 </p>
-<input type="checkbox" name="q2c"> a suit and tie
-<input type="checkbox" name="q2d"> <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>casual</b></a> clothes
+<input type="radio" name="q2b" value=1> a suit and tie
+<input type="radio" name="q2b" value=0> <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>casual</b></a> clothes
  <p class="instrucciones">
 3 How often do you buy new clothes? 
 </p>
-<input type="checkbox" name="q2e"> more than twice a year
-<input type="checkbox" name="q2f"> less than twice a year
+<input type="radio" name="q2c" value=1> more than twice a year
+<input type="radio" name="q2c" value=0> less than twice a year
  <p class="instrucciones">
 4 Where do you normally buy your clothes? 
 </p>
-<input type="checkbox" name="q2g"> in a clothing store
-<input type="checkbox" name="q2h"> in a big supermarket
+<input type="radio" name="q2d" value=1> in a clothing store
+<input type="radio" name="q2d" value=0> in a big supermarket
  <p class="instrucciones">
 5 What is or are Raybans? 
 </p>
-<input type="checkbox" name="q2i"> sunscreen
-<input type="checkbox" name="q2j"> sunglasses
+<input type="radio" name="q2e" value=1> sunscreen
+<input type="radio" name="q2e" value=0> sunglasses
  <p class="instrucciones">
 6 Do you ever buy fashion magazines? 
 </p>
-<input type="checkbox" name="q2k"> No
-<input type="checkbox" name="q2l">  Yes
+<input type="radio" name="q2f" value=1> No
+<input type="radio" name="q2f" value=0>  Yes
  <p class="instrucciones">
 7 A colleague at work starts to wear the same clothes as you. What's your reaction? 
 </p>
-<input type="checkbox" name="q2m"> You're pleased 
-<input type="checkbox" name="q2n">  You think your colleague is little strange.
+<input type="radio" name="q2g" value=1> You're pleased 
+<input type="radio" name="q2g" value=0>  You think your colleague is little strange.
  <p class="instrucciones">
 8 What do Christian Dior and Coco Chanel have in common? 
 </p>
-<input type="checkbox" name="q2o"> they are both models
-<input type="checkbox" name="q2p"> they are both clothes designers
+<input type="radio" name="q2h" value=1> they are both models
+<input type="radio" name="q2h" value=0> they are both clothes designers
  <p class="instrucciones">
 9 What kind of clothing do the brands Nike and Adidas make? 
 </p>
-<input type="checkbox" name="q2q"> <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>demin</b></a> jeans 
-<input type="checkbox" name="q2r"> sports clothing
+<input type="radio" name="q2i" value=1> <a href="#" onclick="window.open('u11b-t1.htm','_blank','width=400,height=530');"><b>demin</b></a> jeans 
+<input type="radio" name="q2i" value=0> sports clothing
  <p class="instrucciones">
 10 Which of these two things would you prefer to wear? 
 </p>
-<input type="checkbox" name="q2s"> a big T-shirt
-<input type="checkbox" name="q2t"> a pair of jeans 
+<input type="radio" name="q2j" value=1> a big T-shirt
+<input type="radio" name="q2j" value=0> a pair of jeans 
  <p>
 </table>
 </p>
-<button class="eval" data-target="t2">Check answers</button>
+<button class="eval" data-target="t2" data-draw="z2">Check answers</button>
 </form>
 
 <div id="z1">
