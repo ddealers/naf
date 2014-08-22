@@ -287,9 +287,6 @@ body .imcuadro {
   margin: auto;
   padding-bottom: 15px;
 }
-body .letra p span {
-  top: 0;
-}
 body .enca {
   position: relative;
   margin: auto;
@@ -333,4 +330,15 @@ body .ro {
   color: #f00;
   font-size: 12px;
   font-family: arial;
+}
+body #t1 p {
+  font-family: verdana;
+  font-size: 14px;
+}
+body .num {
+  font-family: arial;
+  font-size: 12px;
+}
+body li.letra span {
+  top: 0;
 }
