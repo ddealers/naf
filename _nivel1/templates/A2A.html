@@ -22,31 +22,31 @@
 	}
 </script>
 <form id="t1">
-<img src="img/t-u2.jpg">
-<p>
-<span id="tit">Family members</span>
+<img class="logo1" src="img/t-u2.jpg">
+<p class="titulo">
+<span>Family members</span>
 </p>
-<b>1. Look at part of the family tree of this famous family. Can you guess the family's last name?</b> 
+<b class="instrucciones">1. Look at part of the family tree of this famous family. Can you guess the family's last name?</b> 
 <p>
-<img src="img/u2-a.jpg">
+<img id="organigrama" src="img/u2-a.jpg">
 </p>
-(m = married to)
-<p>
-<span id="bl">Clue 1. It's a famous American family.</span>
+<p class="txt">(m = married to)</p>
+<p class="azul">
+<span>Clue 1. It's a famous American family.</span>
 </p>
 <table cellpadding=4 cellspacing=0>
-<tr>
-	<td>Family's last name:</td>
-	<td><input type="text" name="q1a" size=12></td>
-	<td><button data-target="t1" data-draw="z1" class="eval">Check answers</button></td>
+<tr class="txt">
+<td>Family's last name:</td>
+<td><input type="text" name="q1a" size=12></td>
+<td><button data-target="t1" data-draw="z1" class="eval">Check answers</button></td>
 </tr>
 </table>
 </form>
 <form id="t2">
 <p>
-<b>2. Family Relations. Use the information in the family tree in exercise 1 to complete the following sentences.</b>
+<b class="instrucciones">2. Family Relations. Use the information in the family tree in exercise 1 to complete the following sentences.</b>
 </p>
-<table cellpadding=0 cellspacing=0 border=2 bordercolor="#009999">
+<table class="cuadro" cellpadding=0 cellspacing=0 border=2 bordercolor="#009999">
 <tr><td bgcolor="#ffcc99">&#160;</td><td bgcolor="#ffcc99" align="center"><b>Your Answer</b></td></tr>
 <tr><td bgcolor="#ffcc99"width=170>1 Edward is Robert's</td><td bgcolor="#ffcc99" width=130 align="center"><input type="text" name="q2a" size=12></td></tr>
 <tr><td bgcolor="#ffcc99">2 Tatiana is Caroline's</td><td bgcolor="#ffcc99"align="center"><input type="text" name="q2b" size=12></td></tr>
@@ -66,17 +66,17 @@
 <button data-target="t2" data-draw="z2" class="eval">Check answers</button>
 </center>
 </form>
-<form id="t3">
+<form >
 </p>
-<b>3. Look at the groups of words below. Which one is different in each question and why?</b>
+<b class="instrucciones">3. Look at the groups of words below. Which one is different in each question and why?</b>
 <p>
-<table cellpadding=2 cellspacing=0>
-<tr><td>1 <input type="radio" name="q3a" value=1> aunt</td><td><input type="radio" name="q3a" value=2> sister-in-law</td><td><input type="radio" name="q3a" value=3> husband</td><td><input type="radio" name="q3a" value=4> niece</td></tr>
-<tr><td>2 <input type="radio" name="q3b" value=1> grandmother</td><td><input type="radio" name="q3b" value=2> brother</td><td><input type="radio" name="q3b" value=3> wife</td><td><input type="radio" name="q3b" value=4> father</td></tr>
-<tr><td>3 <input type="radio" name="q3c" value=1> uncle</td><td><input type="radio" name="q3c" value=2> brother</td><td><input type="radio" name="q3c" value=3> aunt</td><td><input type="radio" name="q3c" value=4> grandson</td></tr>
-<tr><td>4 <input type="radio" name="q3d" value=1> nephew</td><td><input type="radio" name="q3d" value=2> cousin</td><td><input type="radio" name="q3d" value=3> brother</td><td><input type="radio" name="q3d" value=4> mother</td></tr>
-<tr><td>5 <input type="radio" name="q3e" value=1> father-in-law</td><td><input type="radio" name="q3e" value=2> stepbrother</td><td><input type="radio" name="q3e" value=3>  father</td><td><input type="radio" name="q3e" value=4> husband</td></tr>
-<tr><td>6 <input type="radio" name="q3f" value=1> grandfather</td><td><input type="radio" name="q3f" value=2> son</td><td><input type="radio" name="q3f" value=3> mother</td><td><input type="radio" name="q3f" value=4> uncle</td></tr>
+<table class="cuadro" cellpadding=2 cellspacing=0>
+<tr class="letra"><td>1 <input type="radio" name="q3a" value=1> aunt</td><td><input type="radio" name="q3a" value=2> sister-in-law</td><td><input type="radio" name="q3a" value=3> husband</td><td><input type="radio" name="q3a" value=4> niece</td></tr>
+<tr class="letra"><td>2 <input type="radio" name="q3b" value=1> grandmother</td><td><input type="radio" name="q3b" value=2> brother</td><td><input type="radio" name="q3b" value=3> wife</td><td><input type="radio" name="q3b" value=4> father</td></tr>
+<tr class="letra"><td>3 <input type="radio" name="q3c" value=1> uncle</td><td><input type="radio" name="q3c" value=2> brother</td><td><input type="radio" name="q3c" value=3> aunt</td><td><input type="radio" name="q3c" value=4> grandson</td></tr>
+<tr class="letra"><td>4 <input type="radio" name="q3d" value=1> nephew</td><td><input type="radio" name="q3d" value=2> cousin</td><td><input type="radio" name="q3d" value=3> brother</td><td><input type="radio" name="q3d" value=4> mother</td></tr>
+<tr class="letra"><td>5 <input type="radio" name="q3e" value=1> father-in-law</td><td><input type="radio" name="q3e" value=2> stepbrother</td><td><input type="radio" name="q3e" value=3>  father</td><td><input type="radio" name="q3e" value=4> husband</td></tr>
+<tr class="letra"><td>6 <input type="radio" name="q3f" value=1> grandfather</td><td><input type="radio" name="q3f" value=2> son</td><td><input type="radio" name="q3f" value=3> mother</td><td><input type="radio" name="q3f" value=4> uncle</td></tr>
 </table>
 </p>
 <button data-target="t3" data-draw="z3" class="eval">Check answers</button>
