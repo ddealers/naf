@@ -30,6 +30,9 @@ body #menu {
   height: 100%;
   color: #fff;
 }
+body #menu ol {
+  padding-bottom: 6rem;
+}
 body #menu a {
   color: #fff;
 }
@@ -104,7 +107,7 @@ body .eval {
   display: block;
   margin: 0 auto 1.25rem;
   border-radius: 20px;
-  top: 5px;
+  margin-top: 15px;
 }
 body #lang {
   display: block;
@@ -159,9 +162,10 @@ body #comp {
 }
 body #place {
   position: relative;
-  top: 13px;
+  top: 23px;
   font-family: arial;
   font-size: 14px;
+  padding-bottom: 20px;
 }
 body #t2 {
   position: relative;
@@ -197,7 +201,7 @@ body .titulo {
   margin-bottom: 10px;
 }
 body .instrucciones {
-  font-size: 14px;
+  font-size: 15px;
   font-family: arial;
   color: #000;
   margin: 0;
@@ -277,8 +281,21 @@ body #cont td span {
   top: 0;
 }
 body .imcuadro {
+  display: block;
   position: relative;
   margin: auto;
-  display: block;
   padding-bottom: 15px;
+}
+body .letra p span {
+  top: 0;
+}
+body .enca {
+  position: relative;
+  margin: auto;
+  font-size: 18px;
+  font-family: arial;
+}
+body #t1 p {
+  font-family: arial;
+  font-size: 14px;
 }
