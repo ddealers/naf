@@ -1,37 +1,21 @@
-<script language="javascript">
-function k1(){
-if(q1a.value=="f"|q1a.value=="F"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
-if(q1b.value=="h"|q1b.value=="H"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
-if(q1c.value=="a"|q1c.value=="A"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
-if(q1d.value=="d"|q1d.value=="D"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
-if(q1e.value=="j"|q1e.value=="J"){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
-if(q1f.value=="g"|q1f.value=="G"){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
-if(q1g.value=="b"|q1g.value=="B"){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
-if(q1h.value=="i"|q1h.value=="I"){s1h="8. Correct<br>"}else{s1h="8. Incorrect<br>"}
-if(q1i.value=="c"|q1i.value=="C"){s1i="9. Correct<br>"}else{s1i="9. Incorrect<br>"}
-if(q1j.value=="e"|q1j.value=="E"){s1j="10. Correct<br>"}else{s1j="10. Incorrect<br>"}
-z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h+s1i+s1j
-}
-function k2(){
-if(q2a.value==""){s2a="1. Correct<br>"}
-if(q2a.value!=""){s2a="1. Incorrect<br>"}
-if(q2b.value==""){s2b="2. Correct<br>"}
-if(q2b.value!=""){s2b="2. Incorrect<br>"}
-if(q2c.value==""){s2c="3. Correct<br>"}
-if(q2c.value!=""){s2c="3. Incorrect<br>"}
-if(q2d.value==""){s2d="4. Correct<br>"}
-if(q2d.value!=""){s2d="4. Incorrect<br>"}
-z2.innerHTML=s2a+s2b+s2c+s2d
-}
-function k3(){
-s3a="<br>"
-s3b="<br>"
-s3c="<br>"
-s3d="<br>"
-s3e="<br>"
-s3f="<br>"
-s3g="<br>"
-s3h="<br>"
+<script>
+	v = {
+
+		q1a:'f',
+		q1b:'h',
+		q1c:'a',
+		q1d:'d',
+		q1e:'j',
+		q1f:'g',
+		q1g:'b',
+		q1h:'i',
+		q1i:'c',
+		q1j:'e',
+		q2a:"",
+		q2b:"",
+		q2c:"",
+		q2d:"",
+
 if(q3a.checked){s3a="1.-Correct<br>"}
 if(q3b.checked){s3a="1.-Incorrect<br>"}
 if(q3d.checked){s3b="2.-Correct<br>"}
@@ -48,13 +32,7 @@ if(q3n.checked){s3g="7.-Correct<br>"}
 if(q3m.checked){s3g="7.-Incorrect<br>"}
 if(q3p.checked){s3h="8.-Correct<br>"}
 if(q3o.checked){s3h="8.-Incorrect<br>"}
-z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
-}
-function k4(){
-s4a="<br>"
-s4b="<br>"
-s4c="<br>"
-s4d="<br>"
+
 if(q4b.checked){s4a="1.-Correct<br>"}
 if(q4a.checked){s4a="1.-Incorrect<br>"}
 if(q4c.checked){s4b="2.-Correct<br>"}
@@ -63,8 +41,11 @@ if(q4f.checked){s4c="3.-Correct<br>"}
 if(q4e.checked){s4c="3.-Incorrect<br>"}
 if(q4g.checked){s4d="4.-Correct<br>"}
 if(q4h.checked){s4d="4.-Incorrect<br>"}
-z4.innerHTML=s4a+s4b+s4c+s4d
-}
+
+	}
+
+</script>
+
 <div id="t0">
 <img src="u6.jpg">
 <p>
