@@ -299,3 +299,10 @@ body #t1 p {
   font-family: arial;
   font-size: 14px;
 }
+body .titu2 {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #00b6cc;
+  top: 15px;
+}
