@@ -1,0 +1,192 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t0 {position:absolute;top:5;left:10;font-size:16;font-family:verdana;width:600;color:#842b68}
+#t1 {position:absolute;top:150;left:10;font-size:14;font-family:arial;width:600;color:#000000}
+td {font-size:14;font-family:arial;color:#000000}
+#z1 {position:absolute;top:160;left:650;font-size:14;font-family:arial;width:300;color:#ff0000}
+#z2 {position:absolute;top:350;left:650;font-size:14;font-family:arial;width:300;color:#ff0000}
+a {color:#d8e0e8; text-decoration:none;font-size:12;font-family:arial}
+a:hover {color:#b0d0ff; text-decoration: underline}
+</style>
+<script language="javascript">
+function k1(){
+r=0
+if(q1.value==1) {r1="1.- Correct <br>";r=r+1}
+if(q1.value!=1) {r1="1.- Incorrect<br>"}
+
+if(q2.value==2) {r2="2.- Correct<br>";r=r+1}
+if(q2.value!=2) {r2="2.- Incorrect<br>"}
+z1.innerHTML=r1+r2
+}
+
+
+function k2(){
+s=0
+if(q3.value!=2) {s1="1.- Correct<br>";s=s+1}
+if(q3.value==2) {s1="1.- Incorrect<br>"}
+
+if(q4.value==1) {s2="2.- Correct<br>";s=s+1}
+if(q4.value!=1) {s2="2.- Incorrect<br>"}
+
+if(q5.value==2) {s3="3.- Correct<br>";s=s+1}
+if(q5.value!=2) {s3="3.- Incorrect<br>"}
+
+if(q6.value==2) {s4="4.- Correct<br>";s=s+1}
+if(q6.value!=2) {s4="4.- Incorrect<br>"}
+
+if(q7.value==1) {s5="5.- Correct <br>";s=s+1}
+if(q7.value!=1) {s5="5.- Incorrect <br>"}
+
+if(q8.value==2) {s6="6.- Correct<br>";s=s+1}
+if(q8.value!=2) {s6="6.- Incorrect<br>"}
+
+if(q9.value==2) {s7="7.- Correct<br>";s=s+1}
+if(q9.value!=2) {s7="7.- Incorrect<br>"}
+
+if(q10.value==1) {s8="8.- Correct<br>";s=s+1}
+if(q10.value!=1) {s8="8.- Incorrect<br>"}
+
+if(q11.value==2) {s9="9.- Correct<br>";s=s+1}
+if(q11.value!=2) {s9="9.- Incorrect<br>"}
+
+st=Math.round(s/9*100)
+s0="<br>Your correct answers were "+s+" out of 9. <p>Your grade is "+st+ "<p>100 is the top grade."
+z2.innerHTML=s1+s2+s3+s4+s5+s6+s7+s8+s9+s0
+}
+
+
+</script>
+</head>
+<body>
+
+
+<div id="t0">
+<b>The Gender Gap</b>
+<p>
+<b>Present Simple</b>
+</div>
+
+<div id="t1">
+<b>1. Choose the correct tense in this summary.</b>
+<p>
+<ol>
+<li>The 
+  <select name="q1">
+    <option value=0 selected>Choose answer
+      <option value="1">Present Simple
+      <option value="2">Present Continuous 
+      </select>
+ is used to talk about habits and facts - things that are permanent. 
+ <p>
+<li> The   
+<select name="q2">
+<option value=0 selected>Choose answer
+<option value="1">Present Simple
+<option value="2">Present Continuous 
+</select>
+ is used to talk about changing situations and developments - things that are temporary. 
+</ol>
+<p>
+<p>
+<center>
+ <button onClick="k1()">Check answers</button>
+</center>
+<p>
+<b>2. Read the dialog. Put the verb in parentheses into either the Present Continuous or the  Present Simple. </b>
+<p>
+
+<table>
+<tr><td valign=top>
+Jill:</td><td>	What languages <select name="q3">
+<option value=0 selected>Choose answer
+<option value="1">do you speak
+<option value="2">are you speaking
+</select>?
+<p>
+</td></tr>
+<tr><td valign=top>
+Simon:</td><td>	Well, I 
+<select name="q4">
+<option value=0>Choose answer
+<option value=1>speak
+<option value=2>am speaking
+</select>
+   broken Russian. I studied it at school but I've forgotten a lot of it.
+<p>
+</td></tr>
+<tr><td valign=top>
+Jill:</td><td>	You were lucky you had languages at school. I didn't. I 
+<select name="q5">
+<option value=0 selected>Choose answer
+<option value=1>study
+<option value=2>am studying
+</select>   Italian now at night school.
+<p>
+</td></tr>
+<tr><td valign=top>
+Simon:</td><td>	Why <select name="q6">
+<option value=0>Choose answer
+<option value="1">do you study 
+<option value="2">are you studying
+</select>
+   Italian?
+<p>
+</td></tr>
+<tr><td valign=top>
+
+Jill:</td><td>	My sister  
+<select name="q7">
+<option value=0>Choose answer
+<option value=1>lives
+<option value=2>is living
+</select>
+  there and I'm going to visit her this summer. I want to get by in the language while I'm there.
+<p>
+</td></tr>
+<tr><td valign=top>
+Simon:</td><td>	They say increasing numbers of people 
+<select name="q8">
+<option value=0>Choose answer
+<option value="1">study 
+<option value="2">are studying 
+</select>
+ a foreign language these days so that they can communicate when they travel. 
+<p>
+</td></tr>
+<tr><td valign=top>
+Jill:</td><td>	And I
+<select name="q9">
+<option value=0>Choose answer
+<option value=1>also learn
+<option value=2>am also learning
+</select>
+    a little Gaelic from my grandmother. Of course, it's not for traveling, because everyone 
+<select name="q10">
+<option value=0>Choose answer
+<option value=1>speaks
+<option value=2>is speaking
+</select>
+   English in Scotland. I want to learn more about the culture. Although these days the number of Gaelic speakers 
+<select name="q11">
+<option value=0>Choose answer
+<option value=1>falls
+<option value=2>is falling
+</select>
+ fast.
+</td></tr>
+</table>
+
+<p>
+<center>
+<button onClick="k2()">Check answers</button>
+</center>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>

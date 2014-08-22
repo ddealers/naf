@@ -1,0 +1,190 @@
+<head>
+<title>*</title>
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+<style type="text/css">
+body {background-color:#ffffff}
+#t0 {position:absolute;top:5;left:10;font-size:16;font-family:verdana;width:650;color:#842b68}
+#t1 {position:absolute;top:150;left:10;font-size:14;font-family:arial;width:600;color:#000000}
+#z1 {position:absolute;top:500;left:650;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z2 {position:absolute;top:1250;left:550;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z3 {position:absolute;top:1650;left:600;font-size:12;font-family:verdana;width:300;color:#ff0000}
+#z4 {position:absolute;top:2050;left:600;font-size:12;font-family:verdana;width:300;color:#ff0000}
+td {font-size:14;font-family:verdana;width:600;color:#000000}
+#m1 {color:#ff0000}
+sub {color:#ff4000}
+</style>
+
+<script language="javascript">
+
+function k1(){
+if(q1a.value=="d"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
+if(q1b.value=="b"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
+if(q1c.value=="a"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
+if(q1d.value=="c"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
+if(q1e.value=="e"){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
+
+z1.innerHTML=s1a+s1b+s1c+s1d+s1e
+}
+function k2(){
+if(q2a.value=="2"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
+if(q2b.value=="4"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
+if(q2c.value=="3"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
+if(q2d.value=="1"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
+
+z2.innerHTML=s2a+s2b+s2c+s2d
+}
+
+function k3(){
+s3a="<br>"
+s3b="<br>"
+s3c="<br>"
+s3d="<br>"
+s3e="<br>"
+s3f="<br>"
+s3g="<br>"
+s3h="<br>"
+
+if(q3a.checked){s3a="1.-Correct<br>"}
+if(q3b.checked){s3a="1.-Incorrect<br>"}
+
+if(q3d.checked){s3b="2.-Correct<br>"}
+if(q3c.checked){s3b="2.-Incorrect<br>"}
+
+if(q3e.checked){s3c="3.-Correct<br>"}
+if(q3f.checked){s3c="3.-Incorrect<br>"}
+
+if(q3h.checked){s3d="4.-Correct<br>"}
+if(q3g.checked){s3d="4.-Incorrect<br>"}
+
+if(q3j.checked){s3e="5.-Correct<br>"}
+if(q3i.checked){s3e="5.-Incorrect<br>"}
+
+if(q3k.checked){s3f="6.-Correct<br>"}
+if(q3l.checked){s3f="6.-Incorrect<br>"}
+
+if(q3m.checked){s3g="7.-Correct<br>"}
+if(q3n.checked){s3g="7.-Incorrect<br>"}
+
+if(q3p.checked){s3h="8.-Correct<br>"}
+if(q3o.checked){s3h="8.-Incorrect<br>"}
+
+z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
+}
+
+function k4(){
+s4a="<br>"
+s4b="<br>"
+s4c="<br>"
+s4d="<br>"
+
+if(q4b.checked){s4a="1.-Correct<br>"}
+if(q4a.checked){s4a="1.-Incorrect<br>"}
+
+if(q4c.checked){s4b="2.-Correct<br>"}
+if(q4d.checked){s4b="2.-Incorrect<br>"}
+
+if(q4f.checked){s4c="3.-Correct<br>"}
+if(q4e.checked){s4c="3.-Incorrect<br>"}
+
+if(q4g.checked){s4d="4.-Correct<br>"}
+if(q4h.checked){s4d="4.-Incorrect<br>"}
+
+z4.innerHTML=s4a+s4b+s4c+s4d
+}
+</script>
+</head>
+
+
+<body>
+
+<div id="t0">
+<b>Screen Test</b>
+<p>
+<b>Movie related</b>
+<br>
+</div>
+<p>
+<div id="t1">
+<b>1. This is a poster for a recent movie. Read the review quickly and complete the missing parts of the poster.</b>
+<p>
+<center>
+<img src="u6b1.jpg">
+<p>
+Based on the novel by <input size="1" name="q1a"> <br>
+Directed by <input size="1" name="q1b"> <br>
+Starring <input size="1" name="q1c"> as Frank's father. <br>
+and <input size="1" name="q1d"> as Frank's mother <br>
+Music by <input size="1" name="q1e">
+</center>
+<p>
+<center>
+<button onClick="k1()">Check answers</button>
+
+<p>
+<b>Angela's Ashes</b>
+</center>
+<p>
+Based on the Pulitzer-prize winning novel by Frank McCourt, Angela's Ashes is the latest movie by director Alan Parker (Evita, Mississippi Burning). Set in Ireland in the 30's and 40's, the movie tells the story of Frank's childhood and adolescence in rural Ireland.<p>The movie opens with Frank's family living in Brooklyn. When Frank's baby sister dies, the family decides to give up a poor and difficult life in America and return to Ireland. <p>Parker's movie is faithful to the book, consisting of a series of episodes in Frank's life rather than a continuous narrative. Although it's a dramatic and moving story, it's told with humor and optimism. Robert Carlyle, who recently starred as the bad guy in the new James Bond movie, plays Frank's lovable but heavy-drinking father, and English actress Emily Watson plays his mother. <p>Parker's movie is a classic "rites of passage" movie. In a key scene, Frank's father takes the boy to the pub for the first time, marking young Frank's acceptance into the adult world. The action is helped along by music from guitarist and composer John Williams. <p>Angela's Ashes follows the recent trend of adapting successful novels for movies. But is it as good as the book? Parker wisely avoids the temptation to romanticize the family's difficult life, but he fails to recreate the atmosphere and spirit of McCourt's writing. <p>Hollywood directors love successful novelists and pay millions to adapt their books for the screen. However, it can be extremely difficult to match the quality of prize-winning books like Frank McCourt's. Many people will enjoy Alan Parker's movie. But they would enjoy the book more. <p>
+<b>2. Read the first part of the review again and put these events in order.</b>
+<p>
+<ul>
+<li>Frank’s baby sister dies<br>
+<input size="2" name="q2a"><p>
+<li>Frank goes to the pub with his father<br>
+<input size="2" name="q2b"><p>
+<li>The family decides to go and live in Ireland<br> 
+<input size="2" name="q2c"><p>
+<li>Frank lives with his family in Brooklyn<br>
+<input size="2" name="q2d"><p>
+</ul>
+<p>
+<center>
+<button onClick="k2()">Check answers</button>
+</center>
+<p>
+<b>3. True or false?</b>
+<p>
+<ol>
+<li>Frank McCourt's book won a prize.<br>
+<input type="checkbox" name="q3a"> true  <input type="checkbox" name="q3b">false<p><li>The movie is set in Brooklyn.<br>
+ <input type="checkbox" name="q3c">true  <input type="checkbox" name="q3d">false<p><li>Frank goes to live in a town in Ireland.<br>
+ <input type="checkbox" name="q3e">true  <input type="checkbox" name="q3f">false<p><li>The movie is very different from the book.<br> 
+ <input type="checkbox" name="q3g">true  <input type="checkbox" name="q3h">false<p><li>Robert Carlyle's last movie was in the role of James Bond.<br>
+ <input type="checkbox" name="q3i">true  <input type="checkbox" name="q3j">false<p><li>Alan Parker's movie is a good example of a particular type of movie.<br>
+ <input type="checkbox" name="q3k">true  <input type="checkbox" name="q3l">false <p><li>In the soundtrack, John Williams plays the guitar.<br> 
+ <input type="checkbox" name="q3m">true  <input type="checkbox" name="q3n">false <p><li>Many writers pay money for their books to be made into movie.<br>
+ <input type="checkbox" name="q3o">true  <input type="checkbox" name="q3p">false <p></ol>
+<p> 
+<center>
+<button onClick="k3()">Check answers</button>
+</center>
+<p>	
+<b>4. The critic's opinions.</b>
+<p>
+<ol>
+<li>The writer thinks that the movie is more romantic than the book.<br>
+<input type="checkbox" name="q4a">true  <input type="checkbox" name="q4b">false<p><li>The writer says that adapting novels for the movies is big business.<br>
+ <input type="checkbox" name="q4c">true  <input type="checkbox" name="q4d">false<p><li>The writer thinks that it's easy to make a good book into a good movie.<br>
+ <input type="checkbox" name="q4e">true  <input type="checkbox" name="q4f">false<p><li>The writer thinks that the book is better than the movie.<br>
+ <input type="checkbox" name="q4g">true  <input type="checkbox" name="q4h">false
+</ol>
+<p>
+<center>
+<button onClick="k4()">Check answers</button>
+</center>
+</div>
+
+<div id="z1">
+</div>
+
+<div id="z2">
+</div>
+
+<div id="z3">
+</div>
+
+<div id="z4">
+</div>
+
+
+ 
