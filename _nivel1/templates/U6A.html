@@ -1,7 +1,7 @@
 <script>
 	v = {
 		q1a:'1',
-		q2a:'was'
+		q2a:'was',
 		q2b:'go',
 		q2c:'went out',
 		q2d:'write',
@@ -9,10 +9,7 @@
 		q2f:'fall',
 		q2g:'come',
 		q2h:'have',
-		q2i:'throw',
-		
-		
-		
+		q2i:'throw'
 	}
 </script>
 
@@ -43,14 +40,14 @@ For example:
 <p>
 <center>
 <table class="cuadro" cellpadding=2 cellspacing=0>
-<tr class="letra"><td><input type="checkbox" name="q1a"> story 1</td></tr>
-<tr class="letra"><td><input type="checkbox" name="q1b"> story 2</td></tr>
+<tr class="letra"><td><input type="radio" name="q1a" value=1 checked> story 1</td></tr>
+<tr class="letra"><td><input type="radio" name="q1a" value=2> story 2</td></tr>
 </table>
 </center>
 </p>
 <p>
 <center>
-<button class="eval" data-target="t1">Check answer</button>
+<button class="eval" data-target="t1" data-draw="z1">Check answer</button>
 </center>
 </p>
 </form>
@@ -92,8 +89,11 @@ For example:
 </table>
 </center>
 </p>
-<button class="eval" data-target="t2">Check answers</button>
+<p>
+<center>
+<button class="eval" data-target="t2" data-draw="z2">Check answer</button>
 </center>
+</p>
 </form>
 	
 <div id="z1">

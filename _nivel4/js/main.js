@@ -3,7 +3,7 @@
 
   load = function(url) {
     var cont;
-    cont = $('#cont');
+    cont = $('.data');
     cont.empty();
     return cont.load(url, function() {
       return $('.eval').on('click', function(e) {

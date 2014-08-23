@@ -27,6 +27,7 @@ body #section1 > img {
 }
 body .activity {
   height: 100%;
+  position: relative;
 }
 body #menu {
   overflow-y: scroll;
@@ -38,6 +39,17 @@ body #menu ol {
 }
 body #menu a {
   color: #fff;
+}
+body .alert-box {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+body .alert-box p {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 15px;
 }
 body #cont {
   background: #fff;
@@ -345,6 +357,7 @@ body .num {
 body li.letra span {
   top: 0;
 }
+<<<<<<< HEAD
 /*---------------------------------*/
 .u3tit {
   position: relative;
@@ -387,4 +400,7 @@ p.contenido {
 }
 center.izquierda {
   text-align: left;
+}
+body p.letra span {
+  top: 0;
 }

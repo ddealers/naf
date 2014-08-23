@@ -1,20 +1,18 @@
 <script>
 	v = {
-		q1a:'0'
-		q2a:'0'
-		q3a:'1'
-		q3c:'1'
-		q3e:'0'
-		q3g:'0'
-		q3i:'1'
-		q3k:'1'
-		q3m:'1'
-		q3o:'0'
-
-		
+		q1a:'2',
+		q2a:'3',
+		q3a:'1',
+		q3b:'1',
+		q3c:'0',
+		q3d:'0',
+		q3e:'1',
+		q3f:'1',
+		q3g:'1',
+		q3h:'0'
 	}
 </script>
-<form class="letra">
+<form id="t1" class="letra">
 <img class="logo" src="img/t-u10.jpg">
 <p class="titulo">
 <span>Reading: Sydney</span>
@@ -33,8 +31,8 @@ of New South Wales. It is, however, the biggest and oldest city in Australia.
 <p class="letra">
 <b>History</b><br>
 In little more than two hundred years Sydney has grown to become the most multicultural city in Australia with a population of more 
-than four million. The first <a href="#" onclick="window.open('u10b-t2.htm','_blank','width=400,height=530');">wave</a> of 
-<a href="#" onclick="window.open('u10b-t1.htm','_blank','width=400,height=530');">immigrants</a> came to Australia from 
+than four million. The first <a href="#" onclick="window.open('U10B-T2.html','_blank','width=400,height=530');">wave</a> of 
+<a href="#" onclick="window.open('U10B-T1.html','_blank','width=400,height=530');">immigrants</a> came to Australia from 
 Europe, then in the <a href="#" onclick="window.open('u10b-t2.htm','_blank','width=400,height=530');">seventies </a>
 immigration was mostly from Asia. Now Australia has a mixed culture with one thing in common: its children are all one hundred 
 percent Australian. Sydney has absorbed this mixture of cultures and Thai, Japanese, Korean, Chinese, Greek, Italian or Mexican 
@@ -66,12 +64,12 @@ looking toward the future.
 <b lass="letra">Now choose the best poster of Sydney.</b>
 </p>
 <table class="cuadro" cellpadding=2 cellspacing=0>
-<tr><td align="center"><input type="checkbox" name="q1a"> <b>this one</b></td><td align="center"><input type="checkbox" name="q1b"> <b>this one</b></td><td align="center"><input type="checkbox" name="q1c"> <b>this one</b></td></tr>
+<tr><td align="center"><input type="radio" name="q1a" value=1> <b>this one</b></td><td align="center"><input type="radio" name="q1a" value=2> <b>this one</b></td><td align="center"><input type="radio" name="q1a" value=3> <b>this one</b></td></tr>
 <tr><td><img src="img/u10-a.jpg"></td><td><img src="img/u10-b.jpg"></td><td><img src="img/u10-c.jpg"></td></tr>
 </table>
 <p>
 <center>
-<button class="eval" data-target="t1">Check answers</button>
+<button class="eval" data-target="t1" data-draw="z1">Check answers</button>
 </center>
 </p>
 </form>
@@ -79,41 +77,41 @@ looking toward the future.
 <b class="instrucciones">2. Where did the description in the text come from?</b>
 <p>
 <table class="cuadro" cellpadding=2 cellspacing=0>
-<tr><td width=50></td><td><input type="checkbox" name="q2a"></td><td>an encyclopeadia</td></tr>
-<tr><td></td><td><input type="checkbox" name="q2b"></td><td>a scientific magazine</td></tr>
-<tr><td></td><td><input type="checkbox" name="q2c"></td><td>a travel guide</td></tr>
-<tr><td></td><td><input type="checkbox" name="q2d"></td><td>a news report</td></tr>
+<tr><td width=50></td><td><input type="radio" name="q2a" value=1></td><td>an encyclopeadia</td></tr>
+<tr><td></td><td><input type="radio" name="q2a" value=2></td><td>a scientific magazine</td></tr>
+<tr><td></td><td><input type="radio" name="q2a" value=3></td><td>a travel guide</td></tr>
+<tr><td></td><td><input type="radio" name="q2a" value=4></td><td>a news report</td></tr>
 </table>
 <p>
 <center>
-<button class="eval" data-target="t2">Check answers</button>
+<button class="eval" data-target="t2" data-draw="z2">Check answers</button>
 </center>
 </p>
 </form>
-<form class="letra"> 
+<form id="t3" class="letra"> 
 <b class="instrucciones">3. Are these sentences true or false? </b>
 <p>
 <table cellpadding=2 cellspacing=0>
 <tr><td>1</td><td>Sydney is a state capital but not the national capital.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3a"> true <input type="checkbox" name="q3b"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3a" value=1> true <input type="radio" name="q3a" value=0> false</td></tr>
 <tr><td>2</td><td>Sydney is the oldest city in Australia.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3c"> true <input type="checkbox" name="q3d"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3b" value=1> true <input type="radio" name="q3b" value=0> false</td></tr>
 <tr><td>3</td><td>Canberra, the national capital, is bigger than Sydney.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3e"> true <input type="checkbox" name="q3f"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3c" value=1> true <input type="radio" name="q3c" value=0> false</td></tr>
 <tr><td>4</td><td>There are exactly four million people living in Sydney.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3g"> true <input type="checkbox" name="q3h"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3d" value=1> true <input type="radio" name="q3d" value=0> false</td></tr>
 <tr><td>5</td><td>Sydney is on the coast.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3i"> true <input type="checkbox" name="q3j"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3e" value=1> true <input type="radio" name="q3e" value=0> false</td></tr>
 <tr><td>6</td><td>Sydney has a warm climate.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3k"> true <input type="checkbox" name="q3l"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3f" value=1> true <input type="radio" name="q3f" value=0> false</td></tr>
 <tr><td>7</td><td>At Christmas it is hot in Sydney.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3m"> true <input type="checkbox" name="q3n"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3g" value=1> true <input type="radio" name="q3g" value=0> false</td></tr>
 <tr><td>8</td><td>The lifestyle in Sydney is Californian, not European.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q3o"> true <input type="checkbox" name="q3p"> false</td></tr>
+<tr><td></td><td><input type="radio" name="q3h" value=1> true <input type="radio" name="q3h" value=0> false</td></tr>
 </table>
 </p>
 <center>
-<button class="eval" data-target="t3">Check answers</button>
+<button class="eval" data-target="t3" data-draw="z3">Check answers</button>
 </form>
 
 <div id="z1">
