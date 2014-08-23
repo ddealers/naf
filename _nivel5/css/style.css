@@ -18,6 +18,9 @@ body div.bg.bg3 {
 body div.bg.bg4 {
   background-color: #dc6700;
 }
+body div.bg.bg5 {
+  background-color: #3aa297;
+}
 body #index #t1 img {
   padding: 1em;
   width: 80%;
@@ -488,7 +491,7 @@ p.letra span {
   position: relative;
   display: block;
   top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 b span.rojo {
   top: 0;
@@ -526,4 +529,18 @@ p input {
 }
 .izq {
   text-align: left;
+}
+.inst5 {
+  position: relative;
+  font-family: verdana;
+  font-size: 20px;
+  top: 50px;
+  color: #3aa297;
+}
+.i51 {
+  position: relative;
+  padding-bottom: 15px;
+}
+div span.rojo {
+  top: 0;
 }
