@@ -312,14 +312,14 @@ body #t1 p {
 body .u2tit {
   position: relative;
   font-family: verdana;
-  font-size: 23px;
+  font-size: 24px;
   color: #00b6cc;
   top: 15px;
 }
 body .u2 {
   position: relative;
   font-family: verdana;
-  font-size: 23px;
+  font-size: 24px;
   color: #00b6cc;
   top: 35px;
 }
@@ -353,4 +353,61 @@ body .num {
 }
 body li.letra span {
   top: 0;
+}
+body p.letra span {
+  top: 0;
+}
+body .li {
+  position: relative;
+  font-size: 14px;
+  font-family: arial;
+  margin-left: 50px;
+}
+body .speaker {
+  position: relative;
+  top: 44px;
+  padding-bottom: 30px;
+}
+body .imdep {
+  position: relative;
+  display: block;
+  top: 60px;
+  padding-bottom: 60px;
+}
+body b span.rojo {
+  top: 0;
+}
+body p span.rojo {
+  top: 0;
+}
+body li span.rojo {
+  top: 0;
+}
+body .co1 {
+  position: relative;
+  top: 40px;
+  padding-bottom: 30px;
+}
+body #imu5a {
+  display: block;
+  position: relative;
+  top: 50px;
+  padding-bottom: 40px;
+}
+body .espa-abajo {
+  padding-bottom: 15px;
+}
+body li input {
+  margin: 5px;
+}
+body td input {
+  margin: 5px;
+  height: 23px;
+}
+body p input {
+  margin: 5px;
+  height: 23px;
+}
+body .izq {
+  text-align: left;
 }
