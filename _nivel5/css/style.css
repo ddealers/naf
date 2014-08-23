@@ -50,7 +50,7 @@ body .alert-box {
   display: none;
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 95px;
 }
 body .alert-box p {
   font-size: 14px;
