@@ -15,7 +15,7 @@
 		q3b:'did',
 		q3e:'was',
 		q3f:'was',
-		(q3:'did',
+		q3:'did',
 		q3j:'did',
 		q3m:'has',
 		q3q:'did',
@@ -35,7 +35,7 @@
 
 </script>
 
-<div id="t1">
+<form id="t1">
 <b>1. Read about these 3 people talking about the clothes they wear to work.</b>
 <p>
 <div style="background-color:#ffc090;padding:10" class="box_orange">
@@ -55,22 +55,24 @@ For each speaker, decide if they wear casual clothes or formal clothes. </b>
 <p>
 <ol>
 <li>Speaker 1 wears<br>  
-    <input type="checkbox" name="q1a"> casual clothes<br>
- <input type="checkbox" name="q1b"> formal clothes
+    <input type="radio" name="q1a" value="1" checked> casual clothes<br>
+ <input type="radio" name="q1a" value="0"> formal clothes
  <p>
 <li>Speaker 2 wears  <br>
-    <input type="checkbox" name="q1c"> casual clothes<br>
- <input type="checkbox" name="q1d"> formal clothes
+    <input type="radio" name="q1b" value="1" checked> casual clothes<br>
+ <input type="radio" name="q1b" value="0"> formal clothes
  <p>
 <li>Speaker 3 wears <br> 
-    <input type="checkbox" name="q1e"> casual clothes<br>
- <input type="checkbox" name="q1f"> formal clothes
+    <input type="radio" name="q1c" value="1" checked> casual clothes<br>
+ <input type="radio" name="q1c" value="0"> formal clothes
 
 </ol>
 <p>
 <center>
-<button class="eval"onclick="k1()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center>
+</form>
+<form id="t2">
 <p>
 <b>2. Read again, and decide which picture best represents each speaker. </b>
 <p>
@@ -138,8 +140,9 @@ For each speaker, decide if they wear casual clothes or formal clothes. </b>
 </select> 
 </td></tr></table>
 <p>  
-<button class="eval"onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center>
+</form>
 <p>
 </div>
 

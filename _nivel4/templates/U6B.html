@@ -2,7 +2,7 @@
 	v = {
 
 
-		q1a:['3','5'],
+		q1:{q1a:false,q1b:false,q1c:true,q1d:false,q1e:true,q1f:false,q1g:false,q1h:false,q1i:false,q1j:false}
 		q2a:'c',
 		q2b:'a',
 		q2c:'g',
@@ -26,7 +26,7 @@
 <br>
 </div>
 <p>
-<div id="t1">
+<form id="t1" class="list" data-list="q1">
 <b>1. What other words can you substitute for <span id="m1">may</span> in this sentence, so that the meaning is more or less the same?</b>
 <p>
 <span id="m1">
@@ -46,8 +46,10 @@ The sasquatch could be a surviving form of giant apes that may have crossed from
 <tr><td><input type="checkbox" name="q1j"></td><td>ought to</td></tr>
 </table>
 <p>
-<button class="eval"onclick="k1()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
+</form>
+<form id="t2">
 <p>
 <b>2. Match the sentences on the left with the sentences that mean the same:</b>
 <p>
@@ -62,9 +64,10 @@ The sasquatch could be a surviving form of giant apes that may have crossed from
 </table>
 <p>
 <center>
-<button class="eval"onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
- 
+</form>
+<form id="t3">
 <p>
 <b>3. Complete the dialog by re-writing B's sentences using the verb in parentheses:</b>
 <p>
@@ -100,8 +103,9 @@ B: There are no wolves in our forest. It certainly wasn't a wolf. <b>(couldn't)<
 </td></tr></table>
 <p>
 <center>
-<button class="eval"onclick="k3()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center> 
+</form>
 
 </div>
 
