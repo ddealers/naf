@@ -1,6 +1,5 @@
 <script>
 	v = {
-
 		q1a:'2',
 		q1b:'1',
 		q1c:'3',
@@ -41,10 +40,7 @@
 		q4y:'1',
 		q4ac:'3',
 		q4ag:'4',
-		q4ak:'2',
-
-
-
+		q4ak:'2'
 	}
 </script>
 
@@ -80,31 +76,32 @@ Example: <span class="rojo">Scientists can't agree on what <b>purpose</b> dreams
 <p>
 <table cellpadding=0 cellspacing=10>
 <tr><td>1 The point of these shows is to raise money for charity.</td></tr>
-<tr><td><input type="checkbox" name="q2a"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2b"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2a" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2a" value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>2 The company is continually achieving its idea.</td></tr>
-<tr><td><input type="checkbox" name="q2c"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2d"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2b" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2b"value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>3 The government is hoping to reach its target of 5% unemployment by the year 2010.</td></tr>
-<tr><td><input type="checkbox" name="q2e"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2f"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2c" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2c"value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>4 The target of his studies was to get a better job.</td></tr>
-<tr><td><input type="checkbox" name="q2g"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2h"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2d" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2d"value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>5 The author's purpose in writing the article was to draw attention to the dangers of hunting.</td></tr>
-<tr><td><input type="checkbox" name="q2i"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2j"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2e" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2e" value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>6 The politician used his position for his own corrupt and <a href="#" onclick="window.open('t-u1a-1.htm','_blank','width=275,height=140');">selfish</a> objectives.</td></tr>
-<tr><td><input type="checkbox" name="q2k"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2l"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2f" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2f" value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>7 The company's goal is to be a leader in the market.</td></tr>
-<tr><td><input type="checkbox" name="q2m"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2n"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2g" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2g" value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>8 People will study at home using their computers and the Internet. Well, that's the object.</td></tr>
-<tr><td><input type="checkbox" name="q2o"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2p"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2h" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2h" value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>9 The government's point was to improve the standard of living.</td></tr>
-<tr><td><input type="checkbox" name="q2q"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2r"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2i" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2i" value=0><img src="img/ob/mal.jpg"></td></tr>
 <tr><td>10 What's the point of phoning him now? He won't be home.</td></tr>
-<tr><td><input type="checkbox" name="q2s"><img src="img/ob/bien.jpg"> <input type="checkbox" name="q2t"><img src="img/ob/mal.jpg"></td></tr>
+<tr><td><input type="radio" name="q2j" value=1 checked><img src="img/ob/bien.jpg"> <input type="radio" name="q2j" value=0><img src="img/ob/mal.jpg"></td></tr>
 </table>
 <p>
 <center>
 <button class="eval" data-target="t2">Check Answers</button>
 </center>
 </form>
+<form id="t3">
 <p>
 <b>3. Complete these sentences by choosing the best word. </b>
 <p>
@@ -124,39 +121,41 @@ Example: <span class="rojo">Scientists can't agree on what <b>purpose</b> dreams
 </table>
 <p>
 <center>
-<button class="eval" onclick="k3()">Check answers</button>
+<button class="eval" data-target="t3">Check answers</button>
 </center>
+</form>
+<form id="t4">
 <p>
 <b>4. Choose the word that does NOT fit the context.</b>
 <p>
 <table cellpadding=0 cellspacing=10>
 <tr><td>Police are _________ about the woman's disappearance.</td></tr>
-<tr><td><input type="checkbox" name="q4a">concerned<input type="checkbox" name="q4b">worried<input type="checkbox" name="q4c">	afraid<input type="checkbox" name="q4d">anxious</td></tr>
+<tr><td><input type="radio" name="q4a">concerned<input type="radio" name="q4b">worried<input type="radio" name="q4c">	afraid<input type="radio" name="q4d">anxious</td></tr>
 <tr><td>They are _________ that she may have been kidnapped.</td></tr>
-<tr><td><input type="checkbox" name="q4e">worried<input type="checkbox" name="q4f">afraid<input type="checkbox" name="q4g">anxious<input type="checkbox" name="q4h">concerned</td></tr>
+<tr><td><input type="radio" name="q4e">worried<input type="radio" name="q4f">afraid<input type="radio" name="q4g">anxious<input type="radio" name="q4h">concerned</td></tr>
 <tr><td>The police say that there is no cause __________.</td></tr>
-<tr><td><input type="checkbox" name="q4i">for fear<input type="checkbox" name="q4j">for alarm<input type="checkbox" name="q4k">for concern<input type="checkbox" name="q4l">to worry</td></tr>
+<tr><td><input type="radio" name="q4i">for fear<input type="radio" name="q4j">for alarm<input type="radio" name="q4k">for concern<input type="radio" name="q4l">to worry</td></tr>
 <tr><td>The police kept the story secret so as not to _________ the neighbors.</td></tr>
-<tr><td><input type="checkbox" name="q4m">frighten<input type="checkbox" name="q4n">alarm<input type="checkbox" name="q4o">fear<input type="checkbox" name="q4p">worry</td></tr>
+<tr><td><input type="radio" name="q4m">frighten<input type="radio" name="q4n">alarm<input type="radio" name="q4o">fear<input type="radio" name="q4p">worry</td></tr>
 <tr><td>Her husband ________ her safety.</td></tr>
-<tr><td><input type="checkbox" name="q4q">is worred about<input type="checkbox" name="q4r">fears for<input type="checkbox" name="q4s">is frightened of<input type="checkbox" name="q4t">is concerned for</td></tr>
+<tr><td><input type="radio" name="q4q">is worred about<input type="radio" name="q4r">fears for<input type="radio" name="q4s">is frightened of<input type="radio" name="q4t">is concerned for</td></tr>
 <tr><td>I am __________ of the dark.</td></tr>
-<tr><td><input type="checkbox" name="q4u">frightened<input type="checkbox" name="q4v">afraid<input type="checkbox" name="q4w">scared<input type="checkbox" name="q4x">anxious</td></tr>
+<tr><td><input type="radio" name="q4u">frightened<input type="radio" name="q4v">afraid<input type="radio" name="q4w">scared<input type="radio" name="q4x">anxious</td></tr>
 <tr><td>Before your first parachute jump it's natural to feel a little __________.</td></tr>
-<tr><td><input type="checkbox" name="q4y">anxious<input type="checkbox" name="q4z">preoccupied<input type="checkbox" name="q4aa">apprehensive<input type="checkbox" name="q4ab">nervous</td></tr>
+<tr><td><input type="radio" name="q4y">anxious<input type="radio" name="q4z">preoccupied<input type="radio" name="q4aa">apprehensive<input type="radio" name="q4ab">nervous</td></tr>
 <tr><td>The sight of blood doesn't ________ me at all.</td></tr>
-<tr><td><input type="checkbox" name="q4ac">bother<input type="checkbox" name="q4ad">worry<input type="checkbox" name="q4ae">preoccupy<input type="checkbox" name="q4af">concern</td></tr>
+<tr><td><input type="radio" name="q4ac">bother<input type="radio" name="q4ad">worry<input type="radio" name="q4ae">preoccupy<input type="radio" name="q4af">concern</td></tr>
 <tr><td>The fact that children are starving ________ me a lot.</td></tr>
-<tr><td><input type="checkbox" name="q4ag">preoccupies<input type="checkbox" name="q4ah">worries<input type="checkbox" name="q4ai">troubles<input type="checkbox" name="q4aj">frightens</td></tr>
+<tr><td><input type="radio" name="q4ag">preoccupies<input type="radio" name="q4ah">worries<input type="radio" name="q4ai">troubles<input type="radio" name="q4aj">frightens</td></tr>
 <tr><td>Sorry to _______ you, but is your husband at home?</td></tr>
-<tr><td><input type="checkbox" name="q4ak">bother<input type="checkbox" name="q4al">concern<input type="checkbox" name="q4am">trouble<input type="checkbox" name="q4an">disturb</td></tr>
+<tr><td><input type="radio" name="q4ak">bother<input type="radio" name="q4al">concern<input type="radio" name="q4am">trouble<input type="radio" name="q4an">disturb</td></tr>
 </table>
 <p>
 <center>
-<button class="eval" onclick="k4()">Check answers</button>
+<button class="eval" data-target="t4">Check answers</button>
 </center>
 <p>
-</div>
+</form>
 
 <div id="z1">
 </div>

@@ -1,6 +1,5 @@
 <script>
 	v = {
-
 		q1a:'1',
 		q2a:'Amsterdam',
 		q2b:'ferry',
@@ -30,19 +29,18 @@
 		q4i:'0',
 		q4j:'2',
 		q4k:'0',
-		q4l:'3',
-
+		q4l:'3'
 	}
 
 </script>
 
-<div id="t1">
+<form id="t1">
 <b class="inst5">Listening: A disastrous trip</b>
 <p>
 <b class="tablau2">1. Listen to someone talking about a disastrous journey and choose the map of their route.</b>
 <p>
 <center>	
-<a href="sn/u9a-1.mp3"><img src="img/ob/s-1.jpg" border=0></a>
+<a href="snd/u9a-1.mp3" target="_blank"><img src="img/ob/s-1.jpg" border=0></a>
 </center>
 <p>
 <center>
@@ -52,18 +50,20 @@
 </center>
 <center>
 <table cellpadding=0 cellspacing=10>
-<tr><td width=90></td><td><input type="checkbox" name="q1a"></td><td width=190></td><td><input type="checkbox" name="q1b"></td></tr>
+<tr><td width=90></td><td><input type="radio" name="q1a" value=1 checked></td><td width=190></td><td><input type="radio" name="q1b" value=0></td></tr>
 </table>
 </center>
 <p>
 <center>
-<button class="eval" onclick="k1()">Check answers</button>
+<button class="eval" data-target="t1">Check answers</button>
 </center>
+</form>
+<form id="t2">
 <p>
 <b>2. Listen again and complete the table with some of the words from the box.</b>
 <p>
 <center>	
-<a href="sn/u9a-1.mp3"><img src="img/ob/s-1.jpg" border=0></a>
+<a href="snd/u9a-1.mp3" target="_blank"><img src="img/ob/s-1.jpg" border=0></a>
 </center>
 <p>
 <center>	
@@ -84,13 +84,15 @@
 </table>
 <p>
 <center>
-<button class="eval" onclick="k2()">Check answers</button>
+<button class="eval" data-target="t2">Check answers</button>
 </center>
+</form>
+<form id="t3">
 <p>
 <b>3. Listen again and choose the best options below.</b>
 <p>
 <center>	
-<a href="sn/u9a-1.mp3"><img src="img/ob/s-1.jpg" border=0></a>
+<a href="snd/u9a-1.mp3" target="_blank"><img src="img/ob/s-1.jpg" border=0></a>
 </center>
 <p>
 <table cellpadding=0 cellspacing=10>
@@ -109,8 +111,10 @@
 </table>
 <p>
 <center>
-<button class="eval" onclick="k3()">Check answers</button>
+<button class="eval" data-target="t3">Check answers</button>
 </center>
+</form>
+<form id="t4">
 <p>
 <b>4. Look at part of the transcript and decide which use of had (A, B or C) is being used in each case.</b>
 <p>
@@ -136,8 +140,9 @@ to stand on dry land again.
 </table>
 <p>
 <center>
-<button  class="eval" onclick="k4()">Check answers</button>
+<button  class="eval" data-target="t4">Check answers</button>
 </center>
+</form>
 <p>
 </div>
 

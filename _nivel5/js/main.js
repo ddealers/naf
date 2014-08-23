@@ -57,7 +57,7 @@
       var answer, correct, key, _i, _len;
       answer = elem.value;
       correct = v[elem.name];
-      if (Object.prototype.toString.call(correct) === '[object Array]') {
+      if (Array.isArray(correct)) {
         for (_i = 0, _len = correct.length; _i < _len; _i++) {
           key = correct[_i];
           if (String(answer).toLowerCase() === String(correct[key]).toLowerCase()) {

@@ -72,36 +72,41 @@
 <p>
 <b class="u3">Reporting thoughts</b>
 <br>
+</p>
 </div>
 <p>
-<div id="t1">
-1. Without looking at the text, decide which sentence is better.
+<form id="t1">
+1. Without looking at the text, decide which sentence is better.</p>
 <p>
 <ol>
 <li>	 
-<input type="checkbox" name="q1a">When she got to Torquay, she thought she was in Turkey.<br>
+<input type="radio" name="q1a" value=1 checked>When she got to Torquay, she thought she was in Turkey.<br>
  	 
-<input type="checkbox" name="q1b">When she got to Torquay, she thought she had been in Turkey.
+<input type="radio" name="q1a" value=0>When she got to Torquay, she thought she had been in Turkey.</p>
  <p>
 
 <li>	 
-<input type="checkbox" name="q1c">She thought she traveled through the Channel Tunnel.<br>
+<input type="radio" name="q1b" value=1 checked>She thought she traveled through the Channel Tunnel.<br>
  	 
-<input type="checkbox" name="q1d">She thought she had traveled through the Channel Tunnel.
+<input type="radio" name="q1b" value=0>She thought she had traveled through the Channel Tunnel.
 </ol>
+</p>
 <p>
 <center>
-<button onClick="k1()">Check answers</button>
+<button class="eval" data-target="t1">Check answers</button>
 </center>
+</p>
+</form>
+<form id="t2">
 <P>
-2. Change these actual thoughts into reported thoughts.
+2. Change these actual thoughts into reported thoughts.</p>
 <p>
 <ol>
 <li>"The train is very slow."<br>She thought <sub>t</sub><input size="5" name="q2a">
 <sub>t</sub><input size="5" name="q2b">
 <sub>w</sub><input size="5" name="q2c">
 <sub>v</sub><input size="5" name="q2d">
-<sub>s</sub><input size="5" name="q2e">.
+<sub>s</sub><input size="5" name="q2e">.</p>
 <p>
 
 <li>"I have come a long way." <br>She thought <sub>s</sub><input size="5" name="q2f">
@@ -109,32 +114,32 @@
 <sub>c</sub><input size="5" name="q2h">
 <sub>a</sub><input size="5" name="q2i">
 <sub>l</sub><input size="5" name="q2j">
-<sub>w</sub><input size="5" name="q2k">.
+<sub>w</sub><input size="5" name="q2k">.</p>
 <p>
 <li>"I am going to Turkey." <br>She thought <sub>s</sub><input size="5" name="q2l">
 <sub>w</sub><input size="5" name="q2m">
 <sub>g</sub><input size="5" name="q2n">
 <sub>t</sub><input size="5" name="q2o">
-<sub>T</sub><input size="5" name="q2p">.
+<sub>T</sub><input size="5" name="q2p">.</p>
 <p>
 
 <li>"I have arrived in Turkey." <br>She thought <sub>s</sub><input size="5" name="q2q">
 <sub>h</sub><input size="5" name="q2r">
 <sub>a</sub><input size="5" name="q2s">
 <sub>i</sub><input size="5" name="q2t">
-<sub>T</sub><input size="5" name="q2v">.
+<sub>T</sub><input size="5" name="q2v">.</p>
 <p>
 
 <li>"Nobody has checked my passport." <br>She was surprised <sub>n</sub><input size="5" name="q2w">
 <sub>h</sub><input size="5" name="q2x">
 <sub>c</sub><input size="5" name="q2y">
 <sub>h</sub><input size="5" name="q2z">
-<sub>p</sub><input size="5" name="q2za">.
+<sub>p</sub><input size="5" name="q2za">.</p>
 <p>
 
 <li>"Everybody speaks English."<br> She was surprised <sub>e</sub><input size="5" name="q2zb">
 <sub>s</sub><input size="5" name="q2zc">
-<sub>E</sub><input size="5" name="q2zd">.
+<sub>E</sub><input size="5" name="q2zd">.</p>
 <p>
 
 <li>"Nobody has heard of the hotel." <br>She was surprised <sub>n</sub><input size="5" name="q2ze">
@@ -142,12 +147,12 @@
 <sub>h</sub><input size="5" name="q2zg">
 <sub>o</sub><input size="5" name="q2zh">
 <sub>t</sub><input size="5" name="q2zi">
-<sub>h</sub><input size="5" name="q2zj">.
+<sub>h</sub><input size="5" name="q2zj">.</p>
 <p>
 
 <li>"I am lost."<br>She realized <sub>s</sub><input size="5" name="q2zk">
 <sub>w</sub><input size="5" name="q2zl">
-<sub>l</sub><input size="5" name="q2zm">.
+<sub>l</sub><input size="5" name="q2zm">.</p>
 <p>
 
 <li>"I got on the wrong train."<br>She realized <sub>s</sub><input size="5" name="q2zn">
@@ -156,7 +161,7 @@
 <sub>o</sub><input size="5" name="q2zq">
 <sub>t</sub><input size="5" name="q2zr">
 <sub>w</sub><input size="5" name="q2zs">
-<sub>t</sub><input size="5" name="q2zt">.  
+<sub>t</sub><input size="5" name="q2zt">.</p>
 <p>
 
 <li>"I missed the flight to Turkey." <br>She realized <sub>s</sub><input size="5" name="q2zv">
@@ -165,13 +170,17 @@
 <sub>t</sub><input size="5" name="q2zy">
 <sub>f</sub><input size="5" name="q2zz">
 <sub>t</sub><input size="5" name="q2zza">
-<sub>T</sub><input size="5" name="q2zzb">.
+<sub>T</sub><input size="5" name="q2zzb">. </p>
 <p>
 
 <center>
+<<<<<<< HEAD
+<button class="eval" data-target="t2">Check answers</button>
+=======
 <button class="eval"onClick="k2()">Check answers</button>
+>>>>>>> origin/master
 </center>
-</div>
+</form>
 
 <div id="z1">
 </div>
