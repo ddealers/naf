@@ -35,99 +35,108 @@ z4.innerHTML="Suggested Answers:<p>1 You are not allowed/permitted to light fire
 <b>Best Days of Your Life</b>
 <p>
 <b>Obligation, permission, no obligation</b>
-
 </div>
+
 <p>
-<div id="t1">
+<form id="t1">
 <b>1. Decide which sentences in each pair is correct, according to the text "The House from Hell" (unit 2).</b>
+</p>
 <p>
 <table cellspacing=10 cellpadding=0 width=600>
 <ol>
-<tr><td>1 <input type="checkbox" name="q1a">Participants are required to stay in five nights a week.	 
-</td><td><input type="checkbox" name="q1b">Participants are allowed to stay in five nights a week.</td></tr> 
+<tr><td>1 <input type="radio" name="q1a" value=1 checked>Participants are required to stay in five nights a week.	 
+</td><td><input type="radio" name="q1a" value=0>Participants are allowed to stay in five nights a week.</td></tr> 
 
-<tr><td>2 <input type="checkbox" name="q1c">Their loved ones are allowed to visit them.	 
-</td><td><input type="checkbox" name="q1d">Their loved ones have to visit them.</td></tr>
+<tr><td>2 <input type="radio" name="q1b" value=1 checked>Their loved ones are allowed to visit them.	 
+</td><td><input type="radio" name="q1b" value=0>Their loved ones have to visit them.</td></tr>
 
-<tr><td>3 <input type="checkbox" name="q1e">Their loved ones are allowed to stay the night.	 
-</td><td><input type="checkbox" name="q1f">Their loved ones have to stay the night.</td></tr>
+<tr><td>3 <input type="radio" name="q1c" value=1 checked>Their loved ones are allowed to stay the night.	 
+</td><td><input type="radio" name="q1c" value=0>Their loved ones have to stay the night.</td></tr>
  
-<tr><td>4 <input type="checkbox" name="q1g">The participants are required to bring five items with them. 	 
-</td><td><input type="checkbox" name="q1h">The participants are permitted to bring five items with them.</td></tr>
+<tr><td>4 <input type="radio" name="q1d" value=1 checked>The participants are required to bring five items with them. 	 
+</td><td><input type="radio" name="q1d" value=0>The participants are permitted to bring five items with them.</td></tr>
  
-<tr><td>5 <input type="checkbox" name="q1i">They are not allowed to spend more than $400 a week. 	 
-</td><td><input type="checkbox" name="q1j">They don't have to spend more than $400 a week.</td></tr>
+<tr><td>5 <input type="radio" name="q1e" value=1 checked>They are not allowed to spend more than $400 a week. 	 
+</td><td><input type="radio" name="q1e" value=0>They don't have to spend more than $400 a week.</td></tr>
 
-<tr><td>6 <input type="checkbox" name="q1k">They mustn't pay rent. 	 
-</td><td><input type="checkbox" name="q1l">They don't have to pay rent.</td></tr>
+<tr><td>6 <input type="radio" name="q1f" value=1 checked>They mustn't pay rent. 	 
+</td><td><input type="radio" name="q1f" value=0>They don't have to pay rent.</td></tr>
 
-<tr><td>7 <input type="checkbox" name="q1m">They have to complete certain jobs. 	 
-</td><td><input type="checkbox" name="q1n">They are allowed to complete certain jobs.</td></tr> 
+<tr><td>7 <input type="radio" name="q1g" value=1 checked>They have to complete certain jobs. 	 
+</td><td><input type="radio" name="q1g" value=0>They are allowed to complete certain jobs.</td></tr> 
 
-<tr><td>8 <input type="checkbox" name="q1o">If they don't complete the jobs, they can pay a fine. 	 
-</td><td><input type="checkbox" name="q1p">If they don't complete the jobs, they have to pay a fine.</td></tr>
+<tr><td>8 <input type="radio" name="q1h" value=1 checked>If they don't complete the jobs, they can pay a fine. 	 
+</td><td><input type="radio" name="q1h" value=0>If they don't complete the jobs, they have to pay a fine.</td></tr>
 </table>
+</p>
 <p>
 <center>
-<button onClick="k1()">Check answers</button>
+<button class="eval" data-target="t1">Check answers</button>
+</p>
 </center>
+</form>
+<form id="t2">
 <p>
 <b>2. Match the sentence on the left with the sentence on the right that is most similar in meaning.</b>
 <table cellspacing=8 cellpadding=0 width=600>
 <tr><td>1	You don't have to pay.</td><td>	 
-<input type="checkbox" name="q2a"> You mustn't pay.<br>
-<input type="checkbox" name="q2b">  You are not required to pay.<br>
-<input type="checkbox" name="q2c">  You are not allowed to pay.</td><tr>
+<input type="radio" name="q2a" value=1 checked> You mustn't pay.<br>
+<input type="radio" name="q2a" value=2 checked>  You are not required to pay.<br>
+<input type="radio" name="q2a" value=3 checked>  You are not allowed to pay.</td><tr>
 
 
 <tr><td>2	You mustn't talk.</td><td>	 
-<input type="checkbox" name="q2d">  You don't have to talk.<br>
-<input type="checkbox" name="q2e"> You are not allowed to talk.<br>
-<input type="checkbox" name="q2f"> You don't need to talk.</td></tr>
+<input type="radio" name="q2b" value=1 checked>  You don't have to talk.<br>
+<input type="radio" name="q2b" value=2 checked> You are not allowed to talk.<br>
+<input type="radio" name="q2b" value=3 checked> You don't need to talk.</td></tr>
 
 
 <tr><td>3	You are allowed to bring a friend.</td><td>	
-<input type="checkbox" name="q2g"> You can bring a friend.<br>
-<input type="checkbox" name="q2h"> You have to bring a friend.<br>
-<input type="checkbox" name="q2i"> You can't bring a friend.</td></tr>
+<input type="radio" name="q2c" value=1 checked> You can bring a friend.<br>
+<input type="radio" name="q2c" value=2 checked> You have to bring a friend.<br>
+<input type="radio" name="q2c" value=3 checked> You can't bring a friend.</td></tr>
 
 
 <tr><td>4	You are required to wear a tie.	</td><td> 
-<input type="checkbox" name="q2j"> You are permitted to wear a tie.<br>
-<input type="checkbox" name="q2k"> You can wear a tie.<br>
-<input type="checkbox" name="q2l"> You have to wear a tie.</td></tr>
+<input type="radio" name="q2d" value=1 checked> You are permitted to wear a tie.<br>
+<input type="radio" name="q2d" value=2 checked> You can wear a tie.<br>
+<input type="radio" name="q2d" value=3 checked> You have to wear a tie.</td></tr>
 
 
 <tr><td>5	You can stay the night.	</td><td> 
-<input type="checkbox" name="q2m"> You are allowed to stay the night.<br>
-<input type="checkbox" name="q2n"> You are required to stay the night.<br>
-<input type="checkbox" name="q2o"> You have to stay the night.</td></tr>
+<input type="radio" name="q2e" value=1 checked> You are allowed to stay the night.<br>
+<input type="radio" name="q2e" value=2 checked> You are required to stay the night.<br>
+<input type="radio" name="q2e" value=3 checked> You have to stay the night.</td></tr>
 
 
 <tr><td>6	You can't smoke here.</td><td>	
-<input type="checkbox" name="q2p"> You aren't required to smoke here.<br>
-<input type="checkbox" name="q2q"> You aren't allowed to smoke here.<br>
-<input type="checkbox" name="q2r"> You don't have to smoke here.</td></tr>
+<input type="radio" name="q2f" value=1 checked> You aren't required to smoke here.<br>
+<input type="radio" name="q2f" value=2 checked> You aren't allowed to smoke here.<br>
+<input type="radio" name="q2f" value=3 checked> You don't have to smoke here.</td></tr>
 
 
 <tr><td>7	You don't have to write.</td><td>	
-<input type="checkbox" name="q2s"> You aren't allowed to write.<br>
-<input type="checkbox" name="q2t"> You aren't required to write.<br>
-<input type="checkbox" name="q2v"> You mustn't write.</td></tr>
+<input type="radio" name="q2g" value=1 checked> You aren't allowed to write.<br>
+<input type="radio" name="q2g" value=2 checked> You aren't required to write.<br>
+<input type="radio" name="q2g" value=3 checked> You mustn't write.</td></tr>
 
 
 <tr><td>8	You aren't allowed to sing.</td><td>	
-<input type="checkbox" name="q2w"> You mustn't sing.<br>
-<input type="checkbox" name="q2x"> You don't have to sing.<br>
-<input type="checkbox" name="q2y"> You aren't required to sing.</td></tr>
+<input type="radio" name="q2h" value=1 checked> You mustn't sing.<br>
+<input type="radio" name="q2h" value=2 checked> You don't have to sing.<br>
+<input type="radio" name="q2h" value=3 checked> You aren't required to sing.</td></tr>
 
 </table>
+</p>
 <p>
 <center>
-<button onClick="k2()">Check answers</button>
+<button class="eval" data-target="t2">Check answers</button>
 </center>
+</p>
+</form>
+<form id="t3">
 <p>
-<b>3. Rewrite each sentence using the word in (parentheses). The first one has been done for you as an example.</b>
+<b>3. Rewrite each sentence using the word in (parentheses). The first one has been done for you as an example.</b></p>
 <p>
 <table cellspacing=8 cellpadding=0 width=700>
 <tr><td> Original sentence</td><td>	Your Answer</td></tr>	
@@ -140,24 +149,29 @@ z4.innerHTML="Suggested Answers:<p>1 You are not allowed/permitted to light fire
  <tr><td>Students must not use dictionaries during the exam. (allowed)</td><td><input size=50 name="q3f">.</td></tr>	 
  <tr><td>Americans are not required to carry identification. (have)</td><td><input size=50 name="q3g">.</td></tr>	 
  <tr><td>You are not permitted to take pictures here. (allowed)</td><td><input size=50 name="q3h">.</td></tr>	 
-</table> 
+</table>
+</p> 
 <p>
 <center>
-<button onClick="k3()">Check answers</button>
+<button class="eval" data-target="t3">Check answers</button>
 </center>
+</p>
+</form>
+<form id="t4">
 <p>
-<b>4. Write one sentence for each of these signs.</b>
+<b>4. Write one sentence for each of these signs.</b></p>
 <p>
 <center>
 <img src="u5c.jpg">
 
 </center>
+</p>
 <p>
-For example
+For example</p>
 <p>
 <span id="m1">•	You're not allowed to smoke here. or <br>
 <li>You're not permitted to smoke here. or <br>
-<li>You can't smoke here.</span> 
+<li>You can't smoke here.</span> </p>
 <p>
 <input size=45>.<br>
 <input size=45>.<br>
@@ -166,15 +180,16 @@ For example
 <input size=45>.<br>
 <input size=45>.<br>
 <input size=45>.<br>
-<input size=45>.
+<input size=45>.</p>
 <p>
-Then look at some suggested answers.
+Then look at some suggested answers.</p>
 <p>
 
 <center>
-<button onClick="k4()">Check answers</button>
+<button class="eval" data-target="t4">Check answers</button>
 </center>
-</div>
+</p>
+</form>
 
 <div id="z1">
 </div>

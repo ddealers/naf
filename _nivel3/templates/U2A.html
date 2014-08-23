@@ -63,67 +63,84 @@
 <b>Home Alone</b>
 <p>
 <b>Present Perfect vs Past Simple</b>
+</p>
 </div>
 
-<div id="t1">
+<form id="t1">
 <b>1. Look at this chart of Jenny's life. </b>
 <p>
 <center>
 <img src="u2a.jpg">
+</p>
 </center>
 <p>
-
 Use the information in the chart to decide if these sentences are true or false. 
+</p>
 <p>
 <table cellspacing="0" cellpadding="0">
 
 <tr><td>1 Jenny was born in 1970.<br>
-   <input type="checkbox" name="q1a">true <input type="checkbox" name="q1b"> false<p>
+   <input type="radio" name="q1a" value=1 checked >true <input type="radio" name="q1a" value=0> false
+</p>
+   <p>
 </td></tr>
 
 <tr><td>2 She started school in 1987.<br>
-   <input type="checkbox" name="q1c">true  <input type="checkbox" name="q1d">false<p>
+   <input type="radio" name="q1b"value=1 checked>true  <input type="radio" name="q1b" value=0>false
+</p>
+   <p>
 </td></tr>
 
 <tr><td>3 She has studied computer science for four years.<br>
-   <input type="checkbox" name="q1e">true <input type="checkbox" name="q1f">false<p>
+   <input type="radio" name="q1c" value=1 checked>true <input type="radio" name="q1c" value=0>false
+   </p>
 </td></tr>
-
+<p>
 <tr><td>4 She graduated when she was 21.<br>
-   <input type="checkbox" name="q1g">true  <input type="checkbox" name="q1h">false<p>
+   <input type="radio" name="q1d" value=1 checked>true  <input type="radio" name="q1d" value=0>false</p>
 </td></tr>
-
+<p>
 <tr><td>5 She has worked for Acme Software since 1991.<br>
-   <input type="checkbox" name="q1i">true  <input type="checkbox" name="q1j">false<p>
+   <input type="radio" name="q1e" value=1 checked>true  <input type="radio" name="q1e" value=0>false
+</p>
 </td></tr>
+<p>
 <tr><td>6 She has been working for Software Solutions since 1994.<br>
-   <input type="checkbox" name="q1k">true <input type="checkbox" name="q1l"> false<p>
+   <input type="radio" name="q1f" value=1 checked>true <input type="radio" name="q1f"value=0> false
+</p>
 </td></tr>
-
+<p>
 <tr><td>7 Since graduating, she has taken a course in JavaScript.<br>
-   <input type="checkbox" name="q1m">true  <input type="checkbox" name="q1n">false<p>
+   <input type="radio" name="q1g" value=1 checked>true  <input type="radio" name="q1g" value=0>false
+</p>
 </td></tr>
-
+<p>
 <tr><td>8 She has been doing the JavaScript course since 1997.<br>
-   <input type="checkbox" name="q1o">true  <input type="checkbox" name="q1p">false<p>
+   <input type="radio" name="q1h" value=1 checked>true  <input type="radio" name="q1h" value=0>false
+</p>
 </td></tr>
-
+<p>
 <tr><td>9 She has learned Portuguese.<br>
-   <input type="checkbox" name="q1q">true  <input type="checkbox" name="q1r">false<p>
+   <input type="radio" name="q1i" value=1>true checked  <input type="radio" name="q1i" value=0>false
+</p>
 </td></tr>
-
+<p>
 <tr><td>10 She works for Software Solutions.<br>
-   <input type="checkbox" name="q1s">true  <input type="checkbox" name="q1t">false<p>
+   <input type="radio" name="q1j" value:1 checked>true  <input type="radio" name="q1j" value=0>false
+</p>
 </td></tr>
-
 
 </table>
 <p>
 <center>
-<button onClick="k1()">Check answers</button>
+<button class="eval" data-target="t1">Check answers</button>
 </center>
+</form>
+<form id="t2">
+</p>
 <p>
 <b>2. How good is your memory? Match the question with the answer.</b>
+</p>
 <p>
 1.When was she born?
 <select name="q2a">
@@ -139,6 +156,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 2.When did she finish  school?
 <select name="q2b">
@@ -154,6 +172,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 3.When was she in college?
 <select name="q2c">
@@ -169,6 +188,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 4.How old was she when she graduated?
 <select name="q2d">
@@ -184,6 +204,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 5.When did she start to work for Acme Software?
 <select name="q2e">
@@ -199,6 +220,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 6.How long did she work for Acme Software?
 <select name="q2f">
@@ -214,6 +236,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 7.How long has she been working for Software Solutions ?
 <select name="q2g">
@@ -229,6 +252,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 8.When did she start work for Software Solutions?
 <select name="q2h">
@@ -244,6 +268,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 9.Has she taken a course in JavaScript?
 <select name="q2i">
@@ -259,6 +284,7 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 10.Did she take the JavaScript course in 1997?
 <select name="q2j">
@@ -274,52 +300,67 @@ Use the information in the chart to decide if these sentences are true or false.
 <option value="9">For two years.
 <option value="10">Since 1994.
 </select>
+</p>
 <p>
 <center>
-<button onClick="k2()">Check answers</button>
+<button class="eval" data-target="t2">Check answers</button>
 </center>
+</p>
+</form>
+<form id="t3">
 <p>
 
 <b>3. Complete the questions, using the correct tense.</b>
+</p>
 <p> 
 1. When <sub>(w)</sub><input size="8" name="q3a">she born? In 1970.
+</p>
 <p>
 
 2. When <sub>(d)</sub><input size="8" name="q3b"> <sub>(s)</sub><input size="8" name="q3c"> <sub>(f)</sub><input size="8" name="q3d"> at school? In 1987.
+</p>
 <p>
 
 3. When <sub>(w)</sub><input size="8" name="q3e"> she in college? From 1987 to 1991.
+</p>
 <p>
 
 4. How old <sub>(w)</sub><input size="8" name="q3f"> she when she graduated? 21.
+</p>
 <p>
 
 5. When <sub>(d)</sub><input size="8" name="q3g"> <sub>(s)</sub><input size="8" name="q3h"> <sub>(s)</sub><input size="8" name="q3i"> to work with Acme Software? In 1991.
+</p>
 <p>
 
 6. How long <sub>(d)</sub><input size="8" name="q3j"> <sub>(s)</sub><input size="8" name="q3k"> <sub>(w)</sub><input size="8" name="q3l"> for Acme Software? For two years.
+</p>
 <p>
 
 7. How long <sub>(h)</sub><input size="8" name="q3m"> <sub>(s)</sub><input size="8" name="q3n"> <sub>(b)</sub><input size="8" name="q3o"> <sub>(w)</sub><input size="8" name="q3p"> for Software Solutions? Since 1994. ?
-
+</p>
 <p>
 8. When <sub>(d)</sub><input size="8" name="q3q"> <sub>(s)</sub><input size="8" name="q3r"> <sub>(s)</sub><input size="8" name="q3s"> work for Software Solutions? In 1994.
-
+</p>
 <p>
 
 9. <sub>(h)</sub><input size="8" name="q3t"> <sub>(s)</sub><input size="8" name="q3v"> <sub>(t)</sub><input size="8" name="q3w"> a course in Javascript? Yes she has.
-
+</p>
 <p>
 
 10. <sub>(d)</sub><input size="8" name="q3x"> <sub>(s)</sub><input size="8" name="q3y"> <sub>(t)</sub><input size="8" name="q3z"> the Javascript course in 1997? Yes, she did.
-
+</p>
 <p>
 <center>
-<button onClick="k3()">Check answers</button>
+<button class="eval" data-target="t3">Check answers</button>
 </center>
+</p>
+</form>
+<form id="t4">
 <p>
 
 <b>4. Here is a letter Jenny wrote. Complete it by choosing the best form of the verb.</b>
+</p>
 <p>
 <table cellpadding=5 bgcolor=#ffbc90>
 <tr><td> 
@@ -330,7 +371,7 @@ I am writing on the recommendation of your colleague José Sabater, whom I
 <option value="3">have meat
 </select>
  
-(1)</nobr> at a conference in Peru last year.<P> I am a 31 year-old Australian and I 
+(1)</nobr> at a conference in Peru last year. I am a 31 year-old Australian and I 
 <nobr><select name="q4b">
 <option value="1" selected>Choose Answer
 <option value="2">was working
@@ -375,10 +416,11 @@ I am writing on the recommendation of your colleague José Sabater, whom I
 (8)</nobr> a course in spoken Portuguese, as I am very interested in living and working in Brazil.                              
 </td></tr>
 </table>
-
+</p>
 <center>
-<button onClick="k4()">Check answers</button>
+<button class="eval" data-target="t4">Check answers</button>
 </center>
+</form>
 
 
 
@@ -393,7 +435,7 @@ I am writing on the recommendation of your colleague José Sabater, whom I
 
 
 
-</div>
+
 
 <div id="z1">
 </div>
