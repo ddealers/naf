@@ -1,188 +1,79 @@
-<script language="javascript">
+<script>
+	v = {
 
-function k1(){
-s1a="<br>"
-s1b="<br>"
-s1c="<br>"
-s1d="<br>"
-s1e="<br>"
-s1f="<br>"
-s1g="<br>"
-s1h="<br>"
-
-if(q1a.checked){s1a="1.-Correct<br>"}
-if(q1b.checked){s1a="1.-Incorrect<br>"}
-if(q1d.checked){s1b="2.-Correct<br>"}
-if(q1c.checked){s1b="2.-Incorrect<br>"}
-if(q1e.checked){s1c="3.-Correct<br>"}
-if(q1f.checked){s1c="3.-Incorrect<br>"}
-if(q1g.checked){s1d="4.-Correct<br>"}
-if(q1h.checked){s1d="4.-Incorrect<br>"}
-if(q1i.checked){s1e="5.-Correct<br>"}
-if(q1j.checked){s1e="5.-Incorrect<br>"}
-if(q1l.checked){s1f="6.-Correct<br>"}
-if(q1k.checked){s1f="6.-Incorrect<br>"}
-if(q1n.checked){s1g="7.-Correct<br>"}
-if(q1m.checked){s1g="7.-Incorrect<br>"}
-if(q1p.checked){s1h="8.-Correct<br>"}
-if(q1o.checked){s1h="8.-Incorrect<br>"}
-
-z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h
-}
-function k2(){
-s2a="<br>"
-s2b="<br>"
-s2c="<br>"
-s2d="<br>"
-s2e="<br>"
-s2f="<br>"
-s2g="<br>"
-s2h="<br>"
-s2i="<br>"
-s2j="<br>"
-
-if(q2a.checked){s2a="1.-Correct<br>"}
-if(q2b.checked){s2a="1.-Incorrect<br>"}
-if(q2d.checked){s2b="2.-Correct<br>"}
-if(q2c.checked){s2b="2.-Incorrect<br>"}
-if(q2f.checked){s2c="3.-Correct<br>"}
-if(q2e.checked){s2c="3.-Incorrect<br>"}
-if(q2g.checked){s2d="4.-Correct<br>"}
-if(q2h.checked){s2d="4.-Incorrect<br>"}
-if(q2j.checked){s2e="5.-Correct<br>"}
-if(q2i.checked){s2e="5.-Incorrect<br>"}
-if(q2l.checked){s2f="6.-Correct<br>"}
-if(q2k.checked){s2f="6.-Incorrect<br>"}
-if(q2m.checked){s2g="7.-Correct<br>"}
-if(q2n.checked){s2g="7.-Incorrect<br>"}
-if(q2p.checked){s2h="8.-Correct<br>"}
-if(q2o.checked){s2h="8.-Incorrect<br>"}
-if(q2r.checked){s2i="9.-Correct<br>"}
-if(q2q.checked){s2i="9.-Incorrect<br>"}
-if(q2s.checked){s2j="10.-Correct<br>"}
-if(q2t.checked){s2j="10.-Incorrect<br>"}
-
-z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f+s2g+s2h+s2i+s2j
-}
-
-function k3(){
-s3a="<br>"
-s3b="<br>"
-s3c="<br>"
-
-if(q3b.checked){s3a="1.-Correct<br>"}
-if(q3a.checked){s3a="1.-Incorrect<br>"}
-if(q3c.checked){s3b="2.-Correct<br>"}
-if(q3d.checked){s3b="2.-Incorrect<br>"}
-if(q3f.checked){s3c="3.-Correct<br>"}
-if(q3e.checked){s3c="3.-Incorrect<br>"}
-
-z3.innerHTML=s3a+s3b+s3c
-}
-function k4(){
-s4a="<br>"
-s4b="<br>"
-s4c="<br>"
-s4d="<br>"
-s4e="<br>"
-s4f="<br>"
-s4g="<br>"
-s4h="<br>"
-s4i="<br>"
-s4j="<br>"
-
-if(q4a.checked){s4a="1.-Correct<br>"}
-if(q4b.checked){s4a="1.-Incorrect<br>"}
-if(q4d.checked){s4b="2.-Correct<br>"}
-if(q4c.checked){s4b="2.-Incorrect<br>"}
-if(q4e.checked){s4c="3.-Correct<br>"}
-if(q4f.checked){s4c="3.-Incorrect<br>"}
-if(q4h.checked){s4d="4.-Correct<br>"}
-if(q4g.checked){s4d="4.-Incorrect<br>"}
-if(q4i.checked){s4e="5.-Correct<br>"}
-if(q4j.checked){s4e="5.-Incorrect<br>"}
-if(q4l.checked){s4f="6.-Correct<br>"}
-if(q4k.checked){s4f="6.-Incorrect<br>"}
-if(q4m.checked){s4g="7.-Correct<br>"}
-if(q4n.checked){s4g="7.-Incorrect<br>"}
-if(q4p.checked){s4h="8.-Correct<br>"}
-if(q4o.checked){s4h="8.-Incorrect<br>"}
-if(q4q.checked){s4i="9.-Correct<br>"}
-if(q4r.checked){s4i="9.-Incorrect<br>"}
-if(q4t.checked){s4j="10.-Correct<br>"}
-if(q4s.checked){s4j="10.-Incorrect<br>"}
-
-z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g+s4h+s4i+s4j
-}
-function k5(){
+		q1a:'1',
+		q1b:'1',
+		q1c:'1',
+		q1d:'1',
+		q1e:'1',
+		q1f:'1',
+		q1g:'1',
+		q1h:'1',
+		q2a:'1',
+		q2b:'1',
+		q2c:'1',
+		q2d:'1',
+		q2e:'1',
+		q2f:'1',
+		q2g:'1',
+		q2h:'1',
+		q2i:'1',
+		q2j:'1',
+		q3a:'1',
+		q3b:'1',
+		q3c:'1',
+		q4a:'1'
+		q4b:'1'
+		q4c:'1'
+		q4d:'1'
+		q4e:'1'
+		q4f:'1'
+		q4g:'1'
+		q4h:'1'
+		q4i:'1'
+		q4j:'1'
 z5.innerHTML="2. America was discovered in 1492.<br>4. <i>Citizen Kane</i> was directed by Orson Welles.<br>or Orson Welles directed <i>Citizen Kane</i>.<br>6. Honda motorbikes are made in Japan.<br>8. <i>The Sunflowers</i> was painted by Van Gogh.<br>or Van Gogh painted <i>The Sunflowers</i>.<br>10.Gustave Eiffel built the Eiffel Tower.<br>or The Eiffel Tower was built by Gustave Eiffel.<br>"
+		q6a:'1',
+		q6b:'1',
+		q6c:'1',
+		q6d:'1',
+		q6e:'1',
+		q6f:'1',
+		q7a:'was"',
+		q7b:'written"',
+		q7c:'by',
+		q7d:'discovered',
+		q7e:'It',
+		q7f:'was',
+		q7g:'directed',
+		q7h:'by',
+		q7i:'It',
+		q7j:'was',
+		q7k:'built',
+		q7l:'by',
+		q7m:'climbed',
+		q7n:'was',
+		q7o:'discovered',
+		q7p:'is',
+		q7q:'used',
+		q8a:'was',
+		q8b:'was',
+		q8c:'was given',
+		q8d:'decided',
+		q8e:'was controlled',
+		q8f:'tried',
+		q8g:'was found',
+		q8h:'wanted',
+		q8i:'traveled',
+		q8j:'arrived',
+		q8k:'saw',
+		q8l:'spent',
+		q8m:'was told',
+		q8n:'wrote',
+		q8o:'were written'
 
-}
-function k6(){
-
-s6a="<br>"
-s6b="<br>"
-s6c="<br>"
-s6d="<br>"
-s6e="<br>"
-s6f="<br>"
-
-
-if(q6a.checked){s6a="1.-Correct<br>"}
-if(q6b.checked){s6a="1.-Incorrect<br>"}
-
-if(q6d.checked){s6b="2.-Correct<br>"}
-if(q6c.checked){s6b="2.-Incorrect<br>"}
-
-if(q6e.checked){s6c="3.-Correct<br>"}
-if(q6f.checked){s6c="3.-Incorrect<br>"}
-
-if(q6g.checked){s6d="4.-Correct<br>"}
-if(q6h.checked){s6d="4.-Incorrect<br>"}
-
-if(q6i.checked){s6e="5.-Correct<br>"}
-if(q6j.checked){s6e="5.-Incorrect<br>"}
-
-if(q6l.checked){s6f="6.-Correct<br>"}
-if(q6k.checked){s6f="6.-Incorrect<br>"}
-
-z6.innerHTML=s6a+s6b+s6c+s6d+s6e+s6f
-}
-
-function k7(){
-if(q7a.value=="was"&q7b.value=="written"&q7c.value=="by"){s7a="1. Correct<br>"}else{s7a="1. Incorrect<br>"}
-
-if(q7d.value=="discovered"){s7b="2. Correct<br>"}else{s7b="2. Incorrect<br>"}
-
-if(q7e.value=="It"&q7f.value=="was"&q7g.value=="directed"&q7h.value=="by"){s7c="3. Correct<br>"}else{s7c="3. Incorrect<br>"}
-
-if(q7i.value=="It"&q7j.value=="was"&q7k.value=="built"&q7l.value=="by"){s7d="4. Correct<br>"}else{s7d="4. Incorrect<br>"}
-
-if(q7m.value=="climbed"){s7e="5. Correct<br>"}else{s7e="5. Incorrect<br>"}
-
-if(q7n.value=="was"&q7o.value=="discovered"&q7p.value=="is"&q7q.value=="used"){s7f="6. Correct<br>"}else{s7f="6. Incorrect<br>"}
-
-z7.innerHTML=s7a+s7b+s7c+s7d+s7e+s7f
-}
-function k8(){
-if(q8a.value=="was"){s8a="1. Correct<br>"}else{s8a="1. Incorrect<br>"}
-if(q8b.value=="was"){s8b="2. Correct<br>"}else{s8b="2. Incorrect<br>"}
-if(q8c.value=="was given"){s8c="3. Correct<br>"}else{s8c="3. Incorrect<br>"}
-if(q8d.value=="decided"){s8d="4. Correct<br>"}else{s8d="4. Incorrect<br>"}
-if(q8e.value=="was controlled"){s8e="5. Correct<br>"}else{s8e="5. Incorrect<br>"}
-if(q8f.value=="tried"){s8f="6. Correct<br>"}else{s8f="6. Incorrect<br>"}
-if(q8g.value=="was found"){s8g="7. Correct<br>"}else{s8g="7. Incorrect<br>"}
-if(q8h.value=="wanted"){s8h="8. Correct<br>"}else{s8h="8. Incorrect<br>"}
-if(q8i.value=="traveled"){s8i="9. Correct<br>"}else{s8i="9. Incorrect<br>"}
-if(q8j.value=="arrived"){s8j="10. Correct<br>"}else{s8j="10. Incorrect<br>"}
-if(q8k.value=="saw"){s8k="11. Correct<br>"}else{s8k="11. Incorrect<br>"}
-if(q8l.value=="spent"){s8l="12. Correct<br>"}else{s8l="12. Incorrect<br>"}
-if(q8m.value=="was told"){s8m="13. Correct<br>"}else{s8m="13. Incorrect<br>"}
-if(q8n.value=="wrote"){s8n="14. Correct<br>"}else{s8n="14. Incorrect<br>"}
-if(q8o.value=="were written"){s8o="15. Correct<br>"}else{s8o="15. Incorrect<br>"}
-
-z8.innerHTML=s8a+s8b+s8c+s8d+s8e+s8f+s8g+s8h+s8i+s8j+s8k+s8l+s8m+s8n+s8o
-}
+	}
+</script>
 
 
 <div id="t0">

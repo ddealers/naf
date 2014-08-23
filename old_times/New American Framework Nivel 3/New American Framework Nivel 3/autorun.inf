@@ -1,0 +1,4 @@
+[autorun]
+shellexecute=americanframework3.htm /max
+label=New American Framework 3
+icon=fw3/eye.ico

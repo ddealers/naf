@@ -2,13 +2,13 @@
 extends ../jade/layouts/main.jade
 
 block content
-	div.bg2
+	div.bg.bg4
 		div.row
-			div(class=['large-10','medium-12','short-12','columns'], id='section1')
+			div(class=['large-12','medium-12','short-12','columns'], id='section1')
 				img(id='logo', src='img/m2-1.jpg')
 				img(src='img/m2-2.jpg')
 				img(src='img/m2-3.jpg')
-		div.row
+		div.row.activity
 			div(class=['large-3','medium-3','short-12','columns'], id='menu')
-				include ../jade/menus/2.jade
+				include ../jade/menus/4.jade
 			div(class=['large-9','medium-9','short-12','columns'], id='cont')

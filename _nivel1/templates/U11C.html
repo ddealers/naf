@@ -1,35 +1,33 @@
 <script>
 	v = {
-		q1a:'0'
-		q1c:'1'
-		q2a:'1'
-		q2d:'0'
-		q2g:'1'
-		q2j:'0'
-		q2m:'1'
-		q3a:'3'
-		q3b:'1'
-		q3c:'2'
-		q3d:'3'
-		q3e:'2'
-		q3f:'3'
-		q4a:'5'
-		q4b:'7'
-		q4c:'6'
-		q4d:'3'
-		q4e:'2'
-		q4f:'4'
-		q4g:'1'
-		q5a:'1'
-		q5b:'1'
-		q5c:'2'
-		q5d:'2'
-		q5e:'1'
-		q5f:'2'
-		q5g:'2'
+		q1a:'0',
+		q1c:'1',
+		q2a:'1',
+		q2d:'0',
+		q2g:'1',
+		q2j:'0',
+		q2m:'1',
+		q3a:'3',
+		q3b:'1',
+		q3c:'2',
+		q3d:'3',
+		q3e:'2',
+		q3f:'3',
+		q4a:'5',
+		q4b:'7',
+		q4c:'6',
+		q4d:'3',
+		q4e:'2',
+		q4f:'4',
+		q4g:'1',
+		q5a:'1',
+		q5b:'1',
+		q5c:'2',
+		q5d:'2',
+		q5e:'1',
+		q5f:'2',
+		q5g:'2',
 		q5h:'1'
-
-		
 	}
 </script>
 <form id="t1">
@@ -59,7 +57,7 @@
 The salesperson (<b>A</b>) thinks the sweatshirt is
 </p>
 <p class="letra">
-<input type="checkbox" name="q1a"> too big <input type="checkbox" name="q1b"> too small
+<input type="radio" name="q1a" value=1> too big <input type="radio" name="q1a" value=0> too small
 </p><br>
 <p>
 <b class="letra">Dialog 2</b> 
@@ -82,11 +80,11 @@ The salesperson (<b>A</b>) thinks the sweatshirt is
 The customer (<b>B</b>) thinks the jeans are
 </p>
 <p class="letra">
-<input type="checkbox" name="q1c"> too big  <input type="checkbox" name="q1d"> too small 
+<input type="radio" name="q1b" value=1> too big  <input type="radio" name="q1b" value=0> too small 
 </p>
 <p>
 <center>
-<button class="eval" data-target="t1">Check answers</button>
+<button class="eval" data-target="t1" data-draw="z1">Check answers</button>
 </center>
 </p>
 </form>
@@ -101,19 +99,19 @@ The customer (<b>B</b>) thinks the jeans are
 <tr><td>B: Yes,<!--<sub>1</sub><img src="img/ln.jpg" width=100 height=1>--> like one of those sweatshirts in the window.</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
-<tr><td width=30></td><td class="letra"><input type="checkbox" name="q2a">I'd</td><td width=60></td><td class="letra"><input type="checkbox" name="q2b">Can I try it on</td><td class="letra" width=60></td><td class="letra"><input type="checkbox" name="q2c">fits</td></tr>
+<tr><td width=30></td><td class="letra"><input type="radio" name="q2a">I'd</td><td width=60></td><td class="letra"><input type="radio" name="q2a">Can I try it on</td><td class="letra" width=60></td><td class="letra"><input type="radio" name="q2a">fits</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
 <tr><td class="letra">A: What <!--<sub>2</sub><img src="img/ln.jpg" width=100 height=1>-->?</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
-<tr><td width=30></td><td class="letra"><input type="checkbox" name="q2d">Can I try it on</td><td class="letra" width=60></td><td><input type="checkbox" name="q2e">size</td><td class="letra" width=60></td><td><input type="checkbox" name="q2f">I'd</td></tr>
+<tr><td width=30></td><td class="letra"><input type="radio" name="q2b">Can I try it on</td><td class="letra" width=60></td><td><input type="radio" name="q2b">size</td><td class="letra" width=60></td><td><input type="radio" name="q2b">I'd</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
 <tr><td>B: Small. <!--<sub>3</sub><img src="img/ln.jpg" width=100 height=1>-->?</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
-<tr><td width=30></td><td><input type="checkbox" name="q2g">Can I try it on</td><td width=60></td><td><input type="checkbox" name="q2h">I'll take it</td><td width=60></td><td><input type="checkbox" name="q2i">size</td></tr>
+<tr><td width=30></td><td><input type="radio" name="q2c">Can I try it on</td><td width=60></td><td><input type="radio" name="q2c">I'll take it</td><td width=60></td><td><input type="radio" name="q2c">size</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
 <tr><td>A: Of course.</td></tr>
@@ -121,7 +119,7 @@ The customer (<b>B</b>) thinks the jeans are
 <tr><td>A: I don't think it <!--<sub>4</sub><img src="img/ln.jpg" width=100 height=1>-->.</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
-<tr><td width=30></td><td><input type="checkbox" name="q2j">I'd</td><td width=60></td><td><input type="checkbox" name="q2k">Can I try it on</td><td width=60></td><td><input type="checkbox" name="q2l">fits</td></tr>
+<tr><td width=30></td><td><input type="radio" name="q2d">I'd</td><td width=60></td><td><input type="radio" name="q2d">Can I try it on</td><td width=60></td><td><input type="radio" name="q2d">fits</td></tr>
 </table>
 <table cellpadding=0 cellspacing=4>
 <tr><td>B: It's fine. like my sweatshirts to be tight.</td></tr>
@@ -131,11 +129,11 @@ The customer (<b>B</b>) thinks the jeans are
 <tr><td>B: <!--<sub>5</sub><img src="img/ln.jpg" width=100 height=1></td></tr>-->
 </table>
 <table cellpadding=0 cellspacing=4>
-<tr><td width=30></td><td><input type="checkbox" name="q2m">I'll take it</td><td width=60></td><td><input type="checkbox" name="q2n">fits</td><td width=60></td><td><input type="checkbox" name="q2o">size</td></tr>
+<tr><td width=30></td><td><input type="radio" name="q2e">I'll take it</td><td width=60></td><td><input type="radio" name="q2e">fits</td><td width=60></td><td><input type="radio" name="q2e">size</td></tr>
 </table>
 <p>
 <center>
-<button class="eval" data-target="t2">Check answers</button>
+<button class="eval" data-target="t2" data-draw="z2">Check answers</button>
 </center>
 </p>
 </form>
@@ -243,7 +241,7 @@ B: Oh. OK, well,
 </table>
 <p>
 <center>
-<button class="eval" data-target="t3">Check answers</button>
+<button class="eval" data-target="t3" data-draw="z3">Check answers</button>
 </center>
 </p>
 </form>
@@ -267,7 +265,7 @@ B: Oh. OK, well,
 </p>
 <p>
 <center>
-<button class="eval" data-target="t4">Check answers</button>
+<button class="eval" data-target="t4" data-draw="z4">Check answers</button>
 </center>
 </p>
 </form>
@@ -321,7 +319,7 @@ B: Oh. OK, well,
 <table class="letra" cellpadding=0 cellspacing=4>
 <tr><td><b>B:</b></td><td> Fine.  
 </table>
-<button class="eval" data-target="t5">Check answers</button>
+<button class="eval" data-target="t5" data-draw="z5">Check answers</button>
 </form>
 
 <div id="z1">

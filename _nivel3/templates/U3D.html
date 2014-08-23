@@ -1,84 +1,51 @@
-<script language="javascript">
+<script>
+	v = {
 
-function k1(){
-if(q1a.value=="9"){s1a="1.- Correct<br>"}else{s1a="1.- Incorrect<br>"}
-if(q1b.value=="3"){s1b="2.- Correct<br>"}else{s1b="2.- Incorrect<br>"}
-if(q1c.value=="6"){s1c="3.- Correct<br>"}else{s1c="3.- Incorrect<br>"}
-if(q1d.value=="2"){s1d="4.- Correct<br>"}else{s1d="4.- Incorrect<br>"}
-if(q1e.value=="8"){s1e="5.- Correct<br>"}else{s1e="5.- Incorrect<br>"}
-if(q1f.value=="4"){s1f="6.- Correct<br>"}else{s1f="6.- Incorrect<br>"}
-if(q1g.value=="7"){s1g="7.- Correct<br>"}else{s1g="7.- Incorrect<br>"}
-if(q1h.value=="5"){s1h="8.- Correct<br>"}else{s1h="8.- Incorrect<br>"}
-if(q1i.value=="1"){s1i="9.- Correct<br>"}else{s1i="9.- Incorrect<br>"}
+		q1a:'9',
+		q1b:'3',
+		q1c:'6',
+		q1d:'2',
+		q1e:'8',
+		q1f:'4',
+		q1g:'7',
+		q1h:'5',
+		q1i:'1',
+		q2a:'7',
+		q2b:'5',
+		q2c:'8',
+		q2d:'2',
+		q2e:'1',
+		q2f:'4',
+		q2g:'6',
+		q2h:'3',
+		q3a:'crutches',
+		q3b:'stitches',
+		q3c:'joints',
+		q3d:'pills',
+		q3e:'blood',
+		q3f:'spine',
+		q3g:'brain',
+		q3h:'band-aid',
+		q3i:'injection',
+		q3j:'sling',
+		q3k:'veins',
+		q3l:'ointment',
+		q3m:'bones',
+		q3n:'nerve',
+		q4a:'blisters',
+		q4b:'cut',
+		q4c:'bruises',
+		q4d:'sting',
+		q4e:'fracture',
+		q4f:'bite',
+		q4g:'itch',
+		q4h:'burn',
+		q4i:'sprained',
 
-z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h+s1i
-}
-function k2(){
-if(q2a.value=="7"){s2a="1. Correct<br>"}
-if(q2a.value!="7"){s2a="1. Incorrect<br>"}
+	}
+</script>
 
-if(q2b.value=="5"){s2b="2. Correct<br>"}
-if(q2b.value!="5"){s2b="2. Incorrect<br>"}
-
-if(q2c.value=="8"){s2c="3. Correct<br>"}
-if(q2c.value!="8"){s2c="3. Incorrect<br>"}
-
-if(q2d.value=="2"){s2d="4. Correct<br>"}
-if(q2d.value!="2"){s2d="4. Incorrect<br>"}
-
-if(q2e.value=="1"){s2e="5. Correct<br>"}
-if(q2e.value!="1"){s2e="5. Incorrect<br>"}
-
-if(q2f.value=="4"){s2f="6. Correct<br>"}
-if(q2f.value!="4"){s2f="6. Incorrect<br>"}
-
-if(q2g.value=="6"){s2g="7. Correct<br>"}
-if(q2g.value!="6"){s2g="7. Incorrect<br>"}
-
-if(q2h.value=="3"){s2h="8. Correct<br>"}
-if(q2h.value!="3"){s2h="8. Incorrect<br>"}
-
-z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f+s2g+s2h
-}
-
-function k3(){
-if(q3a.value=="crutches"){s3a="1. Correct<br>"}else{s3a="1. Incorrect<br>"}
-if(q3b.value=="stitches"){s3b="2. Correct<br>"}else{s3b="2. Incorrect<br>"}
-if(q3c.value=="joints"){s3c="3. Correct<br>"}else{s3c="3. Incorrect<br>"}
-if(q3d.value=="pills"){s3d="4. Correct<br>"}else{s3d="4. Incorrect<br>"}
-if(q3e.value=="blood"){s3e="5. Correct<br>"}else{s3e="5. Incorrect<br>"}
-if(q3f.value=="spine"){s3f="6. Correct<br>"}else{s3f="6. Incorrect<br>"}
-if(q3g.value=="brain"){s3g="7. Correct<br>"}else{s3g="7. Incorrect<br>"}
-if(q3h.value=="band-aid"){s3h="8. Correct<br>"}else{s3h="8. Incorrect<br>"}
-if(q3i.value=="injection"){s3i="9. Correct<br>"}else{s3i="9. Incorrect<br>"}
-if(q3j.value=="sling"){s3j="10. Correct<br>"}else{s3j="10. Incorrect<br>"}
-if(q3k.value=="veins"){s3k="11. Correct<br>"}else{s3k="11. Incorrect<br>"}
-if(q3l.value=="ointment"){s3l="12. Correct<br>"}else{s3l="12. Incorrect<br>"}
-if(q3m.value=="bones"){s3m="13. Correct<br>"}else{s3m="13. Incorrect<br>"}
-if(q3n.value=="nerve"){s3n="14. Correct<br>"}else{s3n="14. Incorrect<br>"}
-
-z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h+s3i+s3j+s3k+s3l+s3m+s3n
-}
-
-
-function k4(){
-
-if(q4a.value=="blisters"){s4a="1.- Correct<br>"}else{s4a="1.- Incorrect<br>"}
-if(q4b.value=="cut"){s4b="2.- Correct<br>"}else{s4b="2.- Incorrect<br>"}
-if(q4c.value=="bruises"){s4c="3.- Correct<br>"}else{s4c="3.- Incorrect<br>"}
-if(q4d.value=="sting"){s4d="4.- Correct<br>"}else{s4d="4.- Incorrect<br>"}
-if(q4e.value=="fracture"){s4e="5.- Correct<br>"}else{s4e="5.- Incorrect<br>"}
-if(q4f.value=="bite"){s4f="6.- Correct<br>"}else{s4f="6.- Incorrect<br>"}
-if(q4g.value=="itch"){s4g="7.- Correct<br>"}else{s4g="7.- Incorrect<br>"}
-if(q4h.value=="burn"){s4h="8.- Correct<br>"}else{s4h="8.- Incorrect<br>"}
-if(q4i.value=="sprained"){s4i="9.- Correct<br>"}else{s4i="9.- Incorrect<br>"}
-
-z4.innerHTML=s4a+s4b+s4c+s4d+s4e+s4f+s4g+s4h+s4i
-}
-<div id="t0">
-<b>Body Matters</b>
-<p>
-<b>Medicine and parts of the body</b>
+Parts of the body</b>
 </div>
 <p>
 <div id="t1">
