@@ -1,43 +1,37 @@
-<script language="javascript">
-function k1(){
-if(q1a.value=="turn in"|q1a.value=="Turn in"){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
-if(q1b.value=="take a nap"|q1b.value=="Take a nap"){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
-if(q1c.value=="asleep"|q1c.value=="Asleep"){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
-if(q1d.value=="dozing"|q1d.value=="Dozing"){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
-if(q1e.value=="dozed off"|q1e.value=="Dozed off"){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
-if(q1f.value=="daydream"|q1f.value=="Daydream"){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
-if(q1g.value=="nightmare"|q1g.value=="Nightmare"){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
-if(q1h.value=="nightcap"|q1h.value=="Nightcap"){s1h="8. Correct<br>"}else{s1h="8. Incorrect<br>"}
-if(q1i.value=="lie down"|q1i.value=="Lie down"){s1i="9. Correct<br>"}else{s1i="9. Incorrect<br>"}
-if(q1j.value=="snore"|q1j.value=="Snore"){s1j="10. Correct<br>"}else{s1j="10. Incorrect<br>"}
-if(q1k.value=="awake"|q1k.value=="Awake"){s1k="11. Correct<br>"}else{s1k="11. Incorrect<br>"}
-z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h+s1i+s1j+s1k
-}
-function k2(){
-if(q2a.value==4){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
-if(q2b.value==5){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
-if(q2c.value==1){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
-if(q2d.value==2){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
-if(q2e.value==3){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
-z2.innerHTML=s2a+s2b+s2c+s2d+s2e
-}
-function k3(){
-if(q3a.value=="sleep in"|q3a.value=="Sleep in"){s3a="1. Correct<br>"}else{s3a="1. Incorrect<br>"}
-if(q3b.value=="sleep over"|q3b.value=="Sleep over"){s3b="2. Correct<br>"}else{s3b="2. Incorrect<br>"}
-if(q3c.value=="sleep on it"|q3c.value=="Sleep on it"){s3c="3. Correct<br>"}else{s3c="3. Incorrect<br>"}
-if(q3d.value=="sleep it off"|q3d.value=="Sleep it off"){s3d="4. Correct<br>"}else{s3d="4. Incorrect<br>"}
-if(q3e.value=="sleep with"|q3e.value=="Sleep with"){s3e="5. Correct<br>"}else{s3e="5. Incorrect<br>"}
-if(q3f.value=="oversleep"|q3f.value=="Oversleep"){s3f="6. Correct<br>"}else{s3f="6. Incorrect<br>"}
-z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f
-}
-function k4(){
-if(q4a.checked==false&q4b.checked==false&q4c.checked==true){s4a="1. Correct<br>"}else{s4a="1. Incorrect<br>"}
-if(q4d.checked==false&q4e.checked==true&q4f.checked==false){s4b="2. Correct<br>"}else{s4b="2. Incorrect<br>"}
-if(q4g.checked==false&q4h.checked==true&q4i.checked==false){s4c="3. Correct<br>"}else{s4c="3. Incorrect<br>"}
-if(q4j.checked==true&q4k.checked==false&q4l.checked==false){s4d="4. Correct<br>"}else{s4d="4. Incorrect<br>"}
-if(q4m.checked==false&q4n.checked==false&q4o.checked==true){s4e="5. Correct<br>"}else{s4e="5. Incorrect<br>"}
-z4.innerHTML=s4a+s4b+s4c+s4d+s4e
-}
+<script>
+	v = {
+
+		q1a:'turn in',
+		q1b:'take a nap',
+		q1c:'asleep',
+		q1d:'dozing',
+		q1e:'dozed off',
+		q1f:'daydream',
+		q1g:'nightmare',
+		q1h:'nightcap',
+		q1i:'lie down',
+		q1j:'snore',
+		q1k:'awake',
+		q2a:'4',
+		q2b:'5',
+		q2c:'1',
+		q2d:'2',
+		q2e:'3',
+		q3a:'sleep in',
+		q3b:'sleep over',
+		q3c:'sleep on it',
+		q3d:'sleep it off',
+		q3e:'sleep with',
+		q3f:'oversleep',
+		q4a:'3',
+		q4d:'2',
+		q4g:'2',
+		q4j:'1',
+		q4m:'3',
+
+	}
+</script>
+
 <div id="t1">
 <span id="tit">Sleep idioms</span>
 <p>

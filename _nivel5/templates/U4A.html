@@ -1,39 +1,37 @@
-<script language="javascript">
-function k1(){
-if(q1a.checked==false&q1b.checked==false&q1c.checked==false&q1d.checked==true&q1e.checked==false){s1a="1. Correct<br>"}else{s1a="1. Incorrect<br>"}
-if(q1f.checked==false&q1g.checked==false&q1h.checked==true&q1i.checked==false&q1j.checked==false){s1b="2. Correct<br>"}else{s1b="2. Incorrect<br>"}
-if(q1k.checked==true&q1l.checked==false&q1m.checked==false&q1n.checked==false&q1o.checked==false){s1c="3. Correct<br>"}else{s1c="3. Incorrect<br>"}
-if(q1p.checked==false&q1q.checked==true&q1r.checked==false&q1s.checked==false&q1t.checked==false){s1d="4. Correct<br>"}else{s1d="4. Incorrect<br>"}
-if(q1u.checked==false&q1v.checked==false&q1w.checked==false&q1x.checked==false&q1y.checked==true){s1e="5. Correct<br>"}else{s1e="5. Incorrect<br>"}
-if(q1z.checked==false&q1aa.checked==false&q1ab.checked==true&q1ac.checked==false&q1ad.checked==false){s1f="6. Correct<br>"}else{s1f="6. Incorrect<br>"}
-if(q1ae.checked==false&q1af.checked==false&q1ag.checked==false&q1ah.checked==false&q1ai.checked==true){s1g="7. Correct<br>"}else{s1g="7. Incorrect<br>"}
-if(q1aj.checked==false&q1ak.checked==false&q1al.checked==false&q1am.checked==true&q1an.checked==false){s1h="8. Correct<br>"}else{s1h="8. Incorrect<br>"}
-if(q1ao.checked==true&q1ap.checked==false&q1aq.checked==false&q1ar.checked==false&q1as.checked==false){s1i="9. Correct<br>"}else{s1i="9. Incorrect<br>"}
-if(q1at.checked==false&q1au.checked==true&q1av.checked==false&q1aw.checked==false&q1ax.checked==false){s1j="10. Correct<br>"}else{s1j="10. Incorrect<br>"}
-z1.innerHTML=s1a+s1b+s1c+s1d+s1e+s1f+s1g+s1h+s1i+s1j
-}
-function k2(){
-if(q2a.value=="They didn't have lunch on the plane"|q2a.value=="they didn't have lunch on the plane"){s2a="1. Correct<br>"}else{s2a="1. Incorrect<br>"}
-if(q2b.value=="We didn't have to get a visa"|q2b.value=="we didn't have to get a visa"){s2b="2. Correct<br>"}else{s2b="2. Incorrect<br>"}
-if(q2c.value=="She hadn't been waiting for a long time"|q2c.value=="she hadn't been waiting for a long time"){s2c="3. Correct<br>"}else{s2c="3. Incorrect<br>"}
-if(q2d.value=="I would have enjoyed the trip more if I hadn't rented a car"|q2d.value=="i would have enjoyed the trip more if I hadn't rented a car"){s2d="4. Correct<br>"}else{s2d="4. Incorrect<br>"}
-if(q2e.value=="He didn't have to spend the night at the airport"|q2e.value=="he didn't have to spend the night at the airport"){s2e="5. Correct<br>"}else{s2e="5. Incorrect<br>"}
-if(q2f.value=="We didn't have a lot of time to get to the station"|q2f.value=="we didn't have a lot of time to get to the station"){s2f="6. Correct<br>"}else{s2f="6. Incorrect<br>"}
-if(q2g.value=="Life would be easier if I didn't have brothers and sisters"|q2g.value=="life would be easier if I didn't have brothers and sisters"){s2g="7. Correct<br>"}else{s2g="7. Incorrect<br>"}
-if(q2h.value=="He now wishes he had traveled more"|q2h.value=="he now wishes he had traveled more"){s2h="8. Correct<br>"}else{s2h="8. Incorrect<br>"}
-z2.innerHTML=s2a+s2b+s2c+s2d+s2e+s2f+s2g+s2h
-}
-function k3(){
-if(q3a.value=="hadn't traveled"|q3a.value=="Hadn't traveled"){s3a="1. Correct<br>"}else{s3a="1. Incorrect<br>"}
-if(q3b.value=="didn't have to"|q3b.value=="Didn't have to"){s3b="2. Correct<br>"}else{s3b="2. Incorrect<br>"}
-if(q3c.value=="hadn't left"|q3c.value=="Hadn't left"){s3c="3. Correct<br>"}else{s3c="3. Incorrect<br>"}
-if(q3d.value=="wish I had"|q3d.value=="Wish I had"){s3d="4. Correct<br>"}else{s3d="4. Incorrect<br>"}
-if(q3e.value=="had just hung"|q3e.value=="Had just hung"){s3e="5. Correct<br>"}else{s3e="5. Incorrect<br>"}
-if(q3f.value=="I had enough"|q3f.value=="i had enough"){s3f="6. Correct<br>"}else{s3f="6. Incorrect<br>"}
-if(q3g.value=="had been to"|q3g.value=="Had been to"){s3g="7. Correct<br>"}else{s3g="7. Incorrect<br>"}
-if(q3h.value=="wished she hadn't gone"|q3h.value=="Wished she hadn't gone"){s3h="8. Correct<br>"}else{s3h="8. Incorrect<br>"}
-z3.innerHTML=s3a+s3b+s3c+s3d+s3e+s3f+s3g+s3h
-}
+<script>
+	v = {
+
+		q1a:'4',
+		q1b:'3',
+		q1c:'1',
+		q1d:'2',
+		q1e:'5',
+		q1f:'3',
+		q1g:.'5',
+		q1h:.'4',
+		q1i:.'1',
+		q1j:'2',
+		q2a:'They didn\'t have lunch on the plane',
+		q2b:'We didn\'t have to get a visa',
+		q2c:'She hadn\'t been waiting for a long time',
+		q2d:'I would have enjoyed the trip more if I hadn\'t rented a car',
+		q2e:'He didn\'t have to spend the night at the airport',
+		q2f:'We didn\'t have a lot of time to get to the station',
+		q2g:'Life would be easier if I didn\'t have brothers and sisters',
+		q2h:'He now wishes he had traveled more',
+		q3a:'hadn\'t traveled',
+		q3b:'didn\'t have to',
+		q3c:'hadn\'t left',
+		q3d:'wish I had',
+		q3e:'had just hung',
+		q3f:'I had enough',
+		q3g:'had been to',
+		q3h:'wished she hadn\'t gone'
+
+	}
+
+</script>
+
 <div id="t1">
 <span id="tit">Uses of had</span>
 <p>
