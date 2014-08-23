@@ -12,6 +12,9 @@ body div.bg.bg1 {
 body div.bg.bg2 {
   background-color: #2ba6cb;
 }
+body div.bg.bg3 {
+  background-color: #521c58;
+}
 body #index #t1 img {
   padding: 1em;
   width: 80%;
@@ -24,6 +27,7 @@ body #section1 > img {
 }
 body .activity {
   height: 100%;
+  position: relative;
 }
 body #menu {
   overflow-y: scroll;
@@ -35,6 +39,17 @@ body #menu ol {
 }
 body #menu a {
   color: #fff;
+}
+body .alert-box {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+body .alert-box p {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 15px;
 }
 body #cont {
   background: #fff;
@@ -343,8 +358,49 @@ body li.letra span {
   top: 0;
 }
 <<<<<<< HEAD
+/*---------------------------------*/
+.u3tit {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #521c58;
+  top: 15px;
+}
+.u3 {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #521c58;
+  top: 35px;
+}
+#t1 {
+  padding-top: 60px;
+}
+ol.text {
+  padding-top: 20px;
+}
+li.space {
+  margin-bottom: 10px;
+}
+img.margin-bottom {
+  margin-bottom: 40px;
+}
+input.space-right {
+  margin-right: 10px;
+}
+ol li {
+  margin-bottom: 10px;
+}
+p.contenido {
+  font-family: verdana;
+  font-size: 13px;
+  text-align: left;
+  width: 200px;
+  margin: 20px 0;
+}
+center.izquierda {
+  text-align: left;
+}
 body p.letra span {
   top: 0;
 }
-=======
->>>>>>> 1b39edcc2c049805c928bd99d644a3494e7bde46

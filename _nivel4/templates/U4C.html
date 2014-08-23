@@ -26,13 +26,13 @@
 		q3c:'What do you think it represents',
 		q3d:'Where do you think it was painted',
 		q3e:'What do you make of this one',
-		q4a:'b'
-		q4b:'g'
-		q4c:'a'
-		q4d:'d'
-		q4e:'e'
-		q4f:'f'
-		q4g:'c'
+		q4a:'b',
+		q4b:'g',
+		q4c:'a',
+		q4d:'d',
+		q4e:'e',
+		q4f:'f',
+		q4g:'c',
 		q5a:'2',
 		q5d:'3',
 		q5g:'3',
@@ -54,13 +54,13 @@
 
 
 <div id="t0">
-<img src="u4.jpg">
+<img src="img/u4.jpg" class="logo4">
 <p>
-<b>Circles, dots & wavy lines - giving opinions   </b>
+<b class="u4tit">Circles, dots & wavy lines - giving opinions   </b>
 <p>
 </div>
 
-<div id="t1">
+<form id="t1">
 <b>1. The following are three short dialogs of people describing paintings. 
 <p>
 Put the sentences in the correct order (1,2,3,4,5).
@@ -80,8 +80,10 @@ Dialog 1:</b>
 </ol>
 <p>
 <center>
-<button onclick="k1()">Check Answers </button> 
+<button class="eval"data-target="t2">Check Answers </button> 
 </center>
+</form>
+<form id="t2">
 <p>
 <b>Dialog 2 (1,2,3,4,5,6):</b>
 <p>
@@ -100,8 +102,10 @@ Dialog 1:</b>
 </ol>
 <p>
 <center>
-<button onclick="k1b()">Check Answers </button> 
-</center>   
+<button class="eval"data-target="t3">Check Answers </button> 
+</center>
+</form>   
+<form id="t4">
 <p>
 <b>Dialog 3 (1,2,3,4,5,6):</b>
 <p>
@@ -120,14 +124,16 @@ Dialog 1:</b>
 </ol>
 <p>
 <center>
-<button onclick="k1c()">Check Answers </button> 
+<button class="eval"data-target="t4">Check Answers </button> 
 </center> 
+</form>
+<form id="t5">
 <p>
 <b>2. Now read the dialogs and match them to the paintings they describe.
 (There are three dialogs but four paintings).</b>
 <p>
 <center>
-<img src="u4c1.jpg">
+<img src="img/u4c1.jpg">
 <p>
 <ol>
 <li>Dialog 1   
@@ -160,8 +166,10 @@ Dialog 1:</b>
 </ol>
 <p>
 <center>
-<button onclick="k2()">Check Answers </button> 
+<button class="eval"data-target="t6">Check Answers </button> 
 </center> 
+</form>
+<form id="t7">
 <p>
 <b>3. Put the words in order to make questions from the dialogs.</b>
 <p>
@@ -188,8 +196,10 @@ Dialog 1:</b>
 <p>
 </ol>
 <center>
-<button onclick="k3()">Check Answers </button> 
+<button class="eval"data-target="t7">Check Answers </button> 
 </center> 
+</form>
+<form id="t8">
 <p>
 <b>4. Connect the two parts to complete sentences from the dialogs.</b>
 <p>
@@ -204,63 +214,64 @@ Dialog 1:</b>
 </table>
 <p>
 <center>
-<button onclick="k4()">Check Answers </button> 
+<button class="eval"data-target="t8">Check Answers </button> 
 </center> 
+</form>
 <p>
 <b>5. Choose the correct option to complete the sentences from the dialogs.</b>
 <p>
 <ol>
 <li> What I like about it ... 
-<br><input type="checkbox" name="q5a">   you can see the mountains 
-<br><input type="checkbox" name="q5b">    is the way you can see the mountains 
-<br><input type="checkbox" name="q5c">    you see the mountains 
+<br><input type="radio" name="q5a" value="1" checked>   you can see the mountains 
+<br><input type="radio" name="q5a" value="2" >    is the way you can see the mountains 
+<br><input type="radio" name="q5a" value="3" >    you see the mountains 
 <li> She looks ... 
-<br><input type="checkbox" name="q5d">    a sad woman 
-<br><input type="checkbox" name="q5e">    as a sad woman 
-<br><input type="checkbox" name="q5f">    sad 
+<br><input type="radio" name="q5b" value="1" checked>    a sad woman 
+<br><input type="radio" name="q5b" value="2" >    as a sad woman 
+<br><input type="radio" name="q5b" value="3" >    sad 
 <li> It looks like ... 
-<br><input type="checkbox" name="q5g">    European 
-<br><input type="checkbox" name="q5h">    very relaxing 
-<br><input type="checkbox" name="q5i">    a place in Europe 
+<br><input type="radio" name="q5c" value="1" checked>    European 
+<br><input type="radio" name="q5c" value="2" >    very relaxing 
+<br><input type="radio" name="q5c" value="3" >    a place in Europe 
 <li> It's so ... 
-<br><input type="checkbox" name="q5j">    beautiful 
-<br><input type="checkbox" name="q5k">    a beautiful picture 
-<br><input type="checkbox" name="q5l">    much beautiful 
+<br><input type="radio" name="q5d" value="1" checked>    beautiful 
+<br><input type="radio" name="q5d" value="2" >    a beautiful picture 
+<br><input type="radio" name="q5d" value="3" >    much beautiful 
 <li> What do you think ___ this one? 
-<br><input type="checkbox" name="q5m">    in 
-<br><input type="checkbox" name="q5n">    from 
-<br><input type="checkbox" name="q5o">    of 
+<br><input type="radio" name="q5e" value="1" checked>    in 
+<br><input type="radio" name="q5e" value="2" >    from 
+<br><input type="radio" name="q5e" value="3" >    of 
 <li> What do you like ___ it? 
-<br><input type="checkbox" name="q5p">    of 
-<br><input type="checkbox" name="q5q">    about 
-<br><input type="checkbox" name="q5r">    in 
+<br><input type="radio" name="q5f" value="1" checked>    of 
+<br><input type="radio" name="q5f" value="2" >    about 
+<br><input type="radio" name="q5f" value="3" >    in 
 <li> This one's interesting, ____ ? 
-<br><input type="checkbox" name="q5s">    no 
-<br><input type="checkbox" name="q5t">    doesn't it 
-<br><input type="checkbox" name="q5v">    isn't it 
+<br><input type="radio" name="q5g" value="1" checked>    no 
+<br><input type="radio" name="q5g" value="2" >    doesn't it 
+<br><input type="radio" name="q5g" value="3" >    isn't it 
 <li> It gives me ... 
-<br><input type="checkbox" name="q5w">    sadness 
-<br><input type="checkbox" name="q5x">    a feeling of sadness 
-<br><input type="checkbox" name="q5y">    sad 
+<br><input type="radio" name="q5h" value="1" checked>    sadness 
+<br><input type="radio" name="q5h" value="2" >    a feeling of sadness 
+<br><input type="radio" name="q5h" value="3" >    sad 
 </ol>
 <p>
 <center>
-<button onclick="k5()">Check Answers </button> 
+<button class="eval"onclick="k5()">Check Answers </button> 
 </center> 
 <p>
 <b>6. Now choose the correct word or phrase to complete the dialog about this painting.</b>
 <p>
 <center>
-<img src="u4c2.jpg">
+<img src="img/u4c2.jpg">
 </center>
 <p>
-A: This one's nice, <sub>1</sub><input size=10 name="q6a">?<br>
-B: Oh yes, I like the soft tones and ochre colors.<br>
-A:  <sub>2</sub><input size=15 name="q6b"> is the simplicity.  <sub>3</sub><input size=15 name="q6c"> the shapes very relaxing. <br>
-B: Relaxing!  <sub>4</sub><input size=15 name="q6d"> a little sharp and violent to me. Perhaps  <sub>5</sub><input size=15 name="q6e"> of the artist's life <br>
-A: I'm not sure I agree with you Errol.  <sub>6</sub><input size=15 name="q6f"> a strong feeling of passion for life, but not violence. <br>
-B: Yeah, maybe. It's too simple  <sub>7</sub><input size=15 name="q6g">. There's not enough detail. Who painted it anyway?<br>
-A: Oh Errol! Van Gogh, of course! Let's go and have a coffee. My feet are killing me.
+A: This one's nice, <sub>1</sub><input size=10 name="q6a">?<br><br>
+B: Oh yes, I like the soft tones and ochre colors.<br><br>
+A:  <sub>2</sub><input size=15 name="q6b"> is the simplicity.  <sub>3</sub><input size=15 name="q6c"> the shapes very relaxing. <br><br>
+B: Relaxing!  <sub>4</sub><input size=15 name="q6d"> a little sharp and violent to me. Perhaps  <sub>5</sub><input size=15 name="q6e"> of the artist's life <br><br>
+A: I'm not sure I agree with you Errol.  <sub>6</sub><input size=15 name="q6f"> a strong feeling of passion for life, but not violence. <br><br>
+B: Yeah, maybe. It's too simple  <sub>7</sub><input size=15 name="q6g">. There's not enough detail. Who painted it anyway?<br><br>
+A: Oh Errol! Van Gogh, of course! Let's go and have a coffee. My feet are killing me.<br><br>
 <p>
 <table cellpadding=1 cellspacing=7 width=600 bgcolor=#ffbc90 border=1 bordercolor=#ffffff>
 <tr><td>It gives me </td><td> it's symbolic</td><td> What I like about it</td><td>isn't it</td></tr>
@@ -269,7 +280,7 @@ A: Oh Errol! Van Gogh, of course! Let's go and have a coffee. My feet are killin
 <p>
 
 <center>
-<button onclick="k6()">Check Answers </button> 
+<button class="eval"onclick="k6()">Check Answers </button> 
 </center> 
 <p>
 </div>

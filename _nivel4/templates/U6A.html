@@ -31,13 +31,13 @@
 
 
 <div id="t0">
-<img src="u6.jpg">
+<img src="img/u6.jpg" class="logo4">
 <p>
-<b>Interview with a personologist   </b>
+<b class="u4tit">Interview with a personologist   </b>
 <br>
 </div>
 <p>
-<div id="t1">
+<form id="t1">
 <b>1. Choose an adjective for each description.</b>
 <p>
 <table cellpadding=2 cellspacing=2>
@@ -54,8 +54,10 @@
 </table>
 <p>
 <center>
-<button onclick="k1()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
+</form>
+<form id="t2">
 <p>
 
 <b>2. Read an interview with a personologist. </b>
@@ -79,17 +81,19 @@
 How can personologists tell what type of person you are? What do you think? Choose one option. </b>
 <p>
 <center>
-<img src="u6a1.jpg">
+<img src="img/u6a1.jpg">
 <br>
-<br><input type="checkbox" name="q2a"> by looking in your eyes
-<br><input type="checkbox" name="q2b">  by looking at your face
-<br><input type="checkbox" name="q2c">  by studying your feet
-<br><input type="checkbox" name="q2d">  by using hypnosis 
+<br><input type="radio" name="q2a" value="1" checked>by looking in your eyes
+<br><input type="radio" name="q2a" value="2" >  by looking at your face
+<br><input type="radio" name="q2a" value="3" >  by studying your feet
+<br><input type="radio" name="q2a" value="4" >  by using hypnosis 
 </center>
 <p>
 <center>
-<button onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
+</form>
+<form id="t3">
 <p>
 <b>3. Are these questions true or false?</b> 
 <p>
@@ -148,8 +152,10 @@ How can personologists tell what type of person you are? What do you think? Choo
 </td></tr></table>
 <p> 
 <center>
-<button onclick="k3()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center> 
+</form>
+<form id="t4">
 <p>    
 </ol>
 <b>4. Read and complete the table with the personality adjectives.</b>
@@ -172,8 +178,9 @@ How can personologists tell what type of person you are? What do you think? Choo
 </table>
 <p>
 <center>
-<button onclick="k4()">Check answers</button>
+<button class="eval"data-target="t4">Check answers</button>
 </center> 
+</form>
 <p>
 
 </div>

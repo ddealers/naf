@@ -12,8 +12,16 @@ body div.bg.bg1 {
 body div.bg.bg2 {
   background-color: #2ba6cb;
 }
+<<<<<<< HEAD
 body div.bg.bg5 {
   background-color: #3aa297;
+=======
+body div.bg.bg3 {
+  background-color: #521c58;
+}
+body div.bg.bg4 {
+  background-color: #dc6700;
+>>>>>>> 5623f9a6e67265e7dfc00d7d494d7dc1aae52415
 }
 body #index #t1 img {
   padding: 1em;
@@ -27,6 +35,7 @@ body #section1 > img {
 }
 body .activity {
   height: 100%;
+  position: relative;
 }
 body #menu {
   overflow-y: scroll;
@@ -39,6 +48,17 @@ body #menu ol {
 body #menu a {
   color: #fff;
 }
+body .alert-box {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+body .alert-box p {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 15px;
+}
 body #cont {
   background: #fff;
   overflow-y: scroll;
@@ -46,7 +66,7 @@ body #cont {
   padding-bottom: 200px;
 }
 body #cont td {
-  padding: 0 3px;
+  padding: 10 10px;
 }
 body #cont select {
   width: auto;
@@ -345,26 +365,152 @@ body .num {
 body li.letra span {
   top: 0;
 }
+<<<<<<< HEAD
 body p.letra span {
   top: 0;
 }
 body .li {
+=======
+/*---------------------------------*/
+.u3tit {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #521c58;
+  top: 15px;
+}
+.u3 {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #521c58;
+  top: 35px;
+}
+#t1 {
+  padding-top: 60px;
+}
+ol.text {
+  padding-top: 20px;
+}
+li.space {
+  margin-bottom: 10px;
+}
+img.margin-bottom {
+  margin-bottom: 40px;
+}
+input.space-right {
+  margin-right: 10px;
+}
+ol li {
+  margin-bottom: 10px;
+}
+p.contenido {
+  font-family: verdana;
+  font-size: 13px;
+  text-align: left;
+  width: 200px;
+  margin: 20px 0;
+}
+center.izquierda {
+  text-align: left;
+}
+/*---------------------------------*/
+.u4tit {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #dc6700;
+  top: 15px;
+}
+.u4 {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #dc6700;
+  top: 35px;
+}
+.logo4 {
+  height: 52px;
+  margin-top: 10px;
+  margin-left: -4px;
+}
+img.asset {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 207px;
+}
+div.box_orange {
+  padding: 13px;
+}
+li.top {
+  margin-top: 20px;
+}
+center.box-yellow {
+  margin-bottom: 40px;
+}
+td.espacio {
+  padding: 5px 50px !important;
+  padding-bottom: 20px !important;
+}
+td {
+  padding: 10px 15px;
+}
+.problem {
+  margin-bottom: 20px;
+}
+center.caja {
+  padding: 30px;
+}
+.co1 {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 43px;
+}
+td input {
+  margin: 5px;
+  height: 23px;
+}
+p input {
+  margin: 5px;
+  height: 23px;
+}
+center {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+span {
+  color: #f00;
+}
+p.letra span {
+  top: 0;
+}
+.li {
+>>>>>>> 5623f9a6e67265e7dfc00d7d494d7dc1aae52415
   position: relative;
   font-size: 14px;
   font-family: arial;
   margin-left: 50px;
 }
+<<<<<<< HEAD
 body .speaker {
+=======
+.speaker {
+>>>>>>> 5623f9a6e67265e7dfc00d7d494d7dc1aae52415
   position: relative;
   top: 44px;
   padding-bottom: 30px;
 }
+<<<<<<< HEAD
 body .imdep {
+=======
+.imdep {
+>>>>>>> 5623f9a6e67265e7dfc00d7d494d7dc1aae52415
   position: relative;
   display: block;
   top: 60px;
   padding-bottom: 60px;
 }
+<<<<<<< HEAD
 body b span.rojo {
   top: 0;
 }
@@ -375,16 +521,33 @@ body li span.rojo {
   top: 0;
 }
 body .co1 {
+=======
+b span.rojo {
+  top: 0;
+}
+p span.rojo {
+  top: 0;
+}
+li span.rojo {
+  top: 0;
+}
+.co1 {
+>>>>>>> 5623f9a6e67265e7dfc00d7d494d7dc1aae52415
   position: relative;
   top: 40px;
   padding-bottom: 30px;
 }
+<<<<<<< HEAD
 body #imu5a {
+=======
+#imu5a {
+>>>>>>> 5623f9a6e67265e7dfc00d7d494d7dc1aae52415
   display: block;
   position: relative;
   top: 50px;
   padding-bottom: 40px;
 }
+<<<<<<< HEAD
 body .espa-abajo {
   padding-bottom: 15px;
 }
@@ -416,3 +579,22 @@ body .i51 {
 body div span.rojo {
   top: 0;
 }
+=======
+.espa-abajo {
+  padding-bottom: 15px;
+}
+li input {
+  margin: 5px;
+}
+td input {
+  margin: 5px;
+  height: 23px;
+}
+p input {
+  margin: 5px;
+  height: 23px;
+}
+.izq {
+  text-align: left;
+}
+>>>>>>> 5623f9a6e67265e7dfc00d7d494d7dc1aae52415

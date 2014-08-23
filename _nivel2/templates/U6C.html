@@ -13,44 +13,14 @@
 		q1k:'b',
 		q1l:'a',
 		q1m:'e',
-		q2a:'might',
-		q2b:'be',
-		q2c:'might',
-		q2d:'be',
-		q2e:'might',
-		q2f:'like',
-		q2g:'might',
-		q2h:'need',
-		q2i:'might',
-		q2j:'be',
-		q2k:'might',
-		q2l:'have',
-		q2m:'might',
-		q2n:'eat',
-		q2o:'might',
-		q2p:'be',
-		q3a:'0',
+		q2a:'2',
+		q2b:'2',
+		q3a:'2',
 		q3b:'1',
-		q3c:'0',
-		q3d:'0',
-		q3e:'1',
-		q3f:'0',
-		q4a:'0',
-		q4b:'1',
-		q4c:'0',
-		q4d:'1',
-		q4e:'0',
-		q4f:'0',
-		q4g:'0',
-		q4h:'1',
-		q4i:'0',
-		q4j:'1',
-		4k:'0',
-		q4l:'0',
-		q5a:'Combine all the ingredients in a saucepan and heat gently, stirring until the sauce is smooth',
-		q5b:'Serve it with vanilla ice-cream or figs or pears'
-
-		
+		q3c:'2',
+		q3d:'1',
+		q4a:'Combine all the ingredients in a saucepan and heat gently, stirring until the sauce is smooth',
+		q4b:'Serve it with vanilla ice-cream or figs or pears'
 	}
 </script>
 
@@ -62,7 +32,7 @@
 <p>
 </div>
 
-<div id="t1">
+<form id="t1">
 <div class="co1">	
 <b>1. Match the words to the pictures.</b>
 <p>
@@ -82,20 +52,20 @@
 </form>
 <form id="t2">
 <p>
-<b>2. Now listen and repeat the words.<a href="sound/choc1.ra"><img src="img/listen.jpg"></a></b>
+<b>2. Now listen and repeat the words.<a href="snd/choc1.mp3" target="_blank"><img src="img/listen.jpg"></a></b>
 </p>
 <p>
 <b>3. Listen to a radio cooking program and answer the questions.</b>
 </p>
 <p>
 1 Today's recipe is for <br>
-<input type="checkbox" name="q3a"> a chocolate ice cream<br> 
-<input type="checkbox" name="q3b"> fast chocolate sauce <br>
-<input type="checkbox" name="q3c"> a chocolate cake 
+<input type="radio" name="q2a" value=1 checked> a chocolate ice cream<br> 
+<input type="radio" name="q2a" value=2> fast chocolate sauce <br>
+<input type="radio" name="q2a" value=3> a chocolate cake <br>
 2 What is a sauce? <br>
-<input type="checkbox" name="q3d"> a type of fruit <br>
-<input type="checkbox" name="q3e"> a liquid to put with other food<br> 
-<input type="checkbox" name="q3f"> a drink 
+<input type="radio" name="q2b" value=1 checked> a type of fruit <br>
+<input type="radio" name="q2b" value=2> a liquid to put with other food<br> 
+<input type="radio" name="q2b" value=3> a drink 
 </p>
 <p>
 <center>
@@ -105,17 +75,17 @@
 </form>
 <form id="t3">
 <p>
-<b>4. Listen. Choose the correct quantity of each ingredient.<a href="sound/choc2.ra"><img src="img/listen.jpg"></a> </b>
+<b>4. Listen. Choose the correct quantity of each ingredient.<a href="snd/choc2.mp3" target="_blank"><img src="img/listen.jpg"></a> </b>
 </p>
 <p>
 1 grated chocolate <br>
-  <input type="checkbox" name="q4a"> 25 grams <input type="checkbox" name="q4b"> 125 grams <input type="checkbox" name="q4c"> 225 grams <p>
+  <input type="radio" name="q3a" value=1 checked> 25 grams <input type="radio" name="q3a" value=2> 125 grams <input type="radio" name="q3a" value=3> 225 grams <p>
 2 cream<br> </p>
-   <input type="checkbox" name="q4d"> 1/2 a cup <input type="checkbox" name="q4e"> a cup <input type="checkbox" name="q4f"> three cups <p>
+   <input type="radio" name="q3b" value=1 checked> 1/2 a cup <input type="radio" name="q3b" value=2> a cup <input type="radio" name="q3b" value=3> three cups <p>
 3 milk<br> </p>
-   <input type="checkbox" name="q4g"> 1/4 of a cup <input type="checkbox" name="q4h"> 1/2 cup <input type="checkbox" name="q4i"> a cup <p>
+   <input type="radio" name="q3c" value=1 checked> 1/4 of a cup <input type="radio" name="q3c" value=2> 1/2 cup <input type="radio" name="q3c" value=3> a cup <p>
 4 honey <br> </p>
-   <input type="checkbox" name="q4j"> a teaspoon  <input type="checkbox" name="q4k"> a big spoon <input type="checkbox" name="q4l"> three spoons 
+   <input type="radio" name="q3d" value=1 checked> a teaspoon  <input type="radio" name="q3d" value=2> a big spoon <input type="radio" name="q3d" value=3> three spoons 
 <p>
 <center>
 <button class="eval" data-target="t3">Check answers</button>
@@ -124,7 +94,7 @@
 </form>
 <form id="t4">
 <p>
-<b>5. Listen again. Put the words in order to complete the cooking instructions.<a href="sound/choc2.ra"><img src="img/listen.jpg"></a></b>
+<b>5. Listen again. Put the words in order to complete the cooking instructions.<a href="snd/choc2.mp3" target="_blank"><img src="img/listen.jpg"></a></b>
 </p>
 <p>
 1. all smooth saucepan ingredients in gently, a the Combine sauce and the heat stirring until is.<br>
@@ -132,8 +102,8 @@
 </p>
 <p>
 <ol>
-<li><input size=90 name="q5a">.
-<li><input size=90 name="q5b">.
+<li><input size=90 name="q4a">.
+<li><input size=90 name="q4b">.
 </ol>
 </p>
 <p>
