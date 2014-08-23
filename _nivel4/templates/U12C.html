@@ -37,14 +37,14 @@
 	}
 </script>
 
-<div id="t0">
+<form id="t0">
 <img src="img/u12.jpg"class="logo4">
 <p>
 <b class="u4tit"> Describing fashions </b>
 <p>
-</div>
+</form>
 
-<div id="t1">
+<form id="t1">
 <b>1. Which word does not go with the noun on the right? </b>
 <p>
 <ol>
@@ -122,8 +122,10 @@
 <p>
 </ol>
 <center>
-<button class="eval"onclick="k1()">Check Answers </button> 
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
+</form>
+<form id="t2">
 <p>
 <b>2. Choose the best label for each picture. </b>
 <p>
@@ -132,19 +134,21 @@
 </center>
 <p>
 <table cellpadding=o cellspacing=2 width=600>
-<tr><td>1. <input type="checkbox" name="q2a"> flared jeans     </td><td><input type="checkbox" name="q2b">torn jeans          </td><td><input type="checkbox" name="q2c">baggy jeans     </td></tr>
-<tr><td>2. <input type="checkbox" name="q2d">  platform shoes  </td><td><input type="checkbox" name="q2e">high-heeled shoes   </td><td><input type="checkbox" name="q2f">ankle-length boots</td></tr> 
-<tr><td>3. <input type="checkbox" name="q2g">  sports jacket   </td><td><input type="checkbox" name="q2h">denim jacket        </td><td><input type="checkbox" name="q2i">leather jacket </td></tr>
-<tr><td>4. <input type="checkbox" name="q2j">  spiky hair      </td><td><input type="checkbox" name="q2k">cropped hair        </td><td><input type="checkbox" name="q2l">dyed hair </td></tr>
-<tr><td>5. <input type="checkbox" name="q2m">  flared jeans    </td><td><input type="checkbox" name="q2n">torn jeans          </td><td><input type="checkbox" name="q2o">baggy jeans </td></tr>
-<tr><td>6. <input type="checkbox" name="q2p">  sports jacket   </td><td><input type="checkbox" name="q2q">denim jacket        </td><td><input type="checkbox" name="q2r">leather jacket </td></tr>
-<tr><td>7. <input type="checkbox" name="q2s">  platform shoes  </td><td><input type="checkbox" name="q2t">high-heeled boots   </td><td><input type="checkbox" name="q2v">ankle-length boots </td></tr>
-<tr><td>8. <input type="checkbox" name="q2w">  spiky hair      </td><td><input type="checkbox" name="q2x">cropped hair        </td><td><input type="checkbox" name="q2y">dyed hair </td></tr>
+<tr><td>1. <input type="radio" name="q2a" value=1 checked> flared jeans     </td><td><input type="radio" name="q2a" value=2 checked>torn jeans          </td><td><input type="radio" name="q2a" value=3 checked>baggy jeans     </td></tr>
+<tr><td>2. <input type="radio" name="q2b" value=1 checked>  platform shoes  </td><td><input type="radio" name="q2b" value=2 checked>high-heeled shoes   </td><td><input type="radio" name="q2b" value=3 checked>ankle-length boots</td></tr> 
+<tr><td>3. <input type="radio" name="q2c" value=1 checked>  sports jacket   </td><td><input type="radio" name="q2c" value=2 checked>denim jacket        </td><td><input type="radio" name="q2c" value=3 checked>leather jacket </td></tr>
+<tr><td>4. <input type="radio" name="q2d" value=1 checked>  spiky hair      </td><td><input type="radio" name="q2d" value=2 checked>cropped hair        </td><td><input type="radio" name="q2d" value=3 checked>dyed hair </td></tr>
+<tr><td>5. <input type="radio" name="q2e" value=1 checked>  flared jeans    </td><td><input type="radio" name="q2e" value=2 checked>torn jeans          </td><td><input type="radio" name="q2e" value=3 checked>baggy jeans </td></tr>
+<tr><td>6. <input type="radio" name="q2f" value=1 checked>  sports jacket   </td><td><input type="radio" name="q2f" value=2 checked>denim jacket        </td><td><input type="radio" name="q2f">leather jacket </td></tr>
+<tr><td>7. <input type="radio" name="q2g" value=3 checked>  platform shoes  </td><td><input type="radio" name="q2g" value=2 checked>high-heeled boots   </td><td><input type="radio" name="q2g" value=3 checked>ankle-length boots </td></tr>
+<tr><td>8. <input type="radio" name="q2w">  spiky hair      </td><td><input type="radio" name="q2x">cropped hair        </td><td><input type="radio" name="q2y">dyed hair </td></tr>
 </table>
 <p>
 <center>
-<button class="eval"onclick="k2()">Check Answers </button> 
+<button class="eval"data-target="t2">Check answers</button> 
 </center> 
+</form>
+<form id="t3">
 <p>
 <b>3. Put the letters in order to make a word that matches the definition. Type the answer in the box. </b>
 <p>
@@ -169,9 +173,9 @@
 </table>
 <p>
 <center>
-<button class="eval"onclick="k3()">Check Answers </button> 
+<button class="eval"data-target="t3">Check answers</button>
 </center> 
-
+</form>
 </div>
 
 <div id="z1">

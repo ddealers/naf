@@ -22,15 +22,14 @@
 
 </script>
 
-<div id="t0">
+<form id="t0">
 <img src="img/u11.jpg"class="logo4">
 <p>
 <b class="u4tit">Feng shui  </b>
 
 <br>
-</div>
-<p>
-<div id="t1">
+</form>
+<form id="t1">
 <b>1. You are going to read a magazine article about "Feng Shui". Here is the first part of the article. </b>
 <p>
 <center>
@@ -55,17 +54,19 @@ Use our guide to improve your home&#151;and life!
 <p>
 <ol>
 <li>  What is Feng Shui?    
-<p><input type="checkbox" name="q2a"> a technique to help you feel comfortable in buildings and offices. 
- <br><input type="checkbox" name="q2b"> the art of organizing well the places we live and work in.
+<p><input type="radio" name="q2a" value=1 checked> a technique to help you feel comfortable in buildings and offices. 
+ <br><input type="radio" name="q2b" value=2 checked> the art of organizing well the places we live and work in.
 <p>   
 <li>  How does Feng Shui work?    
-<p><input type="checkbox" name="q2c"> by using air and water in a special way. 
-<br><input type="checkbox" name="q2d"> by using correctly the natural energy in all objects and places. 
+<p><input type="radio" name="q2c" value=1 checked> by using air and water in a special way. 
+<br><input type="radio" name="q2d" value=2 checked> by using correctly the natural energy in all objects and places. 
 <p>
 </ol>
 <center>
-<button class="eval"onclick="k2()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
+</form>
+<form id="t2">
 <p>
 <b>3. Now look at the rest of the article. Choose the title for each section of the article. </b>
 <p>
@@ -132,8 +133,10 @@ With houses on two floors it's better not to have this room above the main entra
 If mirrors are bad in the bedroom they certainly aren't here it's the perfect place for them.  
 <p>
 <center>
-<button class="eval"onclick="k3()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
+</form>
+<form id="t3">
 <p>
 </ol>
 <b>4. Look at the diagrams below. 
@@ -143,19 +146,20 @@ Read each of the four sections of the text again and choose the diagram that bes
 <center>
 <table cellpadding=2 cellspacing=2 width=600>
 <tr><td></td><td colspan=2><img src="img/u11a1.jpg"></td></tr>
-<tr><td><b>1. kitchen</b></td><td><b>A</b><input type="checkbox" name="q4a"></td><td><b>B</b><input type="checkbox" name="q4b"></td></tr>
+<tr><td><b>1. kitchen</b></td><td><b>A</b><input type="radio" name="q4a" value=1 checked></td><td><b>B</b><input type="radio" name="q4a" value=2 checked>></td></tr>
 <tr><td></td><td colspan=2><img src="img/u11a2.jpg"></td></tr>
-<tr><td><b>2. bedroom</b></td><td><b>A</b><input type="checkbox" name="q4c"></td><td><b>B</b><input type="checkbox" name="q4d"></td></tr>
+<tr><td><b>2. bedroom</b></td><td><b>A</b><input type="radio" name="q4b" value=1 checked></td><td><b>B</b><input type="radio" name="q4b" value=2 checked></td></tr>
 <tr><td></td><td colspan=2><img src="img/u11a3.jpg"></td></tr>
-<tr><td><b>3. living room</b></td><td><b>A</b><input type="checkbox" name="q4e"></td><td><b>B</b><input type="checkbox" name="q4f"></td></tr>
-<tr><td rowspan=2><b>4. bathroom</b></td><td colspan=2><b>A</b> <input type="checkbox" name="q4g"> <img src="img/u11a4.jpg"></td></tr>
-<tr><td colspan=2><b>B</b> <input type="checkbox" name="q4h"> <img src="img/u11a5.jpg"></td></tr>
+<tr><td><b>3. living room</b></td><td><b>A</b><input type="radio" name="q4c" value=1 checked></td><td><b>B</b><input type="radio" name="q4c" value=2 checked></td></tr>
+<tr><td rowspan=2><b>4. bathroom</b></td><td colspan=2><b>A</b> <input type="radio" name="q4d" value=1 checked> <img src="img/u11a4.jpg"></td></tr>
+<tr><td colspan=2><b>B</b> <input type="radio" name="q4e" value=1 checked> <img src="img/u11a5.jpg"></td></tr>
 
 </table>
 <p>
 <center>
-<button class="eval"onclick="k4()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center> 
+</form>
 <p>
 
 
