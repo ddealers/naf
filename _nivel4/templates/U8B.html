@@ -25,14 +25,14 @@
 </script>
 
 
-<div id="t0" >
+<form id="t0" >
 <img src="img/u8.jpg"class="logo4">
 <p>
 <b class="u4tit">Radio problem talk show </b>
 <br>
-</div>
-<p>
-<div id="t1">
+</form>
+
+<form id="t1">
 <b>1. Radio talk show</b>
 <p>
 <center>
@@ -48,16 +48,17 @@ Yes, well, um... the problem concerns my partner, the person I live with. Normal
 <p>
 Choose the best summary of the woman's problem. </b>
 <p>
-<input class="space-right"type="checkbox" name="q1a">She works too much and doesn't have time to go out with her partner. 
+<input class="space-right"type="radio" name="q1a" value=1 checked>She works too much and doesn't have time to go out with her partner. 
 <p>  
-<input class="space-right"type="checkbox" name="q1b">Her partner doesn't want to go out with her. 
+<input class="space-right"type="radio" name="q1a" value=2 checked>Her partner doesn't want to go out with her. 
  <p> 
-<input class="space-right"type="checkbox" name="q1c">She wants to go out without her partner but he won't let her do this. 
+<input class="space-right"type="radio" name="q1a" value=3 checked>She wants to go out without her partner but he won't let her do this. 
 <p>
 <center>
-<button class="eval"onclick="k1()">Check answers</button>
-</center>  
-<p>
+<button class="eval"data-target="t1">Check answers</button>
+</center>
+</form>
+<form id="t2">
 <b>2. Are these statements true or false?</b>
 <p>
 <ol>
@@ -111,22 +112,24 @@ Choose the best summary of the woman's problem. </b>
 </ol>   
 <p>  
 <center>
-<button class="eval"onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
-<p>  
+</from>
+<form id="3">
 <b>3. What advice could you give her? </b>
 <p>
-<p><input class="space-right"type="checkbox" name="q3a">  Talk to him and tell him to do less work. 
-<p><input class="space-right"type="checkbox" name="q3b">Tell him that you want to go out without him. 
-<p><input class="space-right"type="checkbox" name="q3c">Talk to him about the problem and wait to see if the situation improves. 
-<p><input class="space-right"type="checkbox" name="q3d">  Accept the situation and do what you want to do. 
-<p><input class="space-right"type="checkbox" name="q3e">Do what he wants to do. 
-<p><input class="space-right"type="checkbox" name="q3f">Tell him that you have a lot of fun when you go out without him. 
+<p><input class="space-right"type="radio" name="q3a" value=1 checked>  Talk to him and tell him to do less work. 
+<p><input class="space-right"type="radio" name="q3a" value=2 checked> >Tell him that you want to go out without him. 
+<p><input class="space-right"type="radio" name="q3a" value=3 checked> Talk to him about the problem and wait to see if the situation improves. 
+<p><input class="space-right"type="radio" name="q3a" value=4 checked>  Accept the situation and do what you want to do. 
+<p><input class="space-right"type="radio" name="q3a" value=5 checked>Do what he wants to do. 
+<p><input class="space-right"type="radio" name="q3a" value=& checked>Tell him that you have a lot of fun when you go out without him. 
 <p>  
 <p>  
 <center>
-<button class="eval"onclick="k3()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center> 
+</form>
 <p>
 </div>
 

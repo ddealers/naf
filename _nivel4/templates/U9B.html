@@ -27,14 +27,14 @@
 	}
 </script>
 
-<div id="t0">
+<form id="t0">
 <img src="img/u9.jpg" class="logo4">
 <p>
 <b class="u4tit"> Job application letter </b>
 <br>
-</div>
-<p>
-<div id="t1">
+</form>
+
+<form id="t1">
 <div class="co1">	
 <b>1. Here is a letter. You are going to read it in parts. Here is the first part. </b>
 <p>
@@ -63,24 +63,27 @@ Frammingham, Massachusetts<br>
 <p>
 <ol>
 <li> Who wrote this letter? 
-<br><input type="checkbox" name="q1a"> Rowena Menzies 
-<br><input type="checkbox" name="q1b">   someone in Argentina 
+<br><input type="radio" name="q1a" value=1 checked> Rowena Menzies 
+<br><input type="radio" name="q1a" value=2 checked>   someone in Argentina 
 <p>
 <li> Is this a formal or informal letter? 
-  <br><input type="checkbox" name="q1c"> formal 
-  <br><input type="checkbox" name="q1d"> informal
+  <br><input type="radio" name="q1b" value=1 checked> formal 
+  <br><input type="radio" name="q1b" value=2 checked> informal
 <p> 
 <li> What does Rowena do? 
-  <br><input type="checkbox" name="q1e"> She manages a company. 
-  <br><input type="checkbox" name="q1f"> She is responsible for staffing in a company. 
-  <br><input type="checkbox" name="q1g"> She is personnel manager. 
+  <br><input type="radio" name="q1c" value=1 checked> She manages a company. 
+  <br><input type="radio" name="q1c" value=2 checked> She is responsible for staffing in a company. 
+  <br><input type="radio" name="q1c" value=3 checked> She is personnel manager. 
 </ol>  
 </div>
 <p> 
 <div class="co1">
 <center>
-<button class="eval"onclick="k1()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
+</form>
+
+<form id="t2">
 <p>
  
 <b>2. Now read on:</b>
@@ -102,30 +105,32 @@ to inquire about the possibility of a position.
 <p>
 <ol>
 <li> The person writing the letter 
-<br><input type="checkbox" name="q2a">wants to go on a marketing course. 
-<br><input type="checkbox" name="q2b">wants a job in ACE Pharmaceuticals. 
-<br><input type="checkbox" name="q2c">wants a job in the Atlanta office. 
+<br><input type="radio" name="q2a" value=1 checked> wants to go on a marketing course. 
+<br><input type="radio" name="q2a" value=2 checked> wants a job in ACE Pharmaceuticals. 
+<br><input type="radio" name="q2a" value=3 checked> wants a job in the Atlanta office. 
 <p>
 <li> The writer 
-<br><input type="checkbox" name="q2d">met Rex Galbraith in Atlanta. 
-<br><input type="checkbox" name="q2e">took a marketing course in São Paulo last summer. 
-<br><input type="checkbox" name="q2f">is recommending Rex Galbraith for a job. 
+<br><input type="radio" name="q2b" value=1 checked> met Rex Galbraith in Atlanta. 
+<br><input type="radio" name="q2b" value=2 checked> took a marketing course in São Paulo last summer. 
+<br><input type="radio" name="q2b" value=3 checked> is recommending Rex Galbraith for a job. 
 <p>
 <li> Rex Galbraith 
-<br><input type="checkbox" name="q2g">recommended that the writer should contact ACE Pharmaceuticals. 
-<br><input type="checkbox" name="q2h">recommended the writer for a job. 
-<br><input type="checkbox" name="q2i">recommended the writer for a marketing course. 
+<br><input type="radio" name="q2c" value=1 checked> recommended that the writer should contact ACE Pharmaceuticals. 
+<br><input type="radio" name="q2c" value=2 checked> recommended the writer for a job. 
+<br><input type="radio" name="q2c" value=3 checked> recommended the writer for a marketing course. 
 <p>
 <li> The writer is writing this letter 
-<br><input type="checkbox" name="q2j">in response to an advertisement. 
-<br><input type="checkbox" name="q2k">because she knows there is a position. 
-<br><input type="checkbox" name="q2l">because she hopes there is a position. 
+<br><input type="radio" name="q2d" value=1 checked> in response to an advertisement. 
+<br><input type="radio" name="q2d" value=2 checked> because she knows there is a position. 
+<br><input type="radio" name="q2d" value=3 checked> because she hopes there is a position. 
 </ol>
 <p>
 </div>
 <center>
-<button class="eval"onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
+</form>
+<form id="3">
 <p>
 <b>3. Now read on:</b>
 
@@ -158,8 +163,10 @@ As well as speaking fluent Spanish and English, I have a good working knowledge 
 <p>
 <div class="co1">
 <center>
-<button class="eval"onclick="k3()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center> 
+</form>
+<form id="4">
 <p>
 <b>4. Now read on:</b>
 <p>
@@ -258,8 +265,10 @@ Yours sincerely,
 </ol>
 
 <center>
-<button onclick="k4()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
+</form>
+<form id="5">
 <p>
 <center>
 <table cellpadding=3 cellspacing=2 width=500 bgcolor=#ffbc90>
@@ -302,12 +311,11 @@ I look forward to hearing from you soon.
 Yours sincerely, 
 <p>
 Ángeles Núñez. 
-
 <p>
 </td></tr>
 </table>
 <p>
-</div>
+</form>
 
 
 </div>

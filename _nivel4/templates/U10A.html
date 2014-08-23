@@ -26,15 +26,14 @@
 
 </script>
 
-<div id="t0">
+<form id="t0">
 <img src="img/u10.jpg" class="logo4">
 <p>
 <b class="u4tit">A man and his name </b>
 <br>
-</div>
-<p>
-<div id="t1">
-<div class=".co1">
+</form>
+<form id="t1">
+<div class="co1">
 <b>1. Read this newspaper article. You can check the meaning of highlighted words by clicking on them.</b>
 <p>
 <center>
@@ -123,20 +122,23 @@ A few weeks ago, I was going through immigration control in the U.S., and became
 <p>      
 </ol>
 <center>
-<button class="eval"onclick="k2()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
+</form>
+<form id="t2">
 <p>
 <b>3. Writer's attitude. There is more than one person called Andrew Marshall. What is the writer's attitude to this? </b>
 <p>
-<input type="checkbox" name="q3a">  genuinely worried <br> 
-<input type="checkbox" name="q3b">  amused  <br>
-<input type="checkbox" name="q3c">  amazed  <br>
-<input type="checkbox" name="q3d">  confused  <br>
+<input type="radio" name="q3a" value=1 checked>  genuinely worried <br> 
+<input type="radio" name="q3b" value=2 checked>  amused  <br>
+<input type="radio" name="q3c" value=3 checked>  amazed  <br>
+<input type="radio" name="q3d" value=4 checked>  confused  <br>
 <p>
 
 <center>
-<button class="eval"onclick="k3()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
+</form>
 
 </div>
 

@@ -15,6 +15,12 @@ body div.bg.bg2 {
 body div.bg.bg3 {
   background-color: #521c58;
 }
+body div.bg.bg4 {
+  background-color: #dc6700;
+}
+body div.bg.bg5 {
+  background-color: #3aa297;
+}
 body #index #t1 img {
   padding: 1em;
   width: 80%;
@@ -44,7 +50,7 @@ body .alert-box {
   display: none;
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 95px;
 }
 body .alert-box p {
   font-size: 14px;
@@ -58,7 +64,7 @@ body #cont {
   padding-bottom: 200px;
 }
 body #cont td {
-  padding: 0 3px;
+  padding: 10 10px;
 }
 body #cont select {
   width: auto;
@@ -103,12 +109,10 @@ body #read {
 body #tabla {
   display: block;
   position: relative;
-  width: 720px;
-  height: 270px;
-  margin: 5px;
+  margin: 0px;
   margin-left: 0;
   top: 50px;
-  left: 100px;
+  padding-bottom: 40px;
 }
 body .preg {
   font-size: 15px;
@@ -315,14 +319,14 @@ body #t1 p {
 body .u2tit {
   position: relative;
   font-family: verdana;
-  font-size: 23px;
+  font-size: 24px;
   color: #00b6cc;
   top: 15px;
 }
 body .u2 {
   position: relative;
   font-family: verdana;
-  font-size: 23px;
+  font-size: 24px;
   color: #00b6cc;
   top: 35px;
 }
@@ -357,7 +361,6 @@ body .num {
 body li.letra span {
   top: 0;
 }
-<<<<<<< HEAD
 /*---------------------------------*/
 .u3tit {
   position: relative;
@@ -401,6 +404,204 @@ p.contenido {
 center.izquierda {
   text-align: left;
 }
-body p.letra span {
+/*---------------------------------*/
+.u4tit {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #dc6700;
+  top: 15px;
+}
+.u4 {
+  position: relative;
+  font-family: verdana;
+  font-size: 23px;
+  color: #dc6700;
+  top: 35px;
+}
+.logo4 {
+  height: 52px;
+  margin-top: 10px;
+  margin-left: -4px;
+}
+img.asset {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 207px;
+}
+div.box_orange {
+  padding: 13px;
+}
+li.top {
+  margin-top: 20px;
+}
+center.box-yellow {
+  margin-bottom: 40px;
+}
+td.espacio {
+  padding: 5px 50px !important;
+  padding-bottom: 20px !important;
+}
+td {
+  padding: 10px 15px;
+}
+.problem {
+  margin-bottom: 20px;
+}
+center.caja {
+  padding: 30px;
+}
+.co1 {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 43px;
+}
+td input {
+  margin: 5px;
+  height: 23px;
+}
+p input {
+  margin: 5px;
+  height: 23px;
+}
+center {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+span {
+  color: #f00;
+}
+p.letra span {
   top: 0;
+}
+.li {
+  position: relative;
+  font-size: 14px;
+  font-family: arial;
+  margin-left: 50px;
+}
+.speaker {
+  position: relative;
+  top: 44px;
+  padding-bottom: 30px;
+}
+.imdep {
+  position: relative;
+  display: block;
+  top: 60px;
+  margin-bottom: 60px;
+}
+b span.rojo {
+  top: 0;
+}
+p span.rojo {
+  top: 0;
+}
+li span.rojo {
+  top: 0;
+}
+.co1 {
+  position: relative;
+  top: 40px;
+  padding-bottom: 30px;
+}
+#imu5a {
+  display: block;
+  position: relative;
+  top: 50px;
+  padding-bottom: 40px;
+}
+.espa-abajo {
+  padding-bottom: 15px;
+}
+li input {
+  margin: 5px;
+}
+td input {
+  margin: 5px;
+  height: 23px;
+}
+p input {
+  margin: 5px;
+  height: 23px;
+}
+.izq {
+  text-align: left;
+}
+.inst5 {
+  position: relative;
+  font-family: verdana;
+  font-size: 20px;
+  top: 50px;
+  color: #3aa297;
+}
+.i51 {
+  position: relative;
+  padding-bottom: 15px;
+}
+div span.rojo {
+  top: 0;
+}
+.alert-box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  font-size: 0.8125rem;
+  transition: opacity 300ms ease-out;
+  background-color: #008cba;
+  border-color: #0078a0;
+  color: #fff;
+}
+.alert-box .close {
+  font-size: 1.375rem;
+  padding: 9px 6px 4px;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.6875rem;
+  right: 0.25rem;
+  color: #333;
+  opacity: 0.3;
+}
+.alert-box .close:hover,
+.alert-box .close:focus {
+  opacity: 0.5;
+}
+.alert-box.radius {
+  border-radius: 3px;
+}
+.alert-box.round {
+  border-radius: 1000px;
+}
+.alert-box.success {
+  background-color: #43ac6a;
+  border-color: #3a945b;
+  color: #fff;
+}
+.alert-box.alert {
+  background-color: #f04124;
+  border-color: #de2d0f;
+  color: #fff;
+}
+.alert-box.secondary {
+  background-color: #e7e7e7;
+  border-color: #c7c7c7;
+  color: #4f4f4f;
+}
+.alert-box.warning {
+  background-color: #f08a24;
+  border-color: #de770f;
+  color: #fff;
+}
+.alert-box.info {
+  background-color: #a0d3e8;
+  border-color: #74bfdd;
+  color: #4f4f4f;
+}
+.alert-box.alert-close {
+  opacity: 0;
 }

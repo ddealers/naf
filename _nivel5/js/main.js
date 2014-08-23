@@ -54,17 +54,20 @@
     $(draw).empty();
     $(draw).append('<a href="#" class="close">x</a>');
     return $.each(answers, function(index, elem) {
-      var answer, correct, key, _i, _len;
+      var answer, c, correct, key;
       answer = elem.value;
       correct = v[elem.name];
       if (Array.isArray(correct)) {
-        for (_i = 0, _len = correct.length; _i < _len; _i++) {
-          key = correct[_i];
+        c = false;
+        for (key in correct) {
           if (String(answer).toLowerCase() === String(correct[key]).toLowerCase()) {
-            $(draw).append('<p>' + (index + 1) + '. Correct</p>');
-          } else {
-            $(draw).append('<p>' + (index + 1) + '. Incorrect</p>');
+            c = true;
           }
+        }
+        if (c) {
+          $(draw).append('<p>' + (index + 1) + '. Correct</p>');
+        } else {
+          $(draw).append('<p>' + (index + 1) + '. Incorrect</p>');
         }
       } else {
         if (String(answer).toLowerCase() === String(correct).toLowerCase()) {

@@ -1,6 +1,5 @@
 <script>
 	v = {
-
 		q1a:'turn in',
 		q1b:'take a nap',
 		q1c:'asleep',
@@ -24,15 +23,14 @@
 		q3e:'sleep with',
 		q3f:'oversleep',
 		q4a:'3',
-		q4d:'2',
-		q4g:'2',
-		q4j:'1',
-		q4m:'3',
-
+		q4b:'2',
+		q4c:'2',
+		q4d:'1',
+		q4e:'3'
 	}
 </script>
 
-<div id="t1">
+<form id="t1">
 <b class="inst5">Sleep idioms</b>
 <p>
 <b class="tablau2">1. Different ways of sleeping.</b>
@@ -65,8 +63,10 @@ Good night and sweet dreams!</td></tr>
 </center>	
 <p>
 <center>
-<button class="eval" onclick="k1()">Check answers</button>
+<button class="eval" data-target="t1">Check answers</button>
 </center>
+</form>
+<form id="t2">
 <p>
 <b>2. Phrases with sleep.</b>
 <p>
@@ -81,8 +81,10 @@ Good night and sweet dreams!</td></tr>
 </table>
 <p>
 <center>
-<button class="eval" onclick="k2()">Check answers</button>
+<button class="eval" data-target="t2">Check answers</button>
 </center>
+</form>
+<form id="t3">
 <p>
 <b>3. Now complete these sentences using the sleep phrases below.</b> 
 <p>
@@ -103,30 +105,33 @@ Good night and sweet dreams!</td></tr>
 </table>
 <p>
 <center>
-<button class="eval" onclick="k3()">Check answers</button>
+<button class="eval" data-target="t3">Check answers</button>
 </center>
+</form>
+<form id="t4">
 <p>
 <b>4. Idioms. What do these idioms mean? Choose the best option.</b>
 <p>
 <table cellpadding=0 cellspacing=10 width=700>
 <tr><td>1.</td><td>Did you hear the storm last night?</td></tr>
 <tr><td></td><td>No. I didn't hear a thing. I was so tired, I slept like a log.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q4a"> I didn't move.<input type="checkbox" name="q4b"> I rolled up in the blankets.<input type="checkbox" name="q4c"> I slept very soundly and didn't wake up.</td></tr>
+<tr><td></td><td><input type="radio" name="q4a" value=1 checked> I didn't move.<input type="radio" name="q4a" value=2> I rolled up in the blankets.<input type="radio" name="q4a" value=3> I slept very soundly and didn't wake up.</td></tr>
 <tr><td>2.</td><td>What's the matter with Andy today? He hasn't said a word all morning.</td></tr>
 <tr><td></td><td>I think he just got out on the wrong side of the bed.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q4d"> didn't sleep well last night<input type="checkbox" name="q4e"> woke up in a bad mood<input type="checkbox" name="q4f"> fell over while getting up</td></tr>
+<tr><td></td><td><input type="radio" name="q4b" value=1 checked> didn't sleep well last night<input type="radio" name="q4b" value=2> woke up in a bad mood<input type="radio" name="q4b" value=3> fell over while getting up</td></tr>
 <tr><td valign="top">3.</td><td>Danny, I've been working hard all day. I'm exhausted. I won't go to the movies with you tonight. Perhaps another time. I'm going home to get a good night's sleep.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q4g"> take a sleeping pill<input type="checkbox" name="q4h"> go to bed early<input type="checkbox" name="q4i"> be good and go to sleep</td></tr>
+<tr><td></td><td><input type="radio" name="q4c" value=1 checked> take a sleeping pill<input type="radio" name="q4c" value=2> go to bed early<input type="radio" name="q4c" value=3> be good and go to sleep</td></tr>
 <tr><td>4.</td><td>"Now don't put your coffee cup on my new book. It'll leave a mark."</td></tr>
 <tr><td></td><td>"I wouldn't dream of it!"</td></tr>
-<tr><td></td><td><input type="checkbox" name="q4j"> I would never do something like that<input type="checkbox" name="q4k"> I dreamed about doing that<input type="checkbox" name="q4l"> I'm too tired to do that</td></tr>
+<tr><td></td><td><input type="radio" name="q4d" value=1 checked> I would never do something like that<input type="radio" name="q4d" value=2> I dreamed about doing that<input type="radio" name="q4d" value=3> I'm too tired to do that</td></tr>
 <tr><td>5.</td><td>This new technology will have undreamed of consequences on our daily lives.</td></tr>
-<tr><td></td><td><input type="checkbox" name="q4m"> like a nightmare<input type="checkbox" name="q4n"> like things we have dreamed of<input type="checkbox" name="q4o"> like we have never imagined</td></tr>
+<tr><td></td><td><input type="radio" name="q4e" value=1 checked> like a nightmare<input type="radio" name="q4e" value=2> like things we have dreamed of<input type="radio" name="q4e" value=3> like we have never imagined</td></tr>
 </table>
 <p>
 <center>
-<button class="eval" onclick="k4()">Check answers</button>
+<button class="eval" data-target="t4">Check answers</button>
 </center>
+</form>
 <p>
 </div>
 
