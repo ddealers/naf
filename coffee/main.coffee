@@ -39,12 +39,16 @@ evaluate = (form, draw) ->
 	$.each answers, (index, elem) ->
 		answer = elem.value
 		correct = v[elem.name]
-		if Object.prototype.toString.call(correct) is '[object Array]'
-			for key in correct
+
+		if Array.isArray correct
+			c = off
+			for key of correct
 				if String(answer).toLowerCase() is String(correct[key]).toLowerCase()
-					$(draw).append '<p>' + (index + 1) + '. Correct</p>'
-				else
-					$(draw).append '<p>' + (index + 1) + '. Incorrect</p>'
+					c = on
+			if c
+				$(draw).append '<p>' + (index + 1) + '. Correct</p>'
+			else
+				$(draw).append '<p>' + (index + 1) + '. Incorrect</p>'
 		else
 			if String(answer).toLowerCase() is String(correct).toLowerCase()
 				$(draw).append '<p>' + (index + 1) + '. Correct</p>'
