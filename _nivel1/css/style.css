@@ -50,7 +50,7 @@ body .alert-box {
   display: none;
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 95px;
 }
 body .alert-box p {
   font-size: 14px;
@@ -109,12 +109,10 @@ body #read {
 body #tabla {
   display: block;
   position: relative;
-  width: 720px;
-  height: 270px;
-  margin: 5px;
+  margin: 0px;
   margin-left: 0;
   top: 50px;
-  left: 100px;
+  padding-bottom: 40px;
 }
 body .preg {
   font-size: 15px;
