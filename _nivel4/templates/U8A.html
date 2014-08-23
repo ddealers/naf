@@ -33,30 +33,25 @@ if(q2g.checked&q2h.checked&q2i.checked){s2c="Problem 3.-Correct<br>"}else{s2c="P
 
 </script>
 
-<div id="t0">
+<form id="t0">
 <img src="img/u8.jpg" class="logo4">
 <p>
 <b class="u4tit">Problem letters and advice  </b>
 <br>
-</div>
-<p>
-<div id="t1">
+</form>
+
+<form id="t1">
 <b>1. Read these problems from a problem page.
 <p>
 Choose the best summary for each problem. </b>
 <p>
-<!--center-->
 <table cellpadding=5 cellspacing=5 width=300 bgcolor=#ffbc90>
-<tr><td> 
-<!--center-->  
+<tr><td>  
 <b> Let Stella help you deal with your problems </b></center>
 </td></tr>  
 </table>
 </center>
 <p>
-   
-
- 
 <table cellpadding=2 cellspacing=2 width=400 bgcolor=#ffbc90>
 <tr><td>
 <b>PROBLEM 1</b>
@@ -91,12 +86,8 @@ My first year of medical school has been stressful, tiring and boring. I've hate
 Archie 
 </td></tr> </table>
 <p>
- 
-
 <b>Choose the best summary. </b>
-
 <p><input class="space-right"type="checkbox" name="q1e">  He wants to be a doctor but doesn't like studying. 
-  
 <p><input class="space-right"type="checkbox" name="q1f">He is studying medicine because he wants to be a doctor, but his father is disappointed. 
   
 <p><input class="space-right"type="checkbox" name="q1g">He doesn't get along with his father, and doesn't like studying. 
@@ -251,10 +242,11 @@ Don't think this is your fault. You just picked the wrong man. There is, of cour
 <p><input class="space-right"type="checkbox" name="q3i">She should try to see him as often as possible and try to win him back. 
 <p>
 <center>
-<button class="eval"onclick="k3()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
-<p> 
+</form>
 
+<form id="t2">
 <b>4. Put the sentences in correct order. (1,2,3,4,5,6,7,8)</b> 
 <p>
 <center>
@@ -275,10 +267,11 @@ Dear Stella:</b>
 </ol>
 <p>
 <center>
-<button class="eval"onclick="k4()">Check answers</button>
-</center> 
-<p>
+<button class="eval"data-target="t2">Check answers</button>
+</center>
+</form> 
 
+<form id="t3">
 <b>5. Click and drag the phrases to complete Stella's advice for 
 <br><center class=" problem">
 PROBLEM 3.</b>
@@ -300,16 +293,9 @@ to contact him. You should feel sorry for the woman stuck with a coward who<br><
 </table>
 <p>
 <center>
-<button class="eval"onclick="k5()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center>
-
-
-
-
-
-
-
-
+</form>
 
 </div>
 

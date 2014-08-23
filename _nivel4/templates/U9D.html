@@ -32,16 +32,16 @@
 
 	}
 
->/script>
+</script>
 
-<div id="t0">
+<form id="t0">
 <img src="u9.jpg">
 <p>
 <b> Job interview </b>
 <br>
-</div>
+</form>
 <p>
-<div id="t1">
+<form id="t1">
 <b>1. Look at these three job advertisements. You are going to hear a job interview. Listen to the first part of the interview and answer this question: Which job is the interviewee applying for?</b>
 <p>
 
@@ -125,19 +125,21 @@ Now, which job is she applying for? </b>
 <b>Now, which job is she applying for?</b>
 <p>
 <ol>
-<li><input type="checkbox" name="q1a">  advertisement 1<br>
+<li><input type="radio" name="q1a" value=1 checked>  advertisement 1<br>
 Agriculture Project Manager 
 <p>  
-<li><input type="checkbox" name="q1b">advertisement 2<br>
+<li><input type="radio" name="q1b" value=2 checked> advertisement 2<br>
 Female Education Program Supervisor 
 <p>  
-<li><input type="checkbox" name="q1c">advertisement3<br>
+<li><input type="radio" name="q1c" value=3 checked> advertisement3<br>
 Refugee Health Program Office 
 </ol>
 <p>
 <center>
-<button onclick="k1()">Check answers</button>
-</center>  
+<button class="eval"data-target="t1">Check answers</button>
+</center>
+</form> 
+<form id="t2"> 
 <p>
 
 <p>
@@ -186,8 +188,10 @@ Experience:
 </td></tr></table>
 <p>
 
-<button onclick="k3()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
+</form>
+<form id="t3">
 <p>
 <b>4. Match the questions to the answers. Then listen again  and check. </b> <a href="snd/9d-1.ra"><img src="listen.jpg" border=0></a></a>
 <p>
@@ -200,8 +204,9 @@ Experience:
 <tr><td>e) That sounds interesting. So you worked in Senegal from 94 to 98?</td><td>5. <input size=1 maxlength=1 name="q4e"> My doctorate is on the education of women...</td></tr>
 </table>
 <p>
-<button onclick="k4()">Check answers</button> 
-<p>
+<button class="eval"data-target="t3">Check answers</button> 
+</form>
+<form id="t4">
 <img src="u9d1.jpg">
 </center>
 <p>
@@ -223,8 +228,9 @@ included teaching and teacher  <sub>12</sub><input size=10 name="q5l">.
 </table>
 <p>
 
-<button onclick="k5()">Check answers</button>
+<button class="eval"data-target="t4">Check answers</button>
 </center> 
+</form>
 <p>
 
 </div>
