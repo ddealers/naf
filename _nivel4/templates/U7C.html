@@ -32,44 +32,48 @@
 <br>
 </div>
 <p>
-<div id="t1">
+<form id="t1">
 <b>1. Listen to these two people talking about the quiz at the beginning of this unit. <a href="snd/7c-1.ra"><img src="img/listen.jpg" border=0></a></b>
 <p>
 <b>Which speaker do you think is the most eco-friendly?</b>
 <p>
 <!--center-->
-<li><input type="checkbox" name="q1a">  the woman
+<li><input type="radio" name="q1a" value="0" checked>  the woman
 <p> 
-<li><input type="checkbox" name="q1b">  the man 
+<li><input type="radio" name="q1a" value="1">  the man 
 </center>
 <p>
 <center>
-<button class="eval"onclick="k1()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center>
+</form>
+<form id="t2">
 <p>
 <b>2. Listen again. <a href="snd/7c-1.ra"><img src="img/listen.jpg" border=0></a></b>
 <p>
 <ol>
 <li>What bothers the man?  
 
-<br><input type="checkbox" name="q2a">  People throwing rubbish in the street 
+<br><input type="radio" name="q2a" value="1" checked>  People throwing rubbish in the street 
 
-<br><input type="checkbox" name="q2b">  Seeing the recycling bins on the street. 
+<br><input type="radio" name="q2a" value="2"   Seeing the recycling bins on the street. 
   
-<br><input type="checkbox" name="q2c">Cars parked on the street.
+<br><input type="radio" name="q2a" value="3" >Cars parked on the street.
 <p> 
 <li>What bothers the woman?  
 
-<br><input type="checkbox" name="q2d">  Having lots of rubbish in her kitchen.  
+<br><input type="radio" name="q2b" value="1" checked>  Having lots of rubbish in her kitchen.  
 
-<br><input type="checkbox" name="q2e">  People who don't put rubbish in the containers. 
+<br><input type="radio" name="q2b" value="2" >  People who don't put rubbish in the containers. 
 
-<br><input type="checkbox" name="q2f">  When the rubbish isn't collected from the containers. 
+<br><input type="radio" name="q2b" value="3" >  When the rubbish isn't collected from the containers. 
 <p>
 </ol>
 <center>
-<button class="eval"onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center>
+</form>
+<form id="t3">
 <p>
 
 <b>3. Listen again. Which speaker says these phrases? <a href="snd/7c-1.ra"><img src="img/listen.jpg" border=0></a></b>
@@ -79,21 +83,21 @@
 
 <tr><td>1 ... we've got a system going and
 everybody takes their turn ...  
-</td><td><input type="checkbox" name="q3a">man  </td><td><input type="checkbox" name="q3b">woman 
+</td><td><input type="radio" name="q3a" value="0" checked>man  </td><td><input type="radio" name="q3a" value="0" checked>woman 
 </td></tr>
 
 <tr><td>2 I just find it a little inconvenient.  </td><td><input type="checkbox" name="q3c">man  
-</td><td><input type="checkbox" name="q3d">woman 
+</td><td><input type="radio" name="q1a" value="0" checked>woman 
 </td></tr>
 
 <tr><td>3 I think they're quite ugly, ...  
-</td><td><input type="checkbox" name="q3e">man  
-</td><td><input type="checkbox" name="q3f">woman 
+</td><td><input type="radio" name="q1a" value="0" checked>man  
+</td><td><input type="radio" name="q1a" value="0" checked>woman 
 </td></tr>
 
 <tr><td>4 I'd never thought about that. 
-</td><td><input type="checkbox" name="q3g">man  
-</td><td><input type="checkbox" name="q3h">woman 
+</td><td><input type="radio" name="q1a" value="0" checked>man  
+</td><td><input type="radio" name="q1a" value="0" checked>woman 
 </td></tr>
 
 <tr><td>5 Then it's worse.  
@@ -102,8 +106,10 @@ everybody takes their turn ...
 </table>
 <p>
 <center>
-<button class="eval"onclick="k3()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center>
+</form>
+<form id="t4">
 <p>
 <b>4. Listen again. Which speaker says these phrases? <a href="snd/7c-1.ra"><img src="img/listen.jpg" border=0></a></b>
 <p>
@@ -134,8 +140,10 @@ everybody takes their turn ...
 </td></tr></table>
 <p>
 <center>
-<button class="eval"onclick="k4()">Check answers</button>
+<button class="eval"data-target="t4">Check answers</button>
 </center>
+</form>
+<form id="t5">
 <p>  
 
 <b>5. Listen again. Which speaker says these words? <a href="snd/7c-1.ra"><img src="img/listen.jpg" border=0></a></b>
@@ -168,7 +176,7 @@ everybody takes their turn ...
 </td></tr></table>
 <p>
 <center>
-<button class="eval"onclick="k5()">Check answers</button>
+<button class="eval"data-target="t5">Check answers</button>
 </center>  
 </div>
 
