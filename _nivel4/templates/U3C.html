@@ -42,18 +42,18 @@
 </script>
 
 <div id="t0">
-<img src="u3.jpg">
+<img src="img/u3.jpg" class="logo4">
 <p>
-<b> The tourist who went to Torquay thinking it was Turkey </b>
+<b class="u4tit"> The tourist who went to Torquay thinking it was Turkey </b>
 <p>
 </div>
 
-<div id="t1">
+<form id="t1">
 <b>1. Read this newspaper story and decide which map represents Mrs. Tsuchida's trip.</b>
 <p>
 <table cellpadding=0 cellspacing=1 width=600>
 <tr><td colspan=2><center><b>Cold Turkey For Kumiko</b></center></td></tr>
-<tr><td><img src="u3c1.jpg"></td>
+<tr><td><img src="img/u3c1.jpg"></td>
 <td>
 <b>Torquay or Turkey? A small difference in pronunciation but a big difference for Kumiko Tsuchida, a Japanese tourist in England. 
 She ended up in Torquay when she was trying to get to Turkey.</b>
@@ -76,12 +76,14 @@ Mark the map that represents Mrs. Tsuchida's trip.</b>
 <p>
 <center>
 <table width=400>
-<tr><td colspan=3><img src="u3c2.jpg"></td></tr>
-<tr><td><center><input type="checkbox" name="q1a"></td><td><center><input type="checkbox" name="q1b"></td><td><center><input type="checkbox" name="q1c"></td></tr>
+<tr><td colspan=3><img src="img/u3c2.jpg"></td></tr>
+<tr><td><center><input type="radio" name="q1a" value="1" checked></td><td><center><input type="radio" name="q1a" value="2" ></td><td><center><input type="radio" name="q1a" value="3" ></td></tr>
 </table>
 <p>
-<button onclick="k1()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center>
+</form>
+<form id="t2">
 <p>
 <b>2. True or False? </b>
 <p>
@@ -221,8 +223,9 @@ Mark the map that represents Mrs. Tsuchida's trip.</b>
 <p>  
 
 <center>
-<button onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center>
+</form>
 </div>
 
 <div id="z1">

@@ -2,7 +2,7 @@
 	v = {
 
 
-		q1a:['3','5'],
+		q1:{q1a:false,q1b:false,q1c:true,q1d:false,q1e:true,q1f:false,q1g:false,q1h:false,q1i:false,q1j:false},
 		q2a:'c',
 		q2b:'a',
 		q2c:'g',
@@ -10,29 +10,29 @@
 		q2e:'b',
 		q2f:'d',
 		q2g:'f',
-		q3a'It may have been a fox',
-		q3b'Could it have been a badger',
-		q3c'It might have been a dog',
-		q3d'it can\'t be a wolf',
-		q3e'You must have imagined it',
-		q3f'It couldn\'t have been a wolf',
+		q3a:'It may have been a fox',
+		q3b:'Could it have been a badger',
+		q3c:'It might have been a dog',
+		q3d:'it can\'t be a wolf',
+		q3e:'You must have imagined it',
+		q3f:'It couldn\'t have been a wolf',
 	}
 </script>
 
 <div id="t0">
-<img src="u6.jpg">
+<img src="img/u6.jpg" class="logo4">
 <p>
-<b>Modals of deduction in the present and past   </b>
+<b class="u4tit">Modals of deduction in the present and past   </b>
 <br>
 </div>
 <p>
-<div id="t1">
+<form id="t1" class="list" data-list="q1">
 <b>1. What other words can you substitute for <span id="m1">may</span> in this sentence, so that the meaning is more or less the same?</b>
 <p>
 <span id="m1">
 The sasquatch could be a surviving form of giant apes that may have crossed from Asia to America. </span>
 <p>
-<center>
+<!--center-->
 <table cellpading=2 cellspacing=1 width=90 bgcolor=#ffbc90>
 <tr><td><input type="checkbox" name="q1a"></td><td>can </td></tr> 
 <tr><td><input type="checkbox" name="q1b"></td><td>did </td></tr>
@@ -46,8 +46,10 @@ The sasquatch could be a surviving form of giant apes that may have crossed from
 <tr><td><input type="checkbox" name="q1j"></td><td>ought to</td></tr>
 </table>
 <p>
-<button onclick="k1()">Check answers</button>
+<button class="eval"data-target="t1">Check answers</button>
 </center> 
+</form>
+<form id="t2">
 <p>
 <b>2. Match the sentences on the left with the sentences that mean the same:</b>
 <p>
@@ -62,9 +64,10 @@ The sasquatch could be a surviving form of giant apes that may have crossed from
 </table>
 <p>
 <center>
-<button onclick="k2()">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
- 
+</form>
+<form id="t3">
 <p>
 <b>3. Complete the dialog by re-writing B's sentences using the verb in parentheses:</b>
 <p>
@@ -100,8 +103,9 @@ B: There are no wolves in our forest. It certainly wasn't a wolf. <b>(couldn't)<
 </td></tr></table>
 <p>
 <center>
-<button onclick="k3()">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center> 
+</form>
 
 </div>
 
