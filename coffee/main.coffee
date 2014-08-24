@@ -11,10 +11,39 @@ load = (url) ->
 			form = $(e.target).data('target')
 			draw = $(e.target).data('draw')
 			console.log form, draw
-			if $('#'+form).hasClass 'list'
+			if $('#'+form).hasClass 'score'
+				evaluateScore form, draw
+			else if $('#'+form).hasClass 'list'
 				evaluateList form, draw
+			else if $('#'+form).hasClass 'generic'
+				evaluateGeneric form, draw
+			else if $('#'+form).hasClass 'quiz'
+				evaluateQuiz form, draw
 			else
 				evaluate form, draw
+evaluateScore = (form, draw) ->
+	score = 0
+	draw = '.alert-box > div'
+	answers = $('#'+form).serializeArray()
+	for answer in answers
+		score+=parseInt answer.value
+	$(draw).empty()
+	$(draw).append '<a href="#" class="close">x</a>'
+	$(draw).append "<p>Score: #{score}</p>"
+	$('.alert-box').fadeIn 500
+evaluateGeneric =  (form, draw) ->
+	draw = '.alert-box > div'
+	$(draw).empty()
+	$(draw).append '<a href="#" class="close">x</a>'
+	console.log $('#'+form).data('generic')
+	$(draw).html $('#'+form).data('generic')
+	$('.alert-box').fadeIn 500
+evaluateQuiz = (form, draw) ->
+	draw = '.alert-box > div'
+	$(draw).empty()
+	$(draw).append '<a href="#" class="close">x</a>'
+	$(draw).html 'If you answered 5 A\'s or more you are a Middle Youth-er. <br>If you answered 5 B\'s or more you are a Yuppie. <br>If you answered 5 C\'s or more you are a Yubbie. <br>If you answered 5 D\'s or more you are a home-loving family person. <br>If you answered less than 5 in any of A-D you are a unique individual who is impossible to label.'
+	$('.alert-box').fadeIn 500
 
 evaluateList = (form, draw) ->
 	draw = '.alert-box > div'
@@ -50,6 +79,7 @@ evaluate = (form, draw) ->
 			else
 				$(draw).append '<p>' + (index + 1) + '. Incorrect</p>'
 		else
+			console.log String(answer).toLowerCase(), String(correct).toLowerCase() 
 			if String(answer).toLowerCase() is String(correct).toLowerCase()
 				$(draw).append '<p>' + (index + 1) + '. Correct</p>'
 			else

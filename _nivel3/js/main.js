@@ -1,5 +1,5 @@
 (function() {
-  var evaluate, evaluateList, load;
+  var evaluate, evaluateGeneric, evaluateList, evaluateQuiz, load;
 
   load = function(url) {
     var cont;
@@ -20,11 +20,32 @@
         console.log(form, draw);
         if ($('#' + form).hasClass('list')) {
           return evaluateList(form, draw);
+        } else if ($('#' + form).hasClass('generic')) {
+          return evaluateGeneric(form, draw);
+        } else if ($('#' + form).hasClass('quiz')) {
+          return evaluateQuiz(form, draw);
         } else {
           return evaluate(form, draw);
         }
       });
     });
+  };
+
+  evaluateGeneric = function(form, draw) {
+    draw = '.alert-box > div';
+    $(draw).empty();
+    $(draw).append('<a href="#" class="close">x</a>');
+    console.log($('#' + form).data('generic'));
+    $(draw).html($('#' + form).data('generic'));
+    return $('.alert-box').fadeIn(500);
+  };
+
+  evaluateQuiz = function(form, draw) {
+    draw = '.alert-box > div';
+    $(draw).empty();
+    $(draw).append('<a href="#" class="close">x</a>');
+    $(draw).html('If you answered 5 A\'s or more you are a Middle Youth-er. <br>If you answered 5 B\'s or more you are a Yuppie. <br>If you answered 5 C\'s or more you are a Yubbie. <br>If you answered 5 D\'s or more you are a home-loving family person. <br>If you answered less than 5 in any of A-D you are a unique individual who is impossible to label.');
+    return $('.alert-box').fadeIn(500);
   };
 
   evaluateList = function(form, draw) {
@@ -70,6 +91,7 @@
           $(draw).append('<p>' + (index + 1) + '. Incorrect</p>');
         }
       } else {
+        console.log(String(answer).toLowerCase(), String(correct).toLowerCase());
         if (String(answer).toLowerCase() === String(correct).toLowerCase()) {
           $(draw).append('<p>' + (index + 1) + '. Correct</p>');
         } else {

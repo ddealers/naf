@@ -1,34 +1,27 @@
 <script>
 	v = {
-
 		q1a:'3',
-		q1e:'4',
-		q1i:'2',
-
-
-if(q2a.checked&q2b.checked&q2c.checked){s2a="Problem 1.-Correct<br>"}else{s2a="Problem 1.-Incorrect<br>"}
-if(q2d.checked&q2e.checked&q2f.checked){s2b="Problem 2.-Correct<br>"}else{s2b="Problem 2.-Incorrect<br>"}
-if(q2g.checked&q2h.checked&q2i.checked){s2c="Problem 3.-Correct<br>"}else{s2c="Problem 3.-Incorrect<br>"}
-
-
-		q3a:'2',
+		q1b:'4',
+		q1c:'2',
+		q2a:'1',
+		q2b:'3',
+		q2c:'1',
+		q2d:'2',
+		q2e:'3',
+		q2f:'1',
+		q3a:'4',
+		q3b:'2',
+		q3c:'8',
 		q3d:'3',
-		q3g:'1',
-		q4a:'4',
-		q4b:'2',
-		q4c:'8',
-		q4d:'3',
-		q4e:'7',
-		q4f:'1',
-		q4g:'5',
-		q4h:'6',
-		q5a:'You just picked the wrong man',
-		q5b:'would forget him',
-		q5c:'delete his address from your email address book',
-		q5d:'uses e-mail to end a relationship',
-		q5e:'but as a new beginning',
-
-
+		q3e:'7',
+		q3f:'1',
+		q3g:'5',
+		q3h:'6',
+		q4a:'You just picked the wrong man',
+		q4b:'would forget him',
+		q4c:'delete his address from your email address book',
+		q4d:'uses e-mail to end a relationship',
+		q4e:'but as a new beginning'
 	}
 
 </script>
@@ -67,13 +60,13 @@ Naomi
 
 <b>Choose the best summary. </b>
 
-<p><input class="space-right"type="checkbox" name="q1a">  Nobody helps her in her new job. 
+<p><input class="space-right"type="radio" name="q1a" value=1 checked>  Nobody helps her in her new job. 
 
-<p><input class="space-right"type="checkbox" name="q1b">She doesn't get along with her new boss. 
+<p><input class="space-right"type="radio" name="q1a" value=2>She doesn't get along with her new boss. 
  
-<p><input class="space-right"type="checkbox" name="q1c">She gets along with her boss but not with her colleagues. 
+<p><input class="space-right"type="radio" name="q1a" value=3>She gets along with her boss but not with her colleagues. 
   
-<p><input class="space-right"type="checkbox" name="q1d">She doesn't like the people she works with. 
+<p><input class="space-right"type="radio" name="q1a" value=4>She doesn't like the people she works with. 
 <p>
  
 <table cellpadding=2 cellspacing=2 width=400 bgcolor=#ffbc90>
@@ -87,12 +80,12 @@ Archie
 </td></tr> </table>
 <p>
 <b>Choose the best summary. </b>
-<p><input class="space-right"type="checkbox" name="q1e">  He wants to be a doctor but doesn't like studying. 
-<p><input class="space-right"type="checkbox" name="q1f">He is studying medicine because he wants to be a doctor, but his father is disappointed. 
+<p><input class="space-right"type="radio" name="q1b" value=1 checked>  He wants to be a doctor but doesn't like studying. 
+<p><input class="space-right"type="radio" name="q1b" value=2>He is studying medicine because he wants to be a doctor, but his father is disappointed. 
   
-<p><input class="space-right"type="checkbox" name="q1g">He doesn't get along with his father, and doesn't like studying. 
+<p><input class="space-right"type="radio" name="q1b" value=3>He doesn't get along with his father, and doesn't like studying. 
   
-<p><input class="space-right"type="checkbox" name="q1h">He doesn't like studying and is worried about what his father will think if he stops. 
+<p><input class="space-right"type="radio" name="q1b" value=4>He doesn't like studying and is worried about what his father will think if he stops. 
 <p>
  
 <table cellpadding=2 cellspacing=2 width=400 bgcolor=#ffbc90>
@@ -109,19 +102,20 @@ Anthea
 
 <b>Choose the best summary. </b>
 
-<p><input class="space-right"type="checkbox" name="q1i">Anthea thinks she should move to Spain. 
+<p><input class="space-right"type="radio" name="q1c" value=1 checked>Anthea thinks she should move to Spain. 
   
-<p><input class="space-right"type="checkbox" name="q1j">Anthea's relationships end unexpectedly and she thinks she is doing something wrong.  
+<p><input class="space-right"type="radio" name="q1c" value=2>Anthea's relationships end unexpectedly and she thinks she is doing something wrong.  
   
-<p><input class="space-right"type="checkbox" name="q1k">Anthea's boyfriend met another woman, but he still wants to marry Anthea. 
+<p><input class="space-right"type="radio" name="q1c" value=3>Anthea's boyfriend met another woman, but he still wants to marry Anthea. 
   
-<p><input class="space-right"type="checkbox" name="q1l">Anthea's boyfriend met another woman, and now he doesn't want to marry Anthea.  
+<p><input class="space-right"type="radio" name="q1c" value=4>Anthea's boyfriend met another woman, and now he doesn't want to marry Anthea.  
 <p>
 <center>
-<button class="eval"onclick="k1()">Check answers</button>
+<button class="eval" data-target="t1">Check answers</button>
 </center> 
-<p> 
-
+</form>
+<form id="t2">
+<p>
 <b>2. What do you think? What is the best advice for each problem?
 <p>
 <center>
@@ -131,11 +125,11 @@ She gets along with her boss but not with her colleagues.</b>
 </center>
 
 
-<p><input class="space-right"type="checkbox" name="q2a">  She should complain to the boss about the unfriendly people. 
+<p><input class="space-right"type="radio" name="q2a" value=1 checked>  She should complain to the boss about the unfriendly people. 
   
-<p><input class="space-right"type="checkbox" name="q2b">She should ignore the unfriendly people and concentrate on her work. 
+<p><input class="space-right"type="radio" name="q2a" value=2>She should ignore the unfriendly people and concentrate on her work. 
   
-<p><input class="space-right"type="checkbox" name="q2c">She should confront the unfriendly people and ask them why they don't like her.  
+<p><input class="space-right"type="radio" name="q2a" value=3>She should confront the unfriendly people and ask them why they don't like her.  
 <p>
 <center>
 <b>Problem 2: Archie
@@ -144,11 +138,11 @@ He doesn't like studying and is worried about what his father will think if he s
 </center>
 <p>
 
-<p><input class="space-right"type="checkbox" name="q2d">  He should finish the course and then decide if he likes being a doctor, or not. 
+<p><input class="space-right"type="radio" name="q2b" value=1 checked>  He should finish the course and then decide if he likes being a doctor, or not. 
   
-<p><input class="space-right"type="checkbox" name="q2e">He should do what makes his father happy. 
+<p><input class="space-right"type="radio" name="q2b" value=2>He should do what makes his father happy. 
   
-<p><input class="space-right"type="checkbox" name="q2f">He shouldn't worry what his father thinks. He should consider his own happiness. 
+<p><input class="space-right"type="radio" name="q2b" value=3>He shouldn't worry what his father thinks. He should consider his own happiness. 
 <p>
 
 <center>
@@ -157,11 +151,11 @@ He doesn't like studying and is worried about what his father will think if he s
 The writer's relationships end unexpectedly and she thinks she is doing something wrong. </b>
 </center>
 
-<p><input class="space-right"type="checkbox" name="q2g">She has chosen the wrong man. She should forget him as soon as possible. 
+<p><input class="space-right"type="radio" name="q2c" value=1 checked>She has chosen the wrong man. She should forget him as soon as possible. 
   
-<p><input class="space-right"type="checkbox" name="q2h">She should ask herself why he doesn't want to marry her, and try to change in some way. 
+<p><input class="space-right"type="radio" name="q2c" value=2>She should ask herself why he doesn't want to marry her, and try to change in some way. 
   
-<p><input class="space-right"type="checkbox" name="q2i">She should try to see him as often as possible and try to win him back. 
+<p><input class="space-right"type="radio" name="q2c" value=3>She should try to see him as often as possible and try to win him back. 
 <p> 
 
 <b>3. Now compare your advice with what STELLA SMITH says.
@@ -187,11 +181,11 @@ Although nobody likes to feel excluded, I don't think you want this unfriendly g
 <b>Choose the best summary.</b>
 </center>
 
-<p><input class="space-right"type="checkbox" name="q3a">She should complain to the boss about the unfriendly people. 
+<p><input class="space-right"type="radio" name="q2d" value=1 checked>She should complain to the boss about the unfriendly people. 
   
-<p><input class="space-right"type="checkbox" name="q3b">She should ignore the unfriendly people and concentrate on her work. 
+<p><input class="space-right"type="radio" name="q2d" value=2>She should ignore the unfriendly people and concentrate on her work. 
   
-<p><input class="space-right"type="checkbox" name="q3c">She should confront the unfriendly people and ask them why they don't like her. 
+<p><input class="space-right"type="radio" name="q2d" value=3>She should confront the unfriendly people and ask them why they don't like her. 
 <p>
 
 <table cellpadding=2 cellspacing=2 width=500 bgcolor=#ffbc90>
@@ -211,11 +205,11 @@ Your happiness is the most important thing in life. Parents should appreciate th
 <b>Choose the best summary.</b>
 </center>
 <p>
-<p><input class="space-right"type="checkbox" name="q3d">He should finish the course and then decide if he likes being a doctor, or not. 
+<p><input class="space-right"type="radio" name="q2e" value=1  checked>He should finish the course and then decide if he likes being a doctor, or not. 
   
-<p><input class="space-right"type="checkbox" name="q3e">He should do what makes his father happy. 
+<p><input class="space-right"type="radio" name="q2e" value=2>He should do what makes his father happy. 
   
-<p><input class="space-right"type="checkbox" name="q3f">He shouldn't worry what his father thinks. He should consider his own happiness. 
+<p><input class="space-right"type="radio" name="q2e" value=3>He shouldn't worry what his father thinks. He should consider his own happiness. 
 <p>
 
 <table cellpadding=2 cellspacing=2 width=500 bgcolor=#ffbc90>
@@ -235,18 +229,18 @@ Don't think this is your fault. You just picked the wrong man. There is, of cour
 </center>
 <p>
 
-<p><input class="space-right"type="checkbox" name="q3g">She has chosen the wrong man. She should forget him as soon as possible. 
+<p><input class="space-right"type="radio" name="q2f" checked>She has chosen the wrong man. She should forget him as soon as possible. 
   
-<p><input class="space-right"type="checkbox" name="q3h">She should ask herself why he doesn't want to marry her, and try to change in some way. 
+<p><input class="space-right"type="radio" name="q2f">She should ask herself why he doesn't want to marry her, and try to change in some way. 
   
-<p><input class="space-right"type="checkbox" name="q3i">She should try to see him as often as possible and try to win him back. 
+<p><input class="space-right"type="radio" name="q2f">She should try to see him as often as possible and try to win him back. 
 <p>
 <center>
-<button class="eval"data-target="t1">Check answers</button>
+<button class="eval"data-target="t2">Check answers</button>
 </center> 
 </form>
 
-<form id="t2">
+<form id="t3">
 <b>4. Put the sentences in correct order. (1,2,3,4,5,6,7,8)</b> 
 <p>
 <center>
@@ -256,34 +250,34 @@ Dear Stella:</b>
 </center>
 <p>
 <ol>
-<li><input class="space-right"size=1 maxlength=1 name="q4a">  While he was there he met someone, who he says he is going to marry.
-<li><input class="space-right"size=1 maxlength=1 name="q4b">  We've been together for five years.
-<li><input class="space-right"size=1 maxlength=1 name="q4c">  What am I doing wrong? What should I do?
-<li><input class="space-right"size=1 maxlength=1 name="q4d">  Recently he went on vacation to Spain for three weeks.
-<li><input class="space-right"size=1 maxlength=1 name="q4e">  This is the third relationship that has finished unexpectedly.
-<li><input class="space-right"size=1 maxlength=1 name="q4f">  My boyfriend wants to get married, but not to me.
-<li><input class="space-right"size=1 maxlength=1 name="q4g">  I can't belive it. I'm devasted!
-<li><input class="space-right"size=1 maxlength=1 name="q4h">  The worst thing is, he didn't even tell me to my face&#151;he broke up with me by e-mail.
+<li><input class="space-right"size=1 maxlength=1 name="q3a">  While he was there he met someone, who he says he is going to marry.
+<li><input class="space-right"size=1 maxlength=1 name="q3b">  We've been together for five years.
+<li><input class="space-right"size=1 maxlength=1 name="q3c">  What am I doing wrong? What should I do?
+<li><input class="space-right"size=1 maxlength=1 name="q3d">  Recently he went on vacation to Spain for three weeks.
+<li><input class="space-right"size=1 maxlength=1 name="q3e">  This is the third relationship that has finished unexpectedly.
+<li><input class="space-right"size=1 maxlength=1 name="q3f">  My boyfriend wants to get married, but not to me.
+<li><input class="space-right"size=1 maxlength=1 name="q3g">  I can't belive it. I'm devasted!
+<li><input class="space-right"size=1 maxlength=1 name="q3h">  The worst thing is, he didn't even tell me to my face&#151;he broke up with me by e-mail.
 </ol>
 <p>
 <center>
-<button class="eval"data-target="t2">Check answers</button>
+<button class="eval"data-target="t3">Check answers</button>
 </center>
 </form> 
 
-<form id="t3">
+<form id="t4">
 <b>5. Click and drag the phrases to complete Stella's advice for 
 <br><center class=" problem">
 PROBLEM 3.</b>
 </center>
 <p>
-Dear Anthea, Don't think this is your fault. <sub>1</sub><input size=15 name="q5a">. There is, of
+Dear Anthea, Don't think this is your fault. <sub>1</sub><input size=15 name="q4a">. There is, of
 course, no limit to how <br><br>many times this can happen. If were you I
- <sub>2</sub><input size=15 name="q5b">; throw away any pictures of him or<br><br> letters; give away any  
-tapes or CD's you listened to together;  <sub>3</sub><input size=15 name="q5c">. Don't be<br><br> tempted
+ <sub>2</sub><input size=15 name="q4b">; throw away any pictures of him or<br><br> letters; give away any  
+tapes or CD's you listened to together;  <sub>3</sub><input size=15 name="q4c">. Don't be<br><br> tempted
 to contact him. You should feel sorry for the woman stuck with a coward who<br><br>
- <nobr><sub>4</sub><input size=15 name="q5d"></nobr>. You ought to think of this, not as an end,  
- <sub>5</sub><input size=15 name="q5e">
+ <nobr><sub>4</sub><input size=15 name="q4d"></nobr>. You ought to think of this, not as an end,  
+ <sub>5</sub><input size=15 name="q4e">
 <p>
 <center> 
 <table width=650>
@@ -293,7 +287,7 @@ to contact him. You should feel sorry for the woman stuck with a coward who<br><
 </table>
 <p>
 <center>
-<button class="eval"data-target="t3">Check answers</button>
+<button class="eval"data-target="t4">Check answers</button>
 </center>
 </form>
 
