@@ -1,5 +1,5 @@
 (function() {
-  var evaluate, evaluateGeneric, evaluateList, evaluateQuiz, load;
+  var evaluate, evaluateGeneric, evaluateList, evaluateQuiz, evaluateScore, load;
 
   load = function(url) {
     var cont;
@@ -18,7 +18,9 @@
         form = $(e.target).data('target');
         draw = $(e.target).data('draw');
         console.log(form, draw);
-        if ($('#' + form).hasClass('list')) {
+        if ($('#' + form).hasClass('score')) {
+          return evaluateScore(form, draw);
+        } else if ($('#' + form).hasClass('list')) {
           return evaluateList(form, draw);
         } else if ($('#' + form).hasClass('generic')) {
           return evaluateGeneric(form, draw);
@@ -29,6 +31,21 @@
         }
       });
     });
+  };
+
+  evaluateScore = function(form, draw) {
+    var answer, answers, score, _i, _len;
+    score = 0;
+    draw = '.alert-box > div';
+    answers = $('#' + form).serializeArray();
+    for (_i = 0, _len = answers.length; _i < _len; _i++) {
+      answer = answers[_i];
+      score += parseInt(answer.value);
+    }
+    $(draw).empty();
+    $(draw).append('<a href="#" class="close">x</a>');
+    $(draw).append("<p>Score: " + score + "</p>");
+    return $('.alert-box').fadeIn(500);
   };
 
   evaluateGeneric = function(form, draw) {
