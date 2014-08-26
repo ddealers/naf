@@ -35,6 +35,12 @@ body .activity {
   height: 100%;
   position: relative;
 }
+body .grey-fill {
+  display: inline-block;
+  background: #eee;
+  width: 100px;
+  height: 20px;
+}
 body #menu {
   overflow-y: scroll;
   height: 100%;
@@ -126,7 +132,7 @@ body .eval {
   display: block;
   margin: 0 auto 1.25rem;
   border-radius: 20px;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 body #lang {
   display: block;
@@ -375,6 +381,9 @@ body li.letra span {
   font-size: 23px;
   color: #521c58;
   top: 35px;
+}
+sub {
+  color: #f00;
 }
 #t1 {
   padding-top: 60px;
