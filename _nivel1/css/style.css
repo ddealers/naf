@@ -9,17 +9,47 @@ body div.bg {
 body div.bg.bg1 {
   background-color: #9ac00a;
 }
+body div.bg.bg1 .eval {
+  background-color: #9ac00a;
+}
+body div.bg.bg1 .eval:hover {
+  background-color: #688e00;
+}
 body div.bg.bg2 {
   background-color: #2ba6cb;
+}
+body div.bg.bg2 .eval {
+  background-color: #2ba6cb;
+}
+body div.bg.bg2 .eval:hover {
+  background-color: #007499;
 }
 body div.bg.bg3 {
   background-color: #521c58;
 }
+body div.bg.bg3 .eval {
+  background-color: #521c58;
+}
+body div.bg.bg3 .eval:hover {
+  background-color: #200026;
+}
 body div.bg.bg4 {
   background-color: #dc6700;
 }
+body div.bg.bg4 .eval {
+  background-color: #dc6700;
+}
+body div.bg.bg4 .eval:hover {
+  background-color: #aa3500;
+}
 body div.bg.bg5 {
   background-color: #3aa297;
+}
+body div.bg.bg5 .eval {
+  background-color: #3aa297;
+}
+body div.bg.bg5 .eval:hover {
+  background-color: #087065;
 }
 body #index #t1 img {
   padding: 1em;
