@@ -1,5 +1,5 @@
 (function() {
-  var evaluate, evaluateGeneric, evaluateList, evaluateQuiz, evaluateScore, load;
+  var evaluate, evaluateFromZero, evaluateGeneric, evaluateList, evaluateQuiz, evaluateScore, load;
 
   load = function(url) {
     var cont;
@@ -26,6 +26,8 @@
           return evaluateGeneric(form, draw);
         } else if ($('#' + form).hasClass('quiz')) {
           return evaluateQuiz(form, draw);
+        } else if ($('#' + form).hasClass('zero')) {
+          return evaluateFromZero(form, draw);
         } else {
           return evaluate(form, draw);
         }
@@ -82,6 +84,41 @@
     $(draw).append('<a href="#" class="close">x</a>');
     $(draw).append(response);
     return $('.alert-box').fadeIn(500);
+  };
+
+  evaluateFromZero = function(form, draw) {
+    var answers;
+    draw = '.alert-box > div';
+    answers = $('#' + form).serializeArray();
+    console.log(answers);
+    $(draw).empty();
+    $(draw).append('<a href="#" class="close">x</a>');
+    return $.each(answers, function(index, elem) {
+      var answer, c, correct, key;
+      answer = elem.value;
+      correct = v[elem.name];
+      if (Array.isArray(correct)) {
+        c = false;
+        for (key in correct) {
+          if (String(answer).toLowerCase() === String(correct[key]).toLowerCase()) {
+            c = true;
+          }
+        }
+        if (c) {
+          $(draw).append('<p>' + index + '. Correct</p>');
+        } else {
+          $(draw).append('<p>' + index + '. Incorrect</p>');
+        }
+      } else {
+        console.log(String(answer).toLowerCase(), String(correct).toLowerCase());
+        if (String(answer).toLowerCase() === String(correct).toLowerCase()) {
+          $(draw).append('<p>' + index + '. Correct</p>');
+        } else {
+          $(draw).append('<p>' + index + '. Incorrect</p>');
+        }
+      }
+      return $('.alert-box').fadeIn(500);
+    });
   };
 
   evaluate = function(form, draw) {

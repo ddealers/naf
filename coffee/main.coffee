@@ -1,6 +1,16 @@
 load = (url) ->
 	cont = $('#cont')
 	cont.empty()
+	#t
+	###
+	url = url.replace './templates/', ''
+	url = url.replace '.html', ''
+	src = $('#'+url).html()
+	console.log src
+	tmplt = Handlebars.compile src
+	console.log tmplt
+	cont.html tmplt
+	###
 	cont.load url, ->
 		$('.list input[type=checkbox]').val('false')
 		$('.list input[type=checkbox]').on 'change', ->

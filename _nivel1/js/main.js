@@ -5,6 +5,16 @@
     var cont;
     cont = $('#cont');
     cont.empty();
+
+    /*
+    	url = url.replace './templates/', ''
+    	url = url.replace '.html', ''
+    	src = $('#'+url).html()
+    	console.log src
+    	tmplt = Handlebars.compile src
+    	console.log tmplt
+    	cont.html tmplt
+     */
     return cont.load(url, function() {
       $('.list input[type=checkbox]').val('false');
       $('.list input[type=checkbox]').on('change', function() {
