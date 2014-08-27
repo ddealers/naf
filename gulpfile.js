@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var coffee = require('gulp-coffee');
+var zip = require('gulp-zip');
 
 var level = args.level;
 
@@ -32,4 +33,28 @@ gulp.task('create', function(){
 	doHTML(config, level);
 	doCSS(config, level);
 	doCoffee(config, level);
+});
+
+gulp.task('zip', function(){
+	var date = new Date().toISOString().replace(/[^0-9]/g, ''),
+		streamqueue = require('streamqueue'),
+		stream = streamqueue({objectMode: true});
+	stream.queue(
+        gulp.src(
+            [
+                "css/**/*",
+                "img/**/*",
+                "js/**/*",
+                "snd/**/*",
+                "templates/**/*",
+                "unit-tests/**/*",
+                "index.html",
+                "main.html"
+            ],
+            {base: "_nivel"+level+"/"})
+    );
+    // once preprocess ended, concat result into a real file
+    return stream.done()
+        .pipe(zip("level-" + level + "-" + date + ".zip"))
+        .pipe(gulp.dest("dist/"));
 });
