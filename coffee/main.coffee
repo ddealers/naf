@@ -19,6 +19,8 @@ load = (url) ->
 				evaluateGeneric form, draw
 			else if $('#'+form).hasClass 'quiz'
 				evaluateQuiz form, draw
+			else if $('#'+form).hasClass 'zero'
+				evaluateFromZero form, draw
 			else
 				evaluate form, draw
 evaluateScore = (form, draw) ->
@@ -57,6 +59,32 @@ evaluateList = (form, draw) ->
 	$(draw).append '<a href="#" class="close">x</a>'
 	$(draw).append response
 	$('.alert-box').fadeIn 500
+evaluateFromZero = (form, draw) ->
+	draw = '.alert-box > div'
+	answers = $('#'+form).serializeArray()
+	console.log answers
+	$(draw).empty()
+	$(draw).append '<a href="#" class="close">x</a>'
+	$.each answers, (index, elem) ->
+		answer = elem.value
+		correct = v[elem.name]
+
+		if Array.isArray correct
+			c = off
+			for key of correct
+				if String(answer).toLowerCase() is String(correct[key]).toLowerCase()
+					c = on
+			if c
+				$(draw).append '<p>' + index + '. Correct</p>'
+			else
+				$(draw).append '<p>' + index + '. Incorrect</p>'
+		else
+			console.log String(answer).toLowerCase(), String(correct).toLowerCase() 
+			if String(answer).toLowerCase() is String(correct).toLowerCase()
+				$(draw).append '<p>' + index + '. Correct</p>'
+			else
+				$(draw).append '<p>' + index + '. Incorrect</p>'
+		$('.alert-box').fadeIn 500
 
 evaluate = (form, draw) ->
 	#draw = '#'+draw
