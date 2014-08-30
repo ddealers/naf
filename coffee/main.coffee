@@ -1,7 +1,7 @@
 load = (url) ->
 	cont = $('#cont')
 	cont.empty()
-	#t
+	###
 	url = url.replace './templates/', ''
 	url = url.replace '.html', ''
 	src = $('#'+url).html()
@@ -51,7 +51,6 @@ load = (url) ->
 				evaluateFromZero form, draw
 			else
 				evaluate form, draw
-	###
 evaluateScore = (form, draw, v) ->
 	score = 0
 	draw = '.alert-box > div'
