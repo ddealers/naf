@@ -79,6 +79,9 @@ body #index #t1 img {
   padding: 1em;
   width: 80%;
 }
+body #index #t2 {
+  padding-top: 60px;
+}
 body #index #t2 img {
   padding: 1em;
 }
@@ -127,7 +130,8 @@ body .alert-box p {
 body #cont {
   background: #fff;
   overflow-y: scroll;
-  height: 100%;
+  overflow-x: hidden;
+  height: 80%;
   padding-bottom: 200px;
 }
 body #cont td {

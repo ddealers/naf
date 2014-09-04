@@ -35,26 +35,36 @@ gulp.task('create', function(){
 	doCoffee(config, level);
 });
 
-gulp.task('zip', function(){
-	var date = new Date().toISOString().replace(/[^0-9]/g, ''),
-		streamqueue = require('streamqueue'),
-		stream = streamqueue({objectMode: true});
-	stream.queue(
-        gulp.src(
-            [
-                "css/**/*",
-                "img/**/*",
-                "js/**/*",
-                "snd/**/*",
-                "templates/**/*",
-                "unit-tests/**/*",
-                "index.html",
-                "main.html"
-            ],
-            {base: "_nivel"+level+"/"})
-    );
-    // once preprocess ended, concat result into a real file
-    return stream.done()
-        .pipe(zip("level-" + level + "-" + date + ".zip"))
-        .pipe(gulp.dest("dist/"));
+gulp.task('production', function(){
+	//gulp.src(['node-webkit/**/*']).pipe(gulp.dest('dist/_nivel'+level));
+	gulp.src([
+		'_nivel'+level+'/css/**/*.*',
+		'_nivel'+level+'/img/**/*.*',
+		'_nivel'+level+'/js/**/*.*',
+		'_nivel'+level+'/snd/**/*.*',
+		'_nivel'+level+'/templates/**/*.*',
+		'_nivel'+level+'/unit-tests/**/*.*',
+		'_nivel'+level+'/index.html',
+		'_nivel'+level+'/main.html',
+		//'_nivel'+level+'/package.json'
+		], {base: './'})
+	.pipe(gulp.dest('dist'));
+	console.log('Level '+level+' Complete!');
 });
+
+//gulp.task('nw', function(){
+//	var date = new Date().toISOString().replace(/[^0-9]/g, '');
+//	gulp.src([
+//		'_nivel'+level+'/css/**/*',
+//		'_nivel'+level+'/img/**/*',
+//		'_nivel'+level+'/js/**/*',
+//		'_nivel'+level+'/snd/**/*',
+//		'_nivel'+level+'/templates/**/*',
+//		'_nivel'+level+'/unit-tests/**/*',
+//		'_nivel'+level+'/index.html',
+//		'_nivel'+level+'/main.html',
+//		'_nivel'+level+'/package.json'
+//		])
+//    .pipe(zip('level-' + level + '-' + date + '.zip'))
+//    .pipe(gulp.dest('dist'));
+//});
