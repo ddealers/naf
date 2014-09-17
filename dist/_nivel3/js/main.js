@@ -5,6 +5,35 @@
     var cont;
     cont = $('#cont');
     cont.empty();
+
+    /*
+    	url = url.replace './templates/', ''
+    	url = url.replace '.html', ''
+    	src = $('#'+url).html()
+    	cont.html src
+    	$('.list input[type=checkbox]').val('false')
+    	$('.list input[type=checkbox]').on 'change', ->
+    		cb = $(this)
+    		cb.val(cb.prop('checked'))
+    	$('button.eval').on 'click', (e) ->
+    		e.preventDefault()
+    		form = $(e.target).data('target')
+    		draw = $(e.target).data('draw')
+    		v = unitans[url]
+    		console.log form, draw, v
+    		if $('#'+form).hasClass 'score'
+    			evaluateScore form, draw, v
+    		else if $('#'+form).hasClass 'list'
+    			evaluateList form, draw, v
+    		else if $('#'+form).hasClass 'generic'
+    			evaluateGeneric form, draw, v
+    		else if $('#'+form).hasClass 'quiz'
+    			evaluateQuiz form, draw, v
+    		else if $('#'+form).hasClass 'zero'
+    			evaluateFromZero form, draw, v
+    		else
+    			evaluate form, draw, v
+     */
     return cont.load(url, function() {
       $('.list input[type=checkbox]').val('false');
       $('.list input[type=checkbox]').on('change', function() {

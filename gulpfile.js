@@ -5,7 +5,6 @@ var gulp = require('gulp');
 var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var coffee = require('gulp-coffee');
-var zip = require('gulp-zip');
 
 var level = args.level;
 
